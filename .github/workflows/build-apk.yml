@@ -34,7 +34,7 @@ jobs:
           gradle-version: '8.11.1'
 
       - name: Build Debug APK
-        run: gradle assembleDebug --stacktrace
+        run: gradle assembleDebug --console=plain
 
       - name: Rename APK
         run: cp app/build/outputs/apk/debug/app-debug.apk EduTrack-v1.0.${{ github.run_number }}.apk
