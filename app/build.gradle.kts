@@ -14,8 +14,8 @@ android {
         applicationId = "com.edutrack.app"
         minSdk = 26
         targetSdk = 35
-        versionCode = 2
-        versionName = "1.0.0-phase2"
+        versionCode = 3
+        versionName = "1.0.0-phase3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
