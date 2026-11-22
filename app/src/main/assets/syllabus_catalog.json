@@ -1,381 +1,860 @@
 {
-  "catalogVersion": "2.0.0",
+  "catalogVersion": "2026.2",
   "verificationDate": "2026-11-22",
   "subjectBanks": {
     "ncert_11_physics": {
       "key": "ncert_11_physics",
       "name": "Physics (Class 11)",
       "chapters": [
-        { "key": "p11_c1", "unit": "Unit I", "title": "Units and Measurements", "topics": ["International System of Units", "Significant Figures", "Dimensions of Physical Quantities", "Dimensional Formulae and Equations", "Dimensional Analysis and Applications"] },
-        { "key": "p11_c2", "unit": "Unit II", "title": "Motion in a Straight Line", "topics": ["Position, Path Length and Displacement", "Average Velocity and Instantaneous Speed", "Acceleration", "Kinematic Equations for Uniformly Accelerated Motion", "Free Fall and Motion Graphs"] },
-        { "key": "p11_c3", "unit": "Unit II", "title": "Motion in a Plane", "topics": ["Scalars and Vectors", "Vector Addition and Resolution", "Motion in a Plane with Constant Acceleration", "Projectile Motion", "Uniform Circular Motion"] },
-        { "key": "p11_c4", "unit": "Unit III", "title": "Laws of Motion", "topics": ["Newton's First Law and Inertia", "Newton's Second Law and Momentum", "Newton's Third Law and Conservation of Momentum", "Equilibrium of a Particle", "Friction", "Circular Motion on Level and Banked Roads"] },
-        { "key": "p11_c5", "unit": "Unit IV", "title": "Work, Energy and Power", "topics": ["Work-Energy Theorem", "Kinetic Energy and Potential Energy", "Conservation of Mechanical Energy", "Potential Energy of a Spring", "Power", "Elastic and Inelastic Collisions"] },
-        { "key": "p11_c6", "unit": "Unit V", "title": "System of Particles and Rotational Motion", "topics": ["Centre of Mass and Its Motion", "Torque and Angular Momentum", "Equilibrium of a Rigid Body", "Moment of Inertia", "Kinematics and Dynamics of Rotational Motion"] },
-        { "key": "p11_c7", "unit": "Unit VI", "title": "Gravitation", "topics": ["Kepler's Laws of Planetary Motion", "Universal Law of Gravitation", "Acceleration Due to Gravity and Its Variation", "Gravitational Potential Energy", "Escape Speed and Orbital Velocity"] },
-        { "key": "p11_c8", "unit": "Unit VII", "title": "Mechanical Properties of Solids", "topics": ["Stress and Strain", "Hooke's Law and Stress-Strain Curve", "Elastic Moduli (Young's, Shear, Bulk)", "Applications of Elastic Behaviour"] },
-        { "key": "p11_c9", "unit": "Unit VII", "title": "Mechanical Properties of Fluids", "topics": ["Pressure and Pascal's Law", "Streamline Flow and Equation of Continuity", "Bernoulli's Principle", "Viscosity and Stokes' Law", "Surface Tension and Capillarity"] },
-        { "key": "p11_c10", "unit": "Unit VII", "title": "Thermal Properties of Matter", "topics": ["Temperature and Thermal Expansion", "Specific Heat Capacity and Calorimetry", "Change of State and Latent Heat", "Conduction, Convection and Radiation", "Newton's Law of Cooling"] },
-        { "key": "p11_c11", "unit": "Unit VIII", "title": "Thermodynamics", "topics": ["Zeroth Law and Thermal Equilibrium", "First Law of Thermodynamics", "Thermodynamic State Variables and Processes", "Second Law of Thermodynamics", "Reversible and Irreversible Processes"] },
-        { "key": "p11_c12", "unit": "Unit IX", "title": "Kinetic Theory", "topics": ["Behaviour of Ideal Gases", "Kinetic Theory of an Ideal Gas", "Law of Equipartition of Energy", "Specific Heat Capacity of Gases", "Mean Free Path"] },
-        { "key": "p11_c13", "unit": "Unit X", "title": "Oscillations", "topics": ["Periodic and Oscillatory Motions", "Simple Harmonic Motion (SHM)", "Velocity, Acceleration and Energy in SHM", "Simple Pendulum and Spring Systems"] },
-        { "key": "p11_c14", "unit": "Unit X", "title": "Waves", "topics": ["Transverse and Longitudinal Waves", "Displacement Relation in a Progressive Wave", "Speed of a Travelling Wave", "Principle of Superposition and Reflection", "Standing Waves, Normal Modes and Beats"] }
+        { "key": "p11_c1", "unit": "Unit I", "title": "Units and Measurements", "topics": ["International System of Units (SI)", "Significant Figures and Rounding", "Errors in Measurement", "Dimensions of Physical Quantities", "Dimensional Analysis and Applications"] },
+        { "key": "p11_c2", "unit": "Unit II", "title": "Motion in a Straight Line", "topics": ["Frame of Reference, Path Length and Displacement", "Average Velocity and Instantaneous Speed", "Acceleration and Position-Time / Velocity-Time Graphs", "Kinematic Equations for Uniformly Accelerated Motion", "Free Fall and Relative Velocity in 1D"] },
+        { "key": "p11_c3", "unit": "Unit II", "title": "Motion in a Plane", "topics": ["Scalars and Vectors", "Vector Addition, Subtraction and Resolution", "Dot and Cross Product of Vectors", "Projectile Motion", "Uniform Circular Motion and Centripetal Acceleration"] },
+        { "key": "p11_c4", "unit": "Unit III", "title": "Laws of Motion", "topics": ["Newton's First Law and Inertia", "Newton's Second Law, Momentum and Impulse", "Newton's Third Law and Conservation of Linear Momentum", "Equilibrium of Concurrent Forces", "Static, Kinetic and Rolling Friction", "Dynamics of Uniform Circular Motion and Banked Roads"] },
+        { "key": "p11_c5", "unit": "Unit IV", "title": "Work, Energy and Power", "topics": ["Work Done by Constant and Variable Forces", "Work-Energy Theorem", "Kinetic Energy and Potential Energy", "Conservation of Mechanical Energy and Vertical Circle", "Potential Energy of a Spring", "Power", "Elastic and Inelastic Collisions in 1D & 2D"] },
+        { "key": "p11_c6", "unit": "Unit V", "title": "System of Particles and Rotational Motion", "topics": ["Centre of Mass of Two-Particle System and Rigid Body", "Torque and Angular Momentum", "Conservation of Angular Momentum", "Equilibrium of a Rigid Body", "Moment of Inertia, Radius of Gyration and Theorems", "Kinematics and Dynamics of Rotational Motion"] },
+        { "key": "p11_c7", "unit": "Unit VI", "title": "Gravitation", "topics": ["Kepler's Laws of Planetary Motion", "Universal Law of Gravitation", "Variation of Acceleration Due to Gravity (Altitude & Depth)", "Gravitational Potential and Potential Energy", "Escape Speed, Orbital Velocity and Satellites"] },
+        { "key": "p11_c8", "unit": "Unit VII", "title": "Mechanical Properties of Solids", "topics": ["Elastic Behaviour, Stress and Strain", "Hooke's Law and Stress-Strain Curve", "Young's, Bulk and Shear Moduli", "Poisson's Ratio and Elastic Potential Energy"] },
+        { "key": "p11_c9", "unit": "Unit VII", "title": "Mechanical Properties of Fluids", "topics": ["Pressure, Pascal's Law and Hydraulic Lift", "Streamline Flow and Equation of Continuity", "Bernoulli's Principle and Applications", "Viscosity, Stokes' Law and Terminal Velocity", "Surface Energy, Surface Tension, Angle of Contact and Capillarity"] },
+        { "key": "p11_c10", "unit": "Unit VII", "title": "Thermal Properties of Matter", "topics": ["Temperature and Thermal Expansion (Linear, Area, Volume)", "Specific Heat Capacity and Calorimetry", "Change of State and Latent Heat", "Heat Transfer: Conduction, Convection and Radiation", "Stefan's Law, Wien's Displacement Law and Newton's Law of Cooling"] },
+        { "key": "p11_c11", "unit": "Unit VIII", "title": "Thermodynamics", "topics": ["Zeroth Law and Thermal Equilibrium", "Heat, Internal Energy and First Law of Thermodynamics", "Isothermal, Adiabatic, Isobaric and Isochoric Processes", "Second Law of Thermodynamics", "Reversible and Irreversible Processes"] },
+        { "key": "p11_c12", "unit": "Unit IX", "title": "Kinetic Theory", "topics": ["Equation of State of a Perfect Gas", "Kinetic Theory of Gases and Pressure Expression", "Kinetic Interpretation of Temperature and RMS Speed", "Degrees of Freedom and Law of Equipartition of Energy", "Specific Heat Capacity of Gases and Mean Free Path"] },
+        { "key": "p11_c13", "unit": "Unit X", "title": "Oscillations", "topics": ["Periodic Motion: Period, Frequency and Displacement", "Simple Harmonic Motion (SHM) and Phase", "Velocity, Acceleration and Energy in SHM", "Oscillations of a Spring and Simple Pendulum"] },
+        { "key": "p11_c14", "unit": "Unit X", "title": "Waves", "topics": ["Transverse and Longitudinal Waves", "Displacement Relation in a Progressive Wave", "Speed of a Travelling Wave (String & Sound)", "Principle of Superposition and Reflection of Waves", "Standing Waves in Strings and Organ Pipes", "Beats"] }
       ]
     },
     "ncert_11_chemistry": {
       "key": "ncert_11_chemistry",
       "name": "Chemistry (Class 11)",
       "chapters": [
-        { "key": "c11_c1", "unit": "Unit I", "title": "Some Basic Concepts of Chemistry", "topics": ["Laws of Chemical Combination", "Dalton's Atomic Theory", "Atomic and Molecular Masses", "Mole Concept and Molar Masses", "Percentage Composition and Empirical Formula", "Stoichiometry and Limiting Reagent"] },
-        { "key": "c11_c2", "unit": "Unit II", "title": "Structure of Atom", "topics": ["Sub-atomic Particles and Atomic Models", "Bohr's Model for Hydrogen Atom", "Dual Behaviour and Heisenberg Uncertainty Principle", "Quantum Numbers and Shapes of Orbitals", "Aufbau Principle, Pauli Exclusion and Hund's Rule"] },
-        { "key": "c11_c3", "unit": "Unit III", "title": "Classification of Elements and Periodicity in Properties", "topics": ["Modern Periodic Law and Electronic Configurations", "s, p, d, f-Block Elements", "Atomic and Ionic Radii", "Ionization Enthalpy and Electron Gain Enthalpy", "Electronegativity and Periodic Trends"] },
-        { "key": "c11_c4", "unit": "Unit IV", "title": "Chemical Bonding and Molecular Structure", "topics": ["Ionic and Covalent Bonding", "VSEPR Theory", "Valence Bond Theory and Hybridisation", "Molecular Orbital Theory (MOT)", "Hydrogen Bonding"] },
-        { "key": "c11_c5", "unit": "Unit V", "title": "Thermodynamics", "topics": ["Thermodynamic Terms and Internal Energy", "First Law and Enthalpy", "Hess's Law of Constant Heat Summation", "Enthalpies of Reactions", "Entropy and Gibbs Energy Spontaneity"] },
-        { "key": "c11_c6", "unit": "Unit VI", "title": "Equilibrium", "topics": ["Law of Chemical Equilibrium and Equilibrium Constants", "Le Chatelier's Principle", "Ionic Equilibrium: Acids, Bases and pH Scale", "Ionisation of Weak Electrolytes and Buffer Solutions", "Solubility Equilibria and Common Ion Effect"] },
-        { "key": "c11_c7", "unit": "Unit VII", "title": "Redox Reactions", "topics": ["Classical and Electron Transfer Concepts", "Oxidation Number", "Types of Redox Reactions", "Balancing Redox Reactions", "Redox Reactions and Electrode Processes"] },
-        { "key": "c11_c8", "unit": "Unit VIII", "title": "Organic Chemistry: Some Basic Principles and Techniques", "topics": ["Structural Representation and Classification", "IUPAC Nomenclature of Organic Compounds", "Isomerism", "Electronic Effects (Inductive, Resonance, Hyperconjugation)", "Purification and Qualitative/Quantitative Analysis"] },
-        { "key": "c11_c9", "unit": "Unit IX", "title": "Hydrocarbons", "topics": ["Alkanes: Nomenclature, Conformations and Reactions", "Alkenes: Isomerism, Preparation and Reactions", "Alkynes: Structure and Reactions", "Aromatic Hydrocarbons: Benzene and Electrophilic Substitution"] }
+        { "key": "c11_c1", "unit": "Unit I", "title": "Some Basic Concepts of Chemistry", "topics": ["Nature of Matter and Laws of Chemical Combination", "Dalton's Atomic Theory", "Atomic and Molecular Masses", "Mole Concept and Molar Masses", "Percentage Composition, Empirical and Molecular Formula", "Stoichiometry, Concentration Terms and Limiting Reagent"] },
+        { "key": "c11_c2", "unit": "Unit II", "title": "Structure of Atom", "topics": ["Sub-atomic Particles, Thomson and Rutherford Models", "Electromagnetic Radiation and Photoelectric Effect", "Bohr's Model for Hydrogen Atom and Spectrum", "de Broglie Relation and Heisenberg Uncertainty Principle", "Quantum Mechanical Model, Quantum Numbers and Shapes of Orbitals", "Aufbau Principle, Pauli Exclusion and Hund's Rule"] },
+        { "key": "c11_c3", "unit": "Unit III", "title": "Classification of Elements and Periodicity in Properties", "topics": ["Modern Periodic Law and Electronic Configurations", "s, p, d, f-Block Elements", "Atomic and Ionic Radii", "Ionization Enthalpy and Electron Gain Enthalpy", "Electronegativity, Valency and Periodic Trends"] },
+        { "key": "c11_c4", "unit": "Unit IV", "title": "Chemical Bonding and Molecular Structure", "topics": ["Ionic Bond, Lattice Enthalpy and Fajans' Rules", "Covalent Bond, Lewis Structures and Dipole Moment", "VSEPR Theory and Molecular Geometry", "Valence Bond Theory, Hybridisation and Resonance", "Molecular Orbital Theory (MOT) and Bond Order", "Hydrogen Bonding"] },
+        { "key": "c11_c5", "unit": "Unit V", "title": "Thermodynamics", "topics": ["System, Surroundings and State Functions", "First Law of Thermodynamics, Work and Heat", "Enthalpy and Relationship Between Cp and Cv", "Hess's Law and Enthalpies of Reactions", "Spontaneity, Entropy and Second Law", "Gibbs Free Energy and Equilibrium Constant"] },
+        { "key": "c11_c6", "unit": "Unit VI", "title": "Equilibrium", "topics": ["Physical and Chemical Equilibrium", "Law of Mass Action, Kp and Kc", "Le Chatelier's Principle", "Acids and Bases (Arrhenius, Bronsted-Lowry, Lewis)", "Ionisation of Water, pH Scale and Weak Electrolytes", "Salt Hydrolysis and Buffer Solutions", "Solubility Product (Ksp) and Common Ion Effect"] },
+        { "key": "c11_c7", "unit": "Unit VII", "title": "Redox Reactions", "topics": ["Oxidation and Reduction Concepts", "Oxidation Number Rules", "Types of Redox Reactions and Disproportionation", "Balancing Redox Reactions (Oxidation Number & Ion-Electron Methods)", "Redox Reactions and Electrode Processes"] },
+        { "key": "c11_c8", "unit": "Unit VIII", "title": "Organic Chemistry: Some Basic Principles and Techniques", "topics": ["Tetravalency of Carbon and Classification", "IUPAC Nomenclature of Organic Compounds", "Structural and Stereoisomerism", "Bond Fission, Carbocations, Carbanions and Free Radicals", "Electronic Effects: Inductive, Resonance, Electromeric and Hyperconjugation", "Purification Methods (Distillation, Chromatography) and Qualitative/Quantitative Analysis"] },
+        { "key": "c11_c9", "unit": "Unit IX", "title": "Hydrocarbons", "topics": ["Alkanes: Nomenclature, Conformations (Sawhorse & Newman) and Reactions", "Alkenes: Geometrical Isomerism, Preparation, Markovnikov & Peroxide Effect", "Alkynes: Acidic Character, Preparation and Addition Reactions", "Aromatic Hydrocarbons: Benzene, Huckel's Rule and Electrophilic Substitution"] }
       ]
     },
     "ncert_11_biology": {
       "key": "ncert_11_biology",
       "name": "Biology (Class 11)",
       "chapters": [
-        { "key": "b11_c1", "unit": "Diversity in Living World", "title": "The Living World", "topics": ["Diversity in the Living World", "Binomial Nomenclature", "Taxonomic Categories and Hierarchy"] },
-        { "key": "b11_c2", "unit": "Diversity in Living World", "title": "Biological Classification", "topics": ["Five Kingdom Classification", "Kingdom Monera", "Kingdom Protista", "Kingdom Fungi", "Viruses, Viroids, Prions and Lichens"] },
-        { "key": "b11_c3", "unit": "Diversity in Living World", "title": "Plant Kingdom", "topics": ["Algae", "Bryophytes", "Pteridophytes", "Gymnosperms", "Angiosperms"] },
-        { "key": "b11_c4", "unit": "Diversity in Living World", "title": "Animal Kingdom", "topics": ["Basis of Classification", "Non-Chordate Phyla (Porifera to Hemichordata)", "Phylum Chordata and Vertebrate Classes"] },
-        { "key": "b11_c5", "unit": "Structural Organisation", "title": "Morphology of Flowering Plants", "topics": ["Root, Stem and Leaf", "Inflorescence and Flower", "Fruit and Seed", "Semi-technical Description of Important Families"] },
-        { "key": "b11_c6", "unit": "Structural Organisation", "title": "Anatomy of Flowering Plants", "topics": ["The Tissue System", "Anatomy of Dicotyledonous and Monocotyledonous Root, Stem and Leaf"] },
-        { "key": "b11_c7", "unit": "Structural Organisation", "title": "Structural Organisation in Animals", "topics": ["Organ and Organ Systems", "Frog: Morphology and Anatomy"] },
-        { "key": "b11_c8", "unit": "Cell Structure", "title": "Cell: The Unit of Life", "topics": ["Cell Theory and Overview", "Prokaryotic Cells", "Eukaryotic Cell Organelles", "Nucleus and Chromosomes"] },
-        { "key": "b11_c9", "unit": "Cell Structure", "title": "Biomolecules", "topics": ["Primary and Secondary Metabolites", "Proteins, Polysaccharides and Nucleic Acids", "Structure of Proteins", "Enzymes: Action, Factors and Classification"] },
-        { "key": "b11_c10", "unit": "Cell Structure", "title": "Cell Cycle and Cell Division", "topics": ["Phases of Cell Cycle", "Mitosis and Significance", "Meiosis I and II and Significance"] },
-        { "key": "b11_c11", "unit": "Plant Physiology", "title": "Photosynthesis in Higher Plants", "topics": ["Photosynthetic Pigments", "Light Reaction and Electron Transport", "Chemiosmotic Hypothesis", "C3 (Calvin) and C4 Pathways", "Photorespiration and Factors Affecting Photosynthesis"] },
-        { "key": "b11_c12", "unit": "Plant Physiology", "title": "Respiration in Plants", "topics": ["Glycolysis", "Fermentation", "Aerobic Respiration: Krebs Cycle", "Electron Transport System (ETS) and Oxidative Phosphorylation", "Respiratory Quotient"] },
-        { "key": "b11_c13", "unit": "Plant Physiology", "title": "Plant Growth and Development", "topics": ["Growth Phases and Rates", "Differentiation, Dedifferentiation and Redifferentiation", "Plant Growth Regulators (Auxins, Gibberellins, Cytokinins, Ethylene, ABA)"] },
-        { "key": "b11_c14", "unit": "Human Physiology", "title": "Breathing and Exchange of Gases", "topics": ["Human Respiratory System", "Mechanism of Breathing and Respiratory Volumes", "Exchange and Transport of Gases", "Regulation and Respiratory Disorders"] },
-        { "key": "b11_c15", "unit": "Human Physiology", "title": "Body Fluids and Circulation", "topics": ["Blood, Blood Groups and Coagulation", "Lymph (Tissue Fluid)", "Human Heart and Cardiac Cycle", "ECG and Double Circulation", "Disorders of Circulatory System"] },
-        { "key": "b11_c16", "unit": "Human Physiology", "title": "Excretory Products and Their Elimination", "topics": ["Human Excretory System and Nephron", "Urine Formation and Counter-Current Mechanism", "Regulation of Kidney Function", "Micturition and Excretory Disorders"] },
-        { "key": "b11_c17", "unit": "Human Physiology", "title": "Locomotion and Movement", "topics": ["Types of Movement and Muscle Structure", "Mechanism of Muscle Contraction", "Human Skeletal System", "Joints and Muscular/Skeletal Disorders"] },
-        { "key": "b11_c18", "unit": "Human Physiology", "title": "Neural Control and Coordination", "topics": ["Human Neural System and Neuron", "Generation and Conduction of Nerve Impulse", "Transmission Across Synapses", "Central Neural System: Brain"] },
-        { "key": "b11_c19", "unit": "Human Physiology", "title": "Chemical Coordination and Integration", "topics": ["Hypothalamus and Pituitary Gland", "Thyroid, Parathyroid, Thymus and Adrenal Glands", "Pancreas, Gonads and Other Tissues", "Mechanism of Hormone Action"] }
+        { "key": "b11_c1", "unit": "Diversity in Living World", "title": "The Living World", "topics": ["Biodiversity and Need for Classification", "Binomial Nomenclature", "Taxonomy, Systematics and Taxonomic Hierarchy"] },
+        { "key": "b11_c2", "unit": "Diversity in Living World", "title": "Biological Classification", "topics": ["Five Kingdom Classification (Whittaker)", "Kingdom Monera (Archaebacteria & Eubacteria)", "Kingdom Protista", "Kingdom Fungi (Phycomycetes, Ascomycetes, Basidiomycetes, Deuteromycetes)", "Viruses, Viroids, Prions and Lichens"] },
+        { "key": "b11_c3", "unit": "Diversity in Living World", "title": "Plant Kingdom", "topics": ["Algae (Chlorophyceae, Phaeophyceae, Rhodophyceae)", "Bryophytes (Liverworts & Mosses)", "Pteridophytes", "Gymnosperms", "Angiosperms Overview"] },
+        { "key": "b11_c4", "unit": "Diversity in Living World", "title": "Animal Kingdom", "topics": ["Basis of Classification (Symmetry, Coelom, Segmentation)", "Non-Chordate Phyla (Porifera to Hemichordata)", "Phylum Chordata and Vertebrate Classes (Cyclostomata to Mammalia)"] },
+        { "key": "b11_c5", "unit": "Structural Organisation", "title": "Morphology of Flowering Plants", "topics": ["Root, Stem and Leaf Morphology", "Inflorescence and Flower Structure", "Fruit and Seed", "Floral Formula and Families (Solanaceae, Malvaceae, Cruciferae, Leguminosae, Compositae, Gramineae)"] },
+        { "key": "b11_c6", "unit": "Structural Organisation", "title": "Anatomy of Flowering Plants", "topics": ["Epidermal, Ground and Vascular Tissue Systems", "Anatomy of Dicot and Monocot Root", "Anatomy of Dicot and Monocot Stem", "Anatomy of Dicot and Monocot Leaf"] },
+        { "key": "b11_c7", "unit": "Structural Organisation", "title": "Structural Organisation in Animals", "topics": ["Animal Tissues Overview", "Frog: External Morphology", "Frog: Digestive, Respiratory, Circulatory, Excretory, Nervous and Reproductive Systems"] },
+        { "key": "b11_c8", "unit": "Cell Structure", "title": "Cell: The Unit of Life", "topics": ["Cell Theory and Overview", "Prokaryotic Cells and Cell Envelope", "Eukaryotic Cell: Membrane, Endomembrane System", "Mitochondria, Plastids, Ribosomes and Cytoskeleton", "Cilia, Flagella, Centrosome, Nucleus and Microbodies"] },
+        { "key": "b11_c9", "unit": "Cell Structure", "title": "Biomolecules", "topics": ["Chemical Analysis, Primary and Secondary Metabolites", "Proteins, Amino Acids and Structure Levels", "Polysaccharides, Lipids and Nucleic Acids", "Enzymes: Classification, Mechanism and Factors Affecting Activity"] },
+        { "key": "b11_c10", "unit": "Cell Structure", "title": "Cell Cycle and Cell Division", "topics": ["Phases of Cell Cycle (G1, S, G2, M, G0)", "Mitosis: Stages and Significance", "Meiosis I (Prophase I Sub-stages), Meiosis II and Significance"] },
+        { "key": "b11_c11", "unit": "Plant Physiology", "title": "Photosynthesis in Higher Plants", "topics": ["Early Experiments and Chloroplast Pigments", "Light Reaction, Photosystems and Electron Transport", "Chemiosmotic Hypothesis of ATP Synthesis", "C3 (Calvin Cycle) and C4 (Hatch-Slack) Pathways", "Photorespiration and Factors Affecting Photosynthesis"] },
+        { "key": "b11_c12", "unit": "Plant Physiology", "title": "Respiration in Plants", "topics": ["Glycolysis (EMP Pathway)", "Fermentation (Alcoholic & Lactic Acid)", "Aerobic Respiration: Link Reaction and Krebs Cycle", "Electron Transport System (ETS) and Oxidative Phosphorylation", "Amphibolic Pathway and Respiratory Quotient (RQ)"] },
+        { "key": "b11_c13", "unit": "Plant Physiology", "title": "Plant Growth and Development", "topics": ["Phases of Growth, Arithmetic and Geometric Growth Rates", "Differentiation, Dedifferentiation, Redifferentiation and Plasticity", "Plant Growth Regulators: Auxins, Gibberellins, Cytokinins, Ethylene and ABA"] },
+        { "key": "b11_c14", "unit": "Human Physiology", "title": "Breathing and Exchange of Gases", "topics": ["Human Respiratory Organs", "Mechanism of Breathing and Respiratory Volumes/Capacities", "Exchange of Gases (Partial Pressures)", "Transport of O2 (Dissociation Curve) and CO2", "Regulation of Respiration and Respiratory Disorders"] },
+        { "key": "b11_c15", "unit": "Human Physiology", "title": "Body Fluids and Circulation", "topics": ["Blood Plasma, Formed Elements, Blood Groups and Coagulation", "Lymph (Tissue Fluid)", "Human Heart Anatomy and Cardiac Cycle", "ECG and Double Circulation", "Regulation of Cardiac Activity and Disorders"] },
+        { "key": "b11_c16", "unit": "Human Physiology", "title": "Excretory Products and Their Elimination", "topics": ["Modes of Excretion and Human Excretory System", "Structure of Nephron and Urine Formation", "Function of Tubules and Counter-Current Mechanism", "Regulation of Kidney Function (ADH, RAAS, ANF)", "Micturition, Other Excretory Organs and Disorders"] },
+        { "key": "b11_c17", "unit": "Human Physiology", "title": "Locomotion and Movement", "topics": ["Types of Movement and Skeletal Muscle Structure", "Contractile Proteins and Sliding Filament Theory", "Axial and Appendicular Skeletal System", "Joints and Muscular/Skeletal Disorders"] },
+        { "key": "b11_c18", "unit": "Human Physiology", "title": "Neural Control and Coordination", "topics": ["Human Neural System and Neuron Structure", "Generation and Conduction of Nerve Impulse", "Synaptic Transmission (Electrical & Chemical)", "Central Neural System: Forebrain, Midbrain and Hindbrain"] },
+        { "key": "b11_c19", "unit": "Human Physiology", "title": "Chemical Coordination and Integration", "topics": ["Hypothalamus and Pituitary Gland", "Pineal, Thyroid, Parathyroid and Thymus Glands", "Adrenal Gland, Pancreas and Gonads", "Hormones of Heart, Kidney and GI Tract", "Mechanism of Hormone Action"] }
       ]
     },
     "ncert_11_maths": {
       "key": "ncert_11_maths",
       "name": "Mathematics (Class 11)",
       "chapters": [
-        { "key": "m11_c1", "unit": "Unit I", "title": "Sets", "topics": ["Sets and Representations", "Subsets and Power Set", "Venn Diagrams", "Operations on Sets and Complement"] },
-        { "key": "m11_c2", "unit": "Unit I", "title": "Relations and Functions", "topics": ["Cartesian Product of Sets", "Relations", "Functions, Domain and Range", "Standard Functions and Algebra of Functions"] },
-        { "key": "m11_c3", "unit": "Unit I", "title": "Trigonometric Functions", "topics": ["Angles (Degree and Radian)", "Trigonometric Functions and Signs", "Sum and Difference Identities", "Multiple and Sub-multiple Angle Formulae"] },
-        { "key": "m11_c4", "unit": "Unit II", "title": "Complex Numbers and Quadratic Equations", "topics": ["Algebra of Complex Numbers", "Modulus and Conjugate", "Argand Plane"] },
-        { "key": "m11_c5", "unit": "Unit II", "title": "Linear Inequalities", "topics": ["Algebraic Solutions of Linear Inequalities in One Variable", "Graphical Representation on Number Line"] },
-        { "key": "m11_c6", "unit": "Unit II", "title": "Permutations and Combinations", "topics": ["Fundamental Principle of Counting", "Permutations", "Combinations"] },
-        { "key": "m11_c7", "unit": "Unit II", "title": "Binomial Theorem", "topics": ["Binomial Theorem for Positive Integral Indices", "General Expansion and Applications"] },
-        { "key": "m11_c8", "unit": "Unit II", "title": "Sequences and Series", "topics": ["Sequences and Series Basics", "Geometric Progression (GP)", "Relationship Between AM and GM"] },
-        { "key": "m11_c9", "unit": "Unit III", "title": "Straight Lines", "topics": ["Slope of a Line", "Various Forms of Equation of a Line", "Distance of a Point From a Line"] },
-        { "key": "m11_c10", "unit": "Unit III", "title": "Conic Sections", "topics": ["Circle", "Parabola", "Ellipse", "Hyperbola"] },
-        { "key": "m11_c11", "unit": "Unit III", "title": "Introduction to Three Dimensional Geometry", "topics": ["Coordinate Axes and Planes in 3D", "Coordinates of a Point in Space", "Distance Between Two Points in 3D"] },
-        { "key": "m11_c12", "unit": "Unit IV", "title": "Limits and Derivatives", "topics": ["Intuitive Idea and Algebra of Limits", "Limits of Polynomial, Rational and Trigonometric Functions", "Derivatives and Rules of Differentiation"] },
-        { "key": "m11_c13", "unit": "Unit V", "title": "Statistics", "topics": ["Measures of Dispersion: Range and Mean Deviation", "Variance and Standard Deviation"] },
-        { "key": "m11_c14", "unit": "Unit V", "title": "Probability", "topics": ["Random Experiments and Events", "Axiomatic Approach to Probability", "Probability of Compound Events"] }
+        { "key": "m11_c1", "unit": "Sets & Functions", "title": "Sets", "topics": ["Sets and Representations", "Empty, Finite, Infinite, Equal Sets and Subsets", "Venn Diagrams", "Union, Intersection, Difference and Complement of Sets"] },
+        { "key": "m11_c2", "unit": "Sets & Functions", "title": "Relations and Functions", "topics": ["Cartesian Product of Sets", "Relations: Domain, Co-domain and Range", "Functions and Real-Valued Functions", "Standard Functions and Algebra of Real Functions"] },
+        { "key": "m11_c3", "unit": "Sets & Functions", "title": "Trigonometric Functions", "topics": ["Degree and Radian Measure", "Trigonometric Functions, Signs and Domain/Range", "Sum and Difference of Two Angles", "Multiple and Sub-multiple Angle Identities"] },
+        { "key": "m11_c4", "unit": "Algebra", "title": "Complex Numbers and Quadratic Equations", "topics": ["Algebra of Complex Numbers", "Modulus and Conjugate of a Complex Number", "Argand Plane and Representation"] },
+        { "key": "m11_c5", "unit": "Algebra", "title": "Linear Inequalities", "topics": ["Algebraic Solutions of Linear Inequalities in One Variable", "Graphical Representation on Number Line"] },
+        { "key": "m11_c6", "unit": "Algebra", "title": "Permutations and Combinations", "topics": ["Fundamental Principle of Counting and Factorial", "Permutations (Distinct & Repeating Objects)", "Combinations and Practical Problems"] },
+        { "key": "m11_c7", "unit": "Algebra", "title": "Binomial Theorem", "topics": ["Binomial Theorem for Positive Integral Indices", "Pascal's Triangle and General Expansion"] },
+        { "key": "m11_c8", "unit": "Algebra", "title": "Sequences and Series", "topics": ["Sequences and Series Basics", "Geometric Progression (GP): nth Term and Sum", "Relationship Between AM and GM"] },
+        { "key": "m11_c9", "unit": "Coordinate Geometry", "title": "Straight Lines", "topics": ["Slope of a Line and Angle Between Two Lines", "Forms of Equation of a Line", "Distance of a Point from a Line and Parallel Lines"] },
+        { "key": "m11_c10", "unit": "Coordinate Geometry", "title": "Conic Sections", "topics": ["Circle: Standard and General Equations", "Parabola", "Ellipse", "Hyperbola"] },
+        { "key": "m11_c11", "unit": "Coordinate Geometry", "title": "Introduction to Three Dimensional Geometry", "topics": ["Coordinate Axes, Planes and Octants", "Coordinates of a Point in Space", "Distance Between Two Points in 3D"] },
+        { "key": "m11_c12", "unit": "Calculus", "title": "Limits and Derivatives", "topics": ["Intuitive Idea and Algebra of Limits", "Limits of Polynomial, Rational and Trigonometric Functions", "First Principle of Derivatives", "Product, Quotient and Algebra of Derivatives"] },
+        { "key": "m11_c13", "unit": "Statistics & Probability", "title": "Statistics", "topics": ["Measures of Dispersion: Range and Mean Deviation", "Variance and Standard Deviation"] },
+        { "key": "m11_c14", "unit": "Statistics & Probability", "title": "Probability", "topics": ["Sample Space and Types of Events", "Axiomatic Approach to Probability", "Probability of Compound Events (Union & Complement)"] }
+      ]
+    },
+    "ncert_11_english_core": {
+      "key": "ncert_11_english_core",
+      "name": "English Core (Class 11)",
+      "chapters": [
+        { "key": "e11_c1", "unit": "Section A", "title": "Reading Comprehension & Note Making", "topics": ["Unseen Factual / Descriptive Passage", "Case-Based Passage with Visual Data", "Note Making and Summarisation"] },
+        { "key": "e11_c2", "unit": "Section B", "title": "Grammar & Creative Writing Skills", "topics": ["Gap Filling (Tenses & Clauses)", "Reordering and Transformation of Sentences", "Classified Advertisements", "Poster Designing", "Speech Writing", "Debate Writing"] },
+        { "key": "e11_c3", "unit": "Hornbill Prose", "title": "Hornbill: Prose Chapters", "topics": ["The Portrait of a Lady", "We're Not Afraid to Die... if We Can All Be Together", "Discovering Tut: The Saga Continues", "The Adventure", "Silk Road"] },
+        { "key": "e11_c4", "unit": "Hornbill Poetry", "title": "Hornbill: Poems", "topics": ["A Photograph", "The Laburnum Top", "The Voice of the Rain", "Childhood", "Father to Son"] },
+        { "key": "e11_c5", "unit": "Snapshots", "title": "Snapshots: Supplementary Reader", "topics": ["The Summer of the Beautiful White Horse", "The Address", "Mother's Day", "Birth", "The Tale of Melon City"] }
+      ]
+    },
+    "ncert_11_cs": {
+      "key": "ncert_11_cs",
+      "name": "Computer Science (Class 11)",
+      "chapters": [
+        { "key": "cs11_c1", "unit": "Unit I", "title": "Computer Systems and Organisation", "topics": ["Basic Computer Organisation, CPU and Memory", "Types of Software and Operating Systems", "Boolean Logic and Logic Gates", "Number Systems (Binary, Octal, Decimal, Hex) and Encoding (ASCII, UTF-8)"] },
+        { "key": "cs11_c2", "unit": "Unit II", "title": "Computational Thinking and Programming (Python)", "topics": ["Problem Solving: Algorithms, Flowcharts and Pseudocode", "Python Basics: Tokens, Data Types and Operators", "Flow of Control: Conditional Statements and Loops", "Strings, Lists, Tuples and Dictionaries", "Python Modules (math, random, statistics)"] },
+        { "key": "cs11_c3", "unit": "Unit III", "title": "Society, Law and Ethics", "topics": ["Digital Footprints and Net Etiquettes", "Data Protection, IPR, Plagiarism and Licensing", "Cyber Crime, Cyber Safety and IT Act", "E-Waste Management and Accessibility"] }
+      ]
+    },
+    "ncert_11_accountancy": {
+      "key": "ncert_11_accountancy",
+      "name": "Accountancy (Class 11)",
+      "chapters": [
+        { "key": "acc11_c1", "unit": "Part A: Unit 1", "title": "Introduction & Theory Base of Accounting", "topics": ["Objectives, Advantages and Limitations of Accounting", "Basic Accounting Terms (Assets, Liabilities, Capital, Revenue, Expenses)", "GAAP, Accounting Concepts and Conventions", "Accounting Standards, Ind AS and GST Basics"] },
+        { "key": "acc11_c2", "unit": "Part A: Unit 2", "title": "Recording of Business Transactions", "topics": ["Source Documents and Vouchers", "Accounting Equation and Rules of Debit & Credit", "Journal Entries (Including Simple GST)", "Cash Book (Single, Double Column & Petty Cash)", "Subsidiary Books (Purchases, Sales, Returns & Journal Proper)", "Ledger Posting and Balancing"] },
+        { "key": "acc11_c3", "unit": "Part A: Unit 2", "title": "Bank Reconciliation Statement", "topics": ["Need and Causes of Differences Between Cash Book & Pass Book", "Preparation of Bank Reconciliation Statement (Including Amended Cash Book)"] },
+        { "key": "acc11_c4", "unit": "Part A: Unit 2", "title": "Depreciation, Provisions and Reserves", "topics": ["Straight Line Method (SLM) & Written Down Value (WDV)", "Provision for Depreciation and Asset Disposal Account", "Provisions vs Reserves and Types of Reserves"] },
+        { "key": "acc11_c5", "unit": "Part A: Unit 2", "title": "Trial Balance and Rectification of Errors", "topics": ["Preparation of Trial Balance", "Classification of Accounting Errors", "Rectification of Errors and Suspense Account"] },
+        { "key": "acc11_c6", "unit": "Part B: Unit 3", "title": "Financial Statements of Sole Proprietorship", "topics": ["Capital vs Revenue Receipts and Expenditures", "Trading and Profit & Loss Account", "Balance Sheet: Grouping and Marshalling", "Financial Statements with Adjustments", "Accounts from Incomplete Records (Single Entry)"] }
+      ]
+    },
+    "ncert_11_business_studies": {
+      "key": "ncert_11_business_studies",
+      "name": "Business Studies (Class 11)",
+      "chapters": [
+        { "key": "bst11_c1", "unit": "Part A", "title": "Evolution and Fundamentals of Business", "topics": ["History of Trade and Commerce in India", "Business, Profession and Employment", "Classification of Business Activities and Business Risk"] },
+        { "key": "bst11_c2", "unit": "Part A", "title": "Forms of Business Organisations", "topics": ["Sole Proprietorship and Joint Hindu Family Business", "Partnership: Features, Types and Registration", "Cooperative Societies", "Joint Stock Company and Formation of a Company"] },
+        { "key": "bst11_c3", "unit": "Part A", "title": "Public, Private and Global Enterprises", "topics": ["Departmental Undertakings, Statutory Corporations & Govt Companies", "Global Enterprises (MNCs), Joint Ventures and PPP"] },
+        { "key": "bst11_c4", "unit": "Part A", "title": "Business Services", "topics": ["Banking Services and E-Banking", "Insurance Principles and Types (Life, Fire, Marine)", "Postal and Telecom Services"] },
+        { "key": "bst11_c5", "unit": "Part A", "title": "Emerging Modes of Business", "topics": ["E-Business: Scope, Benefits and Online Transactions"] },
+        { "key": "bst11_c6", "unit": "Part A", "title": "Social Responsibility of Business and Business Ethics", "topics": ["Case for Social Responsibility and Stakeholder Obligations", "Environmental Protection and Business Ethics"] },
+        { "key": "bst11_c7", "unit": "Part B", "title": "Sources of Business Finance", "topics": ["Owner's Funds (Equity, Preference Shares, Retained Earnings)", "Borrowed Funds (Debentures, Loans, Trade Credit, Public Deposits)"] },
+        { "key": "bst11_c8", "unit": "Part B", "title": "Small Business and Entrepreneurship Development", "topics": ["MSME Definition, Role in Rural India and Govt Schemes", "Entrepreneurship Development, Startup India and IPR"] },
+        { "key": "bst11_c9", "unit": "Part B", "title": "Internal Trade", "topics": ["Wholesale and Retail Trade", "Departmental Stores, Chain Stores and GST Overview"] },
+        { "key": "bst11_c10", "unit": "Part B", "title": "International Business", "topics": ["Meaning, Benefits and Modes of Entry", "Export and Import Procedures & Documents", "WTO Objectives and Functions"] }
+      ]
+    },
+    "ncert_11_economics": {
+      "key": "ncert_11_economics",
+      "name": "Economics (Class 11)",
+      "chapters": [
+        { "key": "eco11_c1", "unit": "Part A: Statistics", "title": "Introduction to Statistics for Economics", "topics": ["Meaning, Scope and Importance of Statistics in Economics"] },
+        { "key": "eco11_c2", "unit": "Part A: Statistics", "title": "Collection, Organisation and Presentation of Data", "topics": ["Primary & Secondary Data, Census and Sampling", "Frequency Distribution and Classification", "Tabular, Diagrammatic and Graphic Presentation"] },
+        { "key": "eco11_c3", "unit": "Part A: Statistics", "title": "Statistical Tools and Interpretation", "topics": ["Measures of Central Tendency: Mean, Median and Mode", "Correlation: Karl Pearson & Spearman's Rank", "Index Numbers (CPI, WPI, Sensex)"] },
+        { "key": "eco11_c4", "unit": "Part B: Microeconomics", "title": "Introduction to Microeconomics", "topics": ["Central Problems of an Economy", "Production Possibility Frontier (PPF) and Opportunity Cost"] },
+        { "key": "eco11_c5", "unit": "Part B: Microeconomics", "title": "Consumer's Equilibrium and Demand", "topics": ["Utility Analysis and Indifference Curve Analysis", "Law of Demand and Determinants", "Price Elasticity of Demand"] },
+        { "key": "eco11_c6", "unit": "Part B: Microeconomics", "title": "Producer Behaviour and Supply", "topics": ["Production Function and Returns to a Factor", "Cost Concepts (TC, TFC, TVC, AC, MC) and Revenue", "Producer's Equilibrium (MR-MC Approach)", "Law of Supply and Price Elasticity of Supply"] },
+        { "key": "eco11_c7", "unit": "Part B: Microeconomics", "title": "Forms of Market and Price Determination", "topics": ["Perfect Competition Features", "Market Equilibrium, Shifts in Demand/Supply", "Price Ceiling and Price Floor"] }
+      ]
+    },
+    "ncert_11_history": {
+      "key": "ncert_11_history",
+      "name": "History (Class 11)",
+      "chapters": [
+        { "key": "his11_c1", "unit": "Early Societies", "title": "Writing and City Life", "topics": ["Mesopotamia: Geography and Urbanisation", "Development of Cuneiform Writing", "Urban Life, Trade and Legacy"] },
+        { "key": "his11_c2", "unit": "Empires", "title": "An Empire Across Three Continents", "topics": ["Early Roman Empire and Political Structure", "Social Hierarchies, Slavery and Economic Expansion", "Late Antiquity and Transformation"] },
+        { "key": "his11_c3", "unit": "Empires", "title": "Nomadic Empires", "topics": ["Genghis Khan and Mongol Military Organisation", "Social, Political and Administrative Institutions", "Impact on World History"] },
+        { "key": "his11_c4", "unit": "Changing Traditions", "title": "The Three Orders", "topics": ["Feudalism in Medieval Europe", "The Clergy, Nobility and Peasantry", "Rise of Towns and Crisis of the Fourteenth Century"] },
+        { "key": "his11_c5", "unit": "Changing Traditions", "title": "Changing Cultural Traditions", "topics": ["Italian Renaissance and Humanism", "Science, Art, Architecture and Printed Books", "Reformation and Scientific Revolution"] },
+        { "key": "his11_c6", "unit": "Towards Modernisation", "title": "Displacing Indigenous Peoples", "topics": ["European Imperialism in North America and Australia", "Impact on Native Peoples and Rights Movements"] },
+        { "key": "his11_c7", "unit": "Towards Modernisation", "title": "Paths to Modernisation", "topics": ["Japan: Meiji Restoration and Industrialisation", "China: Republic, Communist Revolution and Reforms", "Korea: Modernisation Path"] }
+      ]
+    },
+    "ncert_11_political_science": {
+      "key": "ncert_11_political_science",
+      "name": "Political Science (Class 11)",
+      "chapters": [
+        { "key": "pol11_c1", "unit": "Indian Constitution", "title": "Constitution: Why and How?", "topics": ["Need for a Constitution", "Making of the Indian Constitution and Constituent Assembly"] },
+        { "key": "pol11_c2", "unit": "Indian Constitution", "title": "Rights in the Indian Constitution", "topics": ["Six Fundamental Rights and Writs", "Directive Principles of State Policy (DPSP) and Fundamental Duties"] },
+        { "key": "pol11_c3", "unit": "Indian Constitution", "title": "Election and Representation", "topics": ["FPTP vs Proportional Representation", "Election Commission of India and Electoral Reforms"] },
+        { "key": "pol11_c4", "unit": "Indian Constitution", "title": "Executive, Legislature and Judiciary", "topics": ["Parliamentary Executive: President, PM and Council of Ministers", "Parliament: Lok Sabha, Rajya Sabha and Law-Making", "Independence of Judiciary, Judicial Review and PIL"] },
+        { "key": "pol11_c5", "unit": "Indian Constitution", "title": "Federalism & Local Governments", "topics": ["Centre-State Relations and Special Provisions", "73rd & 74th Amendments: Panchayati Raj and Municipalities"] },
+        { "key": "pol11_c6", "unit": "Indian Constitution", "title": "Constitution as a Living Document & Philosophy", "topics": ["Amendment Procedure and Basic Structure Doctrine", "Political Philosophy of the Constitution"] },
+        { "key": "pol11_c7", "unit": "Political Theory", "title": "Political Theory, Freedom & Equality", "topics": ["What is Political Theory?", "Negative & Positive Liberty and Harm Principle", "Dimensions of Equality and Affirmative Action"] },
+        { "key": "pol11_c8", "unit": "Political Theory", "title": "Social Justice, Rights & Citizenship", "topics": ["Rawls' Theory of Justice and Distributive Justice", "Kinds of Rights and Legal Recognition", "Full Membership, Equal Rights and Global Citizenship"] },
+        { "key": "pol11_c9", "unit": "Political Theory", "title": "Nationalism & Secularism", "topics": ["Nations, National Self-Determination and Pluralism", "Western vs Indian Model of Secularism"] }
+      ]
+    },
+    "ncert_11_geography": {
+      "key": "ncert_11_geography",
+      "name": "Geography (Class 11)",
+      "chapters": [
+        { "key": "geo11_c1", "unit": "Physical Geography", "title": "Geography as a Discipline & Origin of Earth", "topics": ["Branches of Geography", "Origin of Earth and Interior of the Earth", "Distribution of Oceans and Continents (Plate Tectonics)"] },
+        { "key": "geo11_c2", "unit": "Physical Geography", "title": "Geomorphic Processes and Landforms", "topics": ["Endogenic and Exogenic Processes", "Landforms Created by Running Water, Wind, Glaciers and Waves"] },
+        { "key": "geo11_c3", "unit": "Physical Geography", "title": "Atmosphere, Climate and Water", "topics": ["Composition and Structure of Atmosphere", "Solar Radiation, Heat Balance and Temperature", "Atmospheric Circulation, Winds and Cyclones", "Water in the Atmosphere and World Climate", "Movements of Ocean Water"] },
+        { "key": "geo11_c4", "unit": "India Physical", "title": "India: Location, Physiography and Drainage", "topics": ["India: Location and Neighbours", "Structure and Physiographic Divisions", "Himalayan and Peninsular Drainage Systems"] },
+        { "key": "geo11_c5", "unit": "India Physical", "title": "Climate, Natural Vegetation and Hazards", "topics": ["Indian Monsoon and Seasons", "Natural Vegetation and Wildlife Conservation", "Natural Hazards and Disasters in India"] }
       ]
     },
     "ncert_12_physics": {
       "key": "ncert_12_physics",
       "name": "Physics (Class 12)",
       "chapters": [
-        { "key": "p12_c1", "unit": "Electrostatics", "title": "Electric Charges and Fields", "topics": ["Electric Charges, Conductors and Insulators", "Coulomb's Law and Superposition", "Electric Field and Field Lines", "Electric Dipole", "Electric Flux and Gauss's Law Applications"] },
-        { "key": "p12_c2", "unit": "Electrostatics", "title": "Electrostatic Potential and Capacitance", "topics": ["Electrostatic Potential and Equipotential Surfaces", "Potential Energy of Charge Systems", "Dielectrics and Polarisation", "Capacitors, Parallel Plate Capacitor and Combinations", "Energy Stored in a Capacitor"] },
-        { "key": "p12_c3", "unit": "Current Electricity", "title": "Current Electricity", "topics": ["Electric Current and Drift Velocity", "Ohm's Law and Resistivity", "Cells, EMF and Internal Resistance", "Kirchhoff's Rules", "Wheatstone Bridge"] },
-        { "key": "p12_c4", "unit": "Magnetism", "title": "Moving Charges and Magnetism", "topics": ["Magnetic Force and Lorentz Force", "Motion in a Magnetic Field", "Biot-Savart Law", "Ampere's Circuital Law and Solenoid", "Force Between Parallel Currents and Moving Coil Galvanometer"] },
-        { "key": "p12_c5", "unit": "Magnetism", "title": "Magnetism and Matter", "topics": ["Bar Magnet as Equivalent Solenoid", "Magnetism and Gauss's Law", "Diamagnetic, Paramagnetic and Ferromagnetic Materials"] },
-        { "key": "p12_c6", "unit": "EMI & AC", "title": "Electromagnetic Induction", "topics": ["Magnetic Flux and Faraday's Laws", "Lenz's Law and Conservation of Energy", "Motional Electromotive Force", "Self and Mutual Inductance", "AC Generator"] },
-        { "key": "p12_c7", "unit": "EMI & AC", "title": "Alternating Current", "topics": ["AC Voltage Applied to Resistor, Inductor and Capacitor", "Series LCR Circuit and Resonance", "Power in AC Circuit and Power Factor", "Transformers"] },
-        { "key": "p12_c8", "unit": "EM Waves", "title": "Electromagnetic Waves", "topics": ["Displacement Current", "Nature and Characteristics of Electromagnetic Waves", "Electromagnetic Spectrum and Uses"] },
-        { "key": "p12_c9", "unit": "Optics", "title": "Ray Optics and Optical Instruments", "topics": ["Reflection by Spherical Mirrors", "Refraction and Total Internal Reflection", "Refraction at Spherical Surfaces and Lenses", "Refraction Through a Prism", "Microscope and Telescope"] },
-        { "key": "p12_c10", "unit": "Optics", "title": "Wave Optics", "topics": ["Huygens Principle", "Coherent Sources and Young's Double-Slit Interference", "Diffraction Due to a Single Slit", "Polarisation of Light"] },
-        { "key": "p12_c11", "unit": "Modern Physics", "title": "Dual Nature of Radiation and Matter", "topics": ["Photoelectric Effect and Experimental Study", "Einstein's Photoelectric Equation", "Particle Nature of Light (Photon)", "Wave Nature of Matter and de Broglie Relation"] },
-        { "key": "p12_c12", "unit": "Modern Physics", "title": "Atoms", "topics": ["Alpha-Particle Scattering and Rutherford Model", "Atomic Spectra", "Bohr Model of the Hydrogen Atom", "de Broglie Explanation of Quantisation"] },
-        { "key": "p12_c13", "unit": "Modern Physics", "title": "Nuclei", "topics": ["Composition and Size of Nucleus", "Mass-Energy and Nuclear Binding Energy", "Nuclear Force", "Nuclear Fission and Fusion"] },
-        { "key": "p12_c14", "unit": "Electronics", "title": "Semiconductor Electronics", "topics": ["Energy Bands in Conductors, Insulators and Semiconductors", "Intrinsic and Extrinsic Semiconductors", "p-n Junction and Semiconductor Diode", "Application of Junction Diode as a Rectifier"] }
+        { "key": "p12_c1", "unit": "Electrostatics", "title": "Electric Charges and Fields", "topics": ["Electric Charges, Conductors and Insulators", "Coulomb's Law and Superposition Principle", "Electric Field and Electric Field Lines", "Electric Dipole in Uniform Electric Field", "Electric Flux and Gauss's Law Applications"] },
+        { "key": "p12_c2", "unit": "Electrostatics", "title": "Electrostatic Potential and Capacitance", "topics": ["Electrostatic Potential and Equipotential Surfaces", "Potential Energy of Charge Systems and Dipole", "Dielectrics and Polarisation", "Parallel Plate Capacitor and Combinations", "Energy Stored in a Capacitor"] },
+        { "key": "p12_c3", "unit": "Current Electricity", "title": "Current Electricity", "topics": ["Electric Current, Drift Velocity and Mobility", "Ohm's Law, Resistivity and Temperature Dependence", "Electrical Energy and Power", "Cells, EMF, Internal Resistance and Combinations", "Kirchhoff's Rules and Wheatstone Bridge"] },
+        { "key": "p12_c4", "unit": "Magnetism", "title": "Moving Charges and Magnetism", "topics": ["Magnetic Force and Lorentz Force", "Motion of Charged Particle in Magnetic Field", "Biot-Savart Law and Circular Loop", "Ampere's Circuital Law and Straight Solenoid", "Force Between Two Parallel Currents", "Torque on Current Loop and Moving Coil Galvanometer"] },
+        { "key": "p12_c5", "unit": "Magnetism", "title": "Magnetism and Matter", "topics": ["Bar Magnet as Equivalent Solenoid and Dipole in Uniform Field", "Magnetism and Gauss's Law", "Diamagnetic, Paramagnetic and Ferromagnetic Substances"] },
+        { "key": "p12_c6", "unit": "EMI & AC", "title": "Electromagnetic Induction", "topics": ["Magnetic Flux and Faraday's Laws", "Lenz's Law and Conservation of Energy", "Motional Electromotive Force", "Self-Inductance and Mutual Inductance", "AC Generator"] },
+        { "key": "p12_c7", "unit": "EMI & AC", "title": "Alternating Current", "topics": ["Peak and RMS Values of AC", "AC Applied to Resistor, Inductor and Capacitor", "Series LCR Circuit, Phasors and Resonance", "Power in AC Circuits, Power Factor and Wattless Current", "Transformers"] },
+        { "key": "p12_c8", "unit": "EM Waves", "title": "Electromagnetic Waves", "topics": ["Displacement Current", "Transverse Nature and Characteristics of EM Waves", "Electromagnetic Spectrum and Applications"] },
+        { "key": "p12_c9", "unit": "Optics", "title": "Ray Optics and Optical Instruments", "topics": ["Reflection by Spherical Mirrors and Mirror Formula", "Refraction, Snell's Law and Total Internal Reflection", "Refraction at Spherical Surfaces and Lens Maker's Formula", "Combination of Thin Lenses and Prism Refraction", "Compound Microscope and Astronomical Telescope"] },
+        { "key": "p12_c10", "unit": "Optics", "title": "Wave Optics", "topics": ["Wavefront and Huygens Principle", "Coherent Sources and Young's Double-Slit Interference", "Diffraction Due to a Single Slit", "Polarisation, Brewster's Law and Malus' Law"] },
+        { "key": "p12_c11", "unit": "Modern Physics", "title": "Dual Nature of Radiation and Matter", "topics": ["Photoelectric Effect and Hertz-Lenard Observations", "Einstein's Photoelectric Equation", "Particle Nature of Light (Photon)", "Wave Nature of Matter and de Broglie Relation"] },
+        { "key": "p12_c12", "unit": "Modern Physics", "title": "Atoms", "topics": ["Alpha-Particle Scattering and Rutherford Model", "Bohr Model of Hydrogen Atom and Energy Levels", "Line Spectra of Hydrogen Atom", "de Broglie Explanation of Bohr's Quantisation"] },
+        { "key": "p12_c13", "unit": "Modern Physics", "title": "Nuclei", "topics": ["Composition, Size and Density of Nucleus", "Mass-Energy Equivalence, Mass Defect and Binding Energy", "Nuclear Force", "Nuclear Fission and Nuclear Fusion"] },
+        { "key": "p12_c14", "unit": "Electronics", "title": "Semiconductor Electronics", "topics": ["Energy Bands in Conductors, Insulators and Semiconductors", "Intrinsic and Extrinsic (n-type & p-type) Semiconductors", "p-n Junction Diode and I-V Characteristics", "Diode as Half-Wave and Full-Wave Rectifier", "LED, Photodiode, Solar Cell, Zener Diode and Logic Gates"] }
       ]
     },
     "ncert_12_chemistry": {
       "key": "ncert_12_chemistry",
       "name": "Chemistry (Class 12)",
       "chapters": [
-        { "key": "c12_c1", "unit": "Physical Chemistry", "title": "Solutions", "topics": ["Concentration Terms and Solubility", "Henry's Law and Raoult's Law", "Ideal and Non-Ideal Solutions", "Colligative Properties", "Abnormal Molar Masses and van't Hoff Factor"] },
-        { "key": "c12_c2", "unit": "Physical Chemistry", "title": "Electrochemistry", "topics": ["Electrochemical Cells and Nernst Equation", "Conductance of Electrolytic Solutions and Kohlrausch Law", "Electrolytic Cells and Faraday's Laws", "Batteries, Fuel Cells and Corrosion"] },
-        { "key": "c12_c3", "unit": "Physical Chemistry", "title": "Chemical Kinetics", "topics": ["Rate of a Chemical Reaction", "Order and Molecularity", "Integrated Rate Equations (Zero and First Order)", "Temperature Dependence and Arrhenius Equation", "Collision Theory"] },
-        { "key": "c12_c4", "unit": "Inorganic Chemistry", "title": "The d- and f-Block Elements", "topics": ["General Properties of Transition Elements (d-Block)", "Important Compounds: K2Cr2O7 and KMnO4", "Lanthanoids and Lanthanoid Contraction", "Actinoids"] },
-        { "key": "c12_c5", "unit": "Inorganic Chemistry", "title": "Coordination Compounds", "topics": ["Werner's Theory and Definitions", "IUPAC Nomenclature and Isomerism", "Valence Bond Theory (VBT)", "Crystal Field Theory (CFT)", "Bonding in Metal Carbonyls"] },
-        { "key": "c12_c6", "unit": "Organic Chemistry", "title": "Haloalkanes and Haloarenes", "topics": ["Classification, Nomenclature and Preparation", "SN1 and SN2 Nucleophilic Substitution Mechanisms", "Elimination and Reactions with Metals", "Reactions of Haloarenes and Polyhalogen Compounds"] },
-        { "key": "c12_c7", "unit": "Organic Chemistry", "title": "Alcohols, Phenols and Ethers", "topics": ["Preparation and Properties of Alcohols", "Preparation and Reactions of Phenols", "Dehydration Mechanism and Commercially Important Alcohols", "Preparation and Reactions of Ethers"] },
-        { "key": "c12_c8", "unit": "Organic Chemistry", "title": "Aldehydes, Ketones and Carboxylic Acids", "topics": ["Preparation of Aldehydes and Ketones", "Nucleophilic Addition, Aldol and Cannizzaro Reactions", "Preparation and Acidic Strength of Carboxylic Acids", "Reactions of Carboxylic Acids"] },
-        { "key": "c12_c9", "unit": "Organic Chemistry", "title": "Amines", "topics": ["Structure, Classification and Preparation of Amines", "Basic Character and Chemical Reactions", "Diazonium Salts and Synthetic Applications"] },
-        { "key": "c12_c10", "unit": "Organic Chemistry", "title": "Biomolecules", "topics": ["Carbohydrates: Glucose, Fructose, Disaccharides and Polysaccharides", "Proteins and Amino Acids", "Enzymes and Vitamins", "Nucleic Acids (DNA and RNA) and Hormones"] }
+        { "key": "c12_c1", "unit": "Physical Chemistry", "title": "Solutions", "topics": ["Concentration Terms (Molarity, Molality, Mole Fraction)", "Solubility and Henry's Law", "Raoult's Law, Ideal and Non-Ideal Solutions", "Colligative Properties (RLVP, Boiling, Freezing, Osmotic Pressure)", "Abnormal Molar Masses and van't Hoff Factor"] },
+        { "key": "c12_c2", "unit": "Physical Chemistry", "title": "Electrochemistry", "topics": ["Galvanic Cells, Electrode Potential and Nernst Equation", "Gibbs Energy and Equilibrium Constant from EMF", "Conductance, Molar Conductivity and Kohlrausch's Law", "Electrolytic Cells and Faraday's Laws", "Batteries, Fuel Cells and Corrosion"] },
+        { "key": "c12_c3", "unit": "Physical Chemistry", "title": "Chemical Kinetics", "topics": ["Rate of Reaction and Factors Affecting Rate", "Rate Law, Order and Molecularity", "Integrated Rate Equations (Zero & First Order) and Half-Life", "Temperature Dependence and Arrhenius Equation", "Collision Theory of Reaction Rates"] },
+        { "key": "c12_c4", "unit": "Inorganic Chemistry", "title": "The d- and f-Block Elements", "topics": ["Electronic Configurations and General Properties of d-Block", "Important Compounds: K2Cr2O7 and KMnO4", "Lanthanoids and Lanthanoid Contraction", "Actinoids: Electronic Configuration and Comparison"] },
+        { "key": "c12_c5", "unit": "Inorganic Chemistry", "title": "Coordination Compounds", "topics": ["Werner's Theory and Coordination Definitions", "IUPAC Nomenclature and Isomerism (Structural & Stereo)", "Valence Bond Theory (VBT)", "Crystal Field Theory (CFT) and Colour/Magnetism", "Bonding in Metal Carbonyls and Importance"] },
+        { "key": "c12_c6", "unit": "Organic Chemistry", "title": "Haloalkanes and Haloarenes", "topics": ["Classification, Nomenclature and Nature of C-X Bond", "Methods of Preparation", "SN1 and SN2 Nucleophilic Substitution & Stereochemistry", "Elimination and Reactions with Metals", "Electrophilic Substitution in Haloarenes and Polyhalogen Compounds"] },
+        { "key": "c12_c7", "unit": "Organic Chemistry", "title": "Alcohols, Phenols and Ethers", "topics": ["Nomenclature and Preparation of Alcohols & Phenols", "Acidity and Chemical Reactions of Alcohols", "Electrophilic Reactions of Phenols (Kolbe, Reimer-Tiemann)", "Preparation (Williamson Synthesis) and Reactions of Ethers"] },
+        { "key": "c12_c8", "unit": "Organic Chemistry", "title": "Aldehydes, Ketones and Carboxylic Acids", "topics": ["Preparation of Aldehydes and Ketones", "Nucleophilic Addition Reactions", "Aldol Condensation, Cannizzaro and Haloform Reactions", "Preparation and Acidic Strength of Carboxylic Acids", "Chemical Reactions of Carboxylic Acids"] },
+        { "key": "c12_c9", "unit": "Organic Chemistry", "title": "Amines", "topics": ["Structure, Classification and Preparation of Amines", "Basicity of Amines and Chemical Reactions (Hinsberg, Carbylamine)", "Diazonium Salts: Preparation and Synthetic Applications"] },
+        { "key": "c12_c10", "unit": "Organic Chemistry", "title": "Biomolecules", "topics": ["Carbohydrates: Glucose, Fructose, Disaccharides and Polysaccharides", "Amino Acids, Peptide Bond and Protein Structure", "Enzymes and Vitamins", "Nucleic Acids (DNA & RNA) and Hormones"] }
       ]
     },
     "ncert_12_biology": {
       "key": "ncert_12_biology",
       "name": "Biology (Class 12)",
       "chapters": [
-        { "key": "b12_c1", "unit": "Reproduction", "title": "Sexual Reproduction in Flowering Plants", "topics": ["Flower Structure and Pre-Fertilisation Events", "Pollination and Outbreeding Devices", "Double Fertilisation", "Post-Fertilisation: Endosperm, Embryo and Seed", "Apomixis and Polyembryony"] },
-        { "key": "b12_c2", "unit": "Reproduction", "title": "Human Reproduction", "topics": ["Male and Female Reproductive Systems", "Gametogenesis (Spermatogenesis & Oogenesis)", "Menstrual Cycle", "Fertilisation and Implantation", "Pregnancy, Embryonic Development, Parturition and Lactation"] },
-        { "key": "b12_c3", "unit": "Reproduction", "title": "Reproductive Health", "topics": ["Reproductive Health Strategies", "Population Stabilisation and Birth Control", "MTP and Sexually Transmitted Infections (STIs)", "Infertility and Assisted Reproductive Technologies (ART)"] },
-        { "key": "b12_c4", "unit": "Genetics & Evolution", "title": "Principles of Inheritance and Variation", "topics": ["Mendel's Laws of Inheritance", "Incomplete Dominance and Co-dominance", "Chromosomal Theory, Linkage and Recombination", "Sex Determination", "Mutation, Pedigree Analysis and Genetic Disorders"] },
-        { "key": "b12_c5", "unit": "Genetics & Evolution", "title": "Molecular Basis of Inheritance", "topics": ["Structure of DNA and Packaging", "Search for Genetic Material and DNA Replication", "Transcription and Genetic Code", "Translation and Lac Operon", "Human Genome Project and DNA Fingerprinting"] },
-        { "key": "b12_c6", "unit": "Genetics & Evolution", "title": "Evolution", "topics": ["Origin of Life and Evidences for Evolution", "Adaptive Radiation and Biological Evolution", "Hardy-Weinberg Principle", "Brief Account of Evolution and Human Evolution"] },
-        { "key": "b12_c7", "unit": "Biology & Human Welfare", "title": "Human Health and Disease", "topics": ["Common Diseases in Humans", "Innate and Acquired Immunity", "AIDS and Cancer", "Drugs and Alcohol Abuse"] },
-        { "key": "b12_c8", "unit": "Biology & Human Welfare", "title": "Microbes in Human Welfare", "topics": ["Microbes in Household and Industrial Products", "Microbes in Sewage Treatment and Biogas Production", "Microbes as Biocontrol Agents and Biofertilisers"] },
-        { "key": "b12_c9", "unit": "Biotechnology", "title": "Biotechnology: Principles and Processes", "topics": ["Principles of Biotechnology", "Tools of Recombinant DNA Technology", "Cloning Vectors and Competent Host", "Processes of Recombinant DNA Technology and PCR"] },
-        { "key": "b12_c10", "unit": "Biotechnology", "title": "Biotechnology and Its Applications", "topics": ["Biotechnological Applications in Agriculture (Bt Cotton, RNAi)", "Applications in Medicine (Insulin, Gene Therapy)", "Transgenic Animals and Ethical Issues"] },
-        { "key": "b12_c11", "unit": "Ecology", "title": "Organisms and Populations", "topics": ["Population Attributes", "Population Growth Models (Exponential & Logistic)", "Population Interactions"] },
-        { "key": "b12_c12", "unit": "Ecology", "title": "Ecosystem", "topics": ["Ecosystem Structure and Productivity", "Decomposition", "Energy Flow and Ecological Pyramids"] },
-        { "key": "b12_c13", "unit": "Ecology", "title": "Biodiversity and Conservation", "topics": ["Patterns of Biodiversity and Loss", "In-situ and Ex-situ Biodiversity Conservation"] }
+        { "key": "b12_c1", "unit": "Reproduction", "title": "Sexual Reproduction in Flowering Plants", "topics": ["Flower Structure, Microsporogenesis and Megasporogenesis", "Pollination Agencies and Outbreeding Devices", "Pollen-Pistil Interaction and Double Fertilisation", "Endosperm, Embryo, Seed and Fruit Development", "Apomixis and Polyembryony"] },
+        { "key": "b12_c2", "unit": "Reproduction", "title": "Human Reproduction", "topics": ["Male and Female Reproductive Systems", "Gametogenesis: Spermatogenesis and Oogenesis", "Menstrual Cycle and Hormonal Control", "Fertilisation and Implantation", "Pregnancy, Placenta, Parturition and Lactation"] },
+        { "key": "b12_c3", "unit": "Reproduction", "title": "Reproductive Health", "topics": ["Reproductive Health Problems and Strategies", "Population Stabilisation and Contraceptive Methods", "MTP and Sexually Transmitted Infections (STIs)", "Infertility and Assisted Reproductive Technologies (IVF, ZIFT, GIFT, ICSI)"] },
+        { "key": "b12_c4", "unit": "Genetics & Evolution", "title": "Principles of Inheritance and Variation", "topics": ["Mendel's Laws: Monohybrid and Dihybrid Crosses", "Incomplete Dominance, Co-dominance and Multiple Alleles", "Chromosomal Theory, Linkage and Recombination", "Sex Determination in Humans, Birds and Honey Bees", "Mutation, Pedigree Analysis, Mendelian & Chromosomal Disorders"] },
+        { "key": "b12_c5", "unit": "Genetics & Evolution", "title": "Molecular Basis of Inheritance", "topics": ["Structure of DNA, Packaging and Nucleosome", "Search for Genetic Material (Griffith, Hershey-Chase)", "DNA Replication (Semiconservative & Meselson-Stahl)", "Transcription and Post-Transcriptional Processing", "Genetic Code, tRNA and Translation", "Regulation of Gene Expression (Lac Operon)", "Human Genome Project (HGP) and DNA Fingerprinting"] },
+        { "key": "b12_c6", "unit": "Genetics & Evolution", "title": "Evolution", "topics": ["Origin of Life (Oparin-Haldane & Miller Experiment)", "Evidences for Evolution (Homologous, Analogous, Fossils)", "Adaptive Radiation and Mechanism of Evolution", "Hardy-Weinberg Principle and Factors", "Brief Account of Evolution and Human Evolution"] },
+        { "key": "b12_c7", "unit": "Human Welfare", "title": "Human Health and Disease", "topics": ["Common Bacterial, Viral, Protozoan & Helminth Diseases", "Innate and Acquired Immunity, Antibodies and Vaccination", "Allergies, Autoimmunity and Lymphoid Organs", "AIDS and Cancer", "Drugs, Tobacco and Alcohol Abuse"] },
+        { "key": "b12_c8", "unit": "Human Welfare", "title": "Microbes in Human Welfare", "topics": ["Microbes in Household and Industrial Products (Antibiotics, Enzymes)", "Microbes in Sewage Treatment (Primary & Secondary)", "Biogas Production, Biocontrol Agents and Biofertilisers"] },
+        { "key": "b12_c9", "unit": "Biotechnology", "title": "Biotechnology: Principles and Processes", "topics": ["Genetic Engineering and Bioprocess Engineering", "Restriction Enzymes, Gel Electrophoresis and Cloning Vectors", "Competent Host and DNA Insertion Methods", "Processes of rDNA Technology, PCR and Bioreactors"] },
+        { "key": "b12_c10", "unit": "Biotechnology", "title": "Biotechnology and Its Applications", "topics": ["Applications in Agriculture (Bt Cotton, RNA Interference)", "Applications in Medicine (Genetically Engineered Insulin, Gene Therapy, Molecular Diagnosis)", "Transgenic Animals, Ethical Issues and Biopiracy"] },
+        { "key": "b12_c11", "unit": "Ecology", "title": "Organisms and Populations", "topics": ["Population Attributes (Age Pyramids, Birth/Death Rates)", "Population Growth Models (Exponential & Logistic)", "Population Interactions (Predation, Competition, Parasitism, Commensalism, Mutualism)"] },
+        { "key": "b12_c12", "unit": "Ecology", "title": "Ecosystem", "topics": ["Ecosystem Structure and Productivity (GPP, NPP)", "Decomposition Steps", "Energy Flow, Food Chains and 10% Law", "Ecological Pyramids (Number, Biomass, Energy)"] },
+        { "key": "b12_c13", "unit": "Ecology", "title": "Biodiversity and Conservation", "topics": ["Levels and Patterns of Biodiversity (Species-Area Relationship)", "Causes of Biodiversity Loss (The Evil Quartet)", "In-situ and Ex-situ Conservation Strategies"] }
       ]
     },
     "ncert_12_maths": {
       "key": "ncert_12_maths",
       "name": "Mathematics (Class 12)",
       "chapters": [
-        { "key": "m12_c1", "unit": "Relations & Functions", "title": "Relations and Functions", "topics": ["Types of Relations (Equivalence)", "Types of Functions (One-One and Onto)", "Composition and Invertible Functions"] },
-        { "key": "m12_c2", "unit": "Relations & Functions", "title": "Inverse Trigonometric Functions", "topics": ["Principal Value Branches", "Graphs and Elementary Properties"] },
-        { "key": "m12_c3", "unit": "Algebra", "title": "Matrices", "topics": ["Types and Operations on Matrices", "Transpose, Symmetric and Skew-Symmetric Matrices", "Invertible Matrices"] },
-        { "key": "m12_c4", "unit": "Algebra", "title": "Determinants", "topics": ["Determinant of Order 2 and 3", "Area of Triangle, Minors and Cofactors", "Adjoint and Inverse of a Matrix", "Solving System of Linear Equations"] },
-        { "key": "m12_c5", "unit": "Calculus", "title": "Continuity and Differentiability", "topics": ["Continuity", "Differentiability and Chain Rule", "Implicit, Inverse Trig and Logarithmic Differentiation", "Parametric Forms and Second Order Derivatives"] },
-        { "key": "m12_c6", "unit": "Calculus", "title": "Application of Derivatives", "topics": ["Rate of Change of Quantities", "Increasing and Decreasing Functions", "Maxima and Minima"] },
-        { "key": "m12_c7", "unit": "Calculus", "title": "Integrals", "topics": ["Integration by Substitution and Partial Fractions", "Integration by Parts", "Fundamental Theorem and Definite Integrals", "Properties of Definite Integrals"] },
+        { "key": "m12_c1", "unit": "Relations & Functions", "title": "Relations and Functions", "topics": ["Reflexive, Symmetric, Transitive and Equivalence Relations", "One-One (Injective), Onto (Surjective) and Bijective Functions"] },
+        { "key": "m12_c2", "unit": "Relations & Functions", "title": "Inverse Trigonometric Functions", "topics": ["Domain, Range and Principal Value Branches", "Graphs and Elementary Properties"] },
+        { "key": "m12_c3", "unit": "Algebra", "title": "Matrices", "topics": ["Types and Algebra of Matrices", "Multiplication of Matrices", "Transpose, Symmetric and Skew-Symmetric Matrices", "Invertible Matrices"] },
+        { "key": "m12_c4", "unit": "Algebra", "title": "Determinants", "topics": ["Determinants of Order 2 and 3", "Area of Triangle, Minors and Cofactors", "Adjoint and Inverse of a Square Matrix", "Solving System of Linear Equations (Matrix Method)"] },
+        { "key": "m12_c5", "unit": "Calculus", "title": "Continuity and Differentiability", "topics": ["Continuity and Algebra of Continuous Functions", "Differentiability and Chain Rule", "Implicit, Inverse Trig, Exponential & Logarithmic Differentiation", "Parametric Forms and Second-Order Derivatives"] },
+        { "key": "m12_c6", "unit": "Calculus", "title": "Application of Derivatives", "topics": ["Rate of Change of Quantities", "Increasing and Decreasing Functions", "Local and Absolute Maxima & Minima"] },
+        { "key": "m12_c7", "unit": "Calculus", "title": "Integrals", "topics": ["Indefinite Integrals and Integration by Substitution", "Integration Using Partial Fractions and By Parts", "Fundamental Theorem of Calculus", "Properties and Evaluation of Definite Integrals"] },
         { "key": "m12_c8", "unit": "Calculus", "title": "Application of Integrals", "topics": ["Area Under Simple Curves (Lines, Circles, Parabolas, Ellipses)"] },
-        { "key": "m12_c9", "unit": "Calculus", "title": "Differential Equations", "topics": ["Order and Degree", "Variable Separable Method", "Homogeneous and Linear Differential Equations"] },
-        { "key": "m12_c10", "unit": "Vectors & 3D", "title": "Vector Algebra", "topics": ["Types and Addition of Vectors", "Scalar (Dot) Product", "Vector (Cross) Product"] },
-        { "key": "m12_c11", "unit": "Vectors & 3D", "title": "Three Dimensional Geometry", "topics": ["Direction Cosines and Direction Ratios", "Equation of a Line in Space", "Angle and Shortest Distance Between Two Lines"] },
-        { "key": "m12_c12", "unit": "Linear Programming", "title": "Linear Programming", "topics": ["Formulation of LPP", "Graphical Method of Solution (Bounded & Unbounded Regions)"] },
-        { "key": "m12_c13", "unit": "Probability", "title": "Probability", "topics": ["Conditional Probability and Multiplication Theorem", "Independent Events", "Bayes' Theorem"] }
+        { "key": "m12_c9", "unit": "Calculus", "title": "Differential Equations", "topics": ["Order, Degree and General/Particular Solutions", "Variable Separable Method", "Homogeneous and First-Order Linear Differential Equations"] },
+        { "key": "m12_c10", "unit": "Vectors & 3D", "title": "Vector Algebra", "topics": ["Types, Addition and Section Formula", "Scalar (Dot) Product and Projection", "Vector (Cross) Product and Area Applications"] },
+        { "key": "m12_c11", "unit": "Vectors & 3D", "title": "Three Dimensional Geometry", "topics": ["Direction Cosines and Direction Ratios", "Cartesian and Vector Equation of a Line", "Angle and Shortest Distance Between Skew & Parallel Lines"] },
+        { "key": "m12_c12", "unit": "Linear Programming", "title": "Linear Programming", "topics": ["Objective Function, Constraints and Feasible Region", "Graphical Method (Bounded and Unbounded Regions)"] },
+        { "key": "m12_c13", "unit": "Probability", "title": "Probability", "topics": ["Conditional Probability and Multiplication Theorem", "Independent Events", "Total Probability Theorem and Bayes' Theorem", "Random Variables and Probability Distribution"] }
+      ]
+    },
+    "ncert_12_english_core": {
+      "key": "ncert_12_english_core",
+      "name": "English Core (Class 12)",
+      "chapters": [
+        { "key": "e12_c1", "unit": "Section A", "title": "Reading Skills", "topics": ["Unseen Factual / Descriptive / Literary Passage", "Case-Based Factual Passage with Statistical Data"] },
+        { "key": "e12_c2", "unit": "Section B", "title": "Creative Writing Skills", "topics": ["Notice Writing", "Formal and Informal Invitations & Replies", "Letter to Editor & Job Application with Bio-data", "Article Writing and Report Writing"] },
+        { "key": "e12_c3", "unit": "Flamingo Prose", "title": "Flamingo: Prose Chapters", "topics": ["The Last Lesson", "Lost Spring", "Deep Water", "The Rattrap", "Indigo", "Poets and Pancakes", "The Interview", "Going Places"] },
+        { "key": "e12_c4", "unit": "Flamingo Poetry", "title": "Flamingo: Poems", "topics": ["My Mother at Sixty-Six", "Keeping Quiet", "A Thing of Beauty", "A Roadside Stand", "Aunt Jennifer's Tigers"] },
+        { "key": "e12_c5", "unit": "Vistas", "title": "Vistas: Supplementary Reader", "topics": ["The Third Level", "The Tiger King", "Journey to the End of the Earth", "The Enemy", "On the Face of It", "Memories of Childhood"] }
+      ]
+    },
+    "ncert_12_cs": {
+      "key": "ncert_12_cs",
+      "name": "Computer Science (Class 12)",
+      "chapters": [
+        { "key": "cs12_c1", "unit": "Unit I", "title": "Computational Thinking & Python Programming II", "topics": ["Revision of Python Basics and Functions", "Exception Handling", "File Handling (Text, Binary & CSV Files)", "Data Structures: Stack Implementation Using List"] },
+        { "key": "cs12_c2", "unit": "Unit II", "title": "Computer Networks", "topics": ["Evolution of Networking and Switching Techniques", "Transmission Media, Network Devices and Topologies", "Protocols (HTTP, TCP/IP, SMTP, FTP) and Web Services"] },
+        { "key": "cs12_c3", "unit": "Unit III", "title": "Database Management (SQL & Python)", "topics": ["Relational Data Model and Keys", "SQL Commands: DDL, DML, Aggregate Functions, GROUP BY and Joins", "Interface of Python with SQL Database"] }
+      ]
+    },
+    "ncert_12_accountancy": {
+      "key": "ncert_12_accountancy",
+      "name": "Accountancy (Class 12)",
+      "chapters": [
+        { "key": "acc12_c1", "unit": "Part A: Partnership", "title": "Accounting for Partnership: Basic Concepts", "topics": ["Partnership Deed and Indian Partnership Act 1932", "Fixed vs Fluctuating Capital Accounts", "P&L Appropriation Account, Guarantee & Past Adjustments"] },
+        { "key": "acc12_c2", "unit": "Part A: Partnership", "title": "Goodwill & Change in Profit-Sharing Ratio", "topics": ["Valuation of Goodwill (Average, Super Profit & Capitalisation)", "Sacrificing/Gaining Ratio, Revaluation and Accumulated Profits"] },
+        { "key": "acc12_c3", "unit": "Part A: Partnership", "title": "Admission, Retirement & Death of a Partner", "topics": ["Admission: New Ratio, Goodwill Treatment and Capital Adjustments", "Retirement & Death: Executor's Account and Profit Share"] },
+        { "key": "acc12_c4", "unit": "Part A: Partnership", "title": "Dissolution of Partnership Firm", "topics": ["Modes of Dissolution and Settlement of Accounts", "Realisation Account, Partners' Capital and Cash Account"] },
+        { "key": "acc12_c5", "unit": "Part A: Companies", "title": "Accounting for Share Capital & Debentures", "topics": ["Issue of Shares (Par, Premium, Over-Subscription, Pro-Rata)", "Forfeiture and Reissue of Shares", "Issue of Debentures, Collateral Security and Writing Off Discount/Loss"] },
+        { "key": "acc12_c6", "unit": "Part B: Analysis", "title": "Financial Statements, Ratios & Cash Flow", "topics": ["Schedule III Company Balance Sheet & Statement of P&L", "Comparative and Common-Size Statements", "Accounting Ratios (Liquidity, Solvency, Activity, Profitability)", "Cash Flow Statement (AS-3 Revised Indirect Method)"] }
+      ]
+    },
+    "ncert_12_business_studies": {
+      "key": "ncert_12_business_studies",
+      "name": "Business Studies (Class 12)",
+      "chapters": [
+        { "key": "bst12_c1", "unit": "Part A", "title": "Nature & Significance of Management", "topics": ["Concept, Objectives, Levels and Functions of Management", "Management as Art, Science & Profession and Coordination"] },
+        { "key": "bst12_c2", "unit": "Part A", "title": "Principles of Management & Business Environment", "topics": ["Fayol's 14 Principles and Taylor's Scientific Management", "Dimensions of Business Environment and Demonetisation"] },
+        { "key": "bst12_c3", "unit": "Part A", "title": "Planning & Organising", "topics": ["Planning Process, Limitations and Types of Plans", "Organising Process, Functional vs Divisional Structures", "Delegation and Decentralisation"] },
+        { "key": "bst12_c4", "unit": "Part A", "title": "Staffing, Directing & Controlling", "topics": ["Recruitment, Selection, Training and Development", "Motivation (Maslow's Hierarchy), Leadership Styles & Communication", "Controlling Process and Relationship with Planning"] },
+        { "key": "bst12_c5", "unit": "Part B", "title": "Financial Management & Financial Markets", "topics": ["Investment, Financing and Dividend Decisions", "Capital Structure, Fixed and Working Capital", "Money Market, Capital Market, Stock Exchange and SEBI"] },
+        { "key": "bst12_c6", "unit": "Part B", "title": "Marketing & Consumer Protection", "topics": ["Marketing Mix: Product, Price, Place and Promotion (4 Ps)", "Consumer Protection Act 2019: Rights, Responsibilities and Redressal"] }
+      ]
+    },
+    "ncert_12_economics": {
+      "key": "ncert_12_economics",
+      "name": "Economics (Class 12)",
+      "chapters": [
+        { "key": "eco12_c1", "unit": "Macroeconomics", "title": "National Income and Related Aggregates", "topics": ["Circular Flow of Income and Basic Aggregates (GDP, GNP, NNP)", "Value Added, Income and Expenditure Methods", "Real vs Nominal GDP and GDP Welfare"] },
+        { "key": "eco12_c2", "unit": "Macroeconomics", "title": "Money and Banking", "topics": ["Money Supply (M1) and Credit Creation by Commercial Banks", "Central Bank (RBI) Functions and Monetary Policy Tools"] },
+        { "key": "eco12_c3", "unit": "Macroeconomics", "title": "Determination of Income and Employment", "topics": ["Aggregate Demand, Aggregate Supply, APC/MPC & APS/MPS", "Investment Multiplier and Equilibrium Output", "Excess Demand, Deficient Demand and Fiscal/Monetary Remedies"] },
+        { "key": "eco12_c4", "unit": "Macroeconomics", "title": "Government Budget & Balance of Payments", "topics": ["Revenue vs Capital Receipts/Expenditure and Budget Deficits", "Balance of Payments (Current & Capital Account)", "Foreign Exchange Rate Systems"] },
+        { "key": "eco12_c5", "unit": "Indian Economy", "title": "Development Experience (1947-90) & 1991 Reforms", "topics": ["Indian Economy on the Eve of Independence", "Five-Year Plans, Agriculture, Industry and Foreign Trade", "LPG Reforms (Liberalisation, Privatisation, Globalisation)"] },
+        { "key": "eco12_c6", "unit": "Indian Economy", "title": "Current Challenges & Comparative Development", "topics": ["Human Capital Formation and Rural Development", "Employment: Growth and Informalisation", "Environment and Sustainable Development", "India, China and Pakistan: Comparative Development"] }
+      ]
+    },
+    "ncert_12_history": {
+      "key": "ncert_12_history",
+      "name": "History (Class 12)",
+      "chapters": [
+        { "key": "his12_c1", "unit": "Part I: Ancient", "title": "Bricks, Beads and Bones (Harappan Civilisation)", "topics": ["Urban Planning, Subsistence and Craft Production", "Trade, Script, Seals and Decline of Harappan Culture"] },
+        { "key": "his12_c2", "unit": "Part I: Ancient", "title": "Kings, Farmers, Kinship & Thinkers", "topics": ["Early States (Mauryan Empire) and Economic Changes", "Social Histories: Mahabharata, Caste and Gender", "Buddhism, Jainism and Stupa Architecture (Sanchi)"] },
+        { "key": "his12_c3", "unit": "Part II: Medieval", "title": "Travellers, Bhakti-Sufi & Vijayanagara", "topics": ["Accounts of Al-Biruni, Ibn Battuta and Francois Bernier", "Bhakti and Sufi Traditions (8th to 18th Century)", "An Imperial Capital: Vijayanagara (Hampi)"] },
+        { "key": "his12_c4", "unit": "Part II: Medieval", "title": "Peasants, Zamindars and the State", "topics": ["Agrarian Society, Ain-i-Akbari and Mughal Revenue System"] },
+        { "key": "his12_c5", "unit": "Part III: Modern", "title": "Colonialism, 1857 Revolt & Nationalist Movement", "topics": ["Permanent Settlement, Ryotwari and Santhal Rebellion", "Rebels and the Raj: Revolt of 1857", "Mahatma Gandhi: Non-Cooperation, Civil Disobedience & Quit India", "Framing the Constitution of India"] }
+      ]
+    },
+    "ncert_12_political_science": {
+      "key": "ncert_12_political_science",
+      "name": "Political Science (Class 12)",
+      "chapters": [
+        { "key": "pol12_c1", "unit": "World Politics", "title": "End of Bipolarity & Contemporary Centres of Power", "topics": ["Disintegration of USSR and Shock Therapy", "European Union, ASEAN, China, Japan and South Korea"] },
+        { "key": "pol12_c2", "unit": "World Politics", "title": "Contemporary South Asia & International Organisations", "topics": ["India's Relations with Pakistan, Bangladesh, Nepal, Sri Lanka", "United Nations Structure, Reforms and Agencies"] },
+        { "key": "pol12_c3", "unit": "World Politics", "title": "Security, Environment & Globalisation", "topics": ["Traditional and Non-Traditional Notions of Security", "Global Environmental Norms and Common Property Resources", "Political, Economic and Cultural Consequences of Globalisation"] },
+        { "key": "pol12_c4", "unit": "Indian Politics", "title": "Nation Building, Planned Development & Foreign Policy", "topics": ["Partition, Integration of Princely States and States Reorganisation", "Era of One-Party Dominance & Planning Commission / NITI Aayog", "India's External Relations: NAM, China, Pakistan and Nuclear Policy"] },
+        { "key": "pol12_c5", "unit": "Indian Politics", "title": "Democratic Order, Regional Aspirations & Recent Developments", "topics": ["Challenges to Congress System & Crisis of Democratic Order (1975)", "Regional Aspirations (J&K, Punjab, North-East)", "Coalition Politics, Mandal Commission and New Consensus"] }
+      ]
+    },
+    "ncert_12_geography": {
+      "key": "ncert_12_geography",
+      "name": "Geography (Class 12)",
+      "chapters": [
+        { "key": "geo12_c1", "unit": "Human Geography", "title": "Human Geography, Population & Development", "topics": ["Nature and Scope of Human Geography", "World Population Distribution, Density and Demographic Transition", "Four Pillars and Approaches to Human Development"] },
+        { "key": "geo12_c2", "unit": "Human Geography", "title": "Economic Activities, Transport & Trade", "topics": ["Primary, Secondary, Tertiary and Quaternary Activities", "Major Transport Corridors, Ports and International Trade"] },
+        { "key": "geo12_c3", "unit": "India People & Economy", "title": "Population, Settlements & Resources of India", "topics": ["India Population Composition and Human Settlements", "Land Resources, Agriculture and Water Resources", "Mineral and Energy Resources"] },
+        { "key": "geo12_c4", "unit": "India People & Economy", "title": "Planning, Transport & Environmental Issues", "topics": ["Planning and Sustainable Development in Indian Context", "Transport, Communication and International Trade of India", "Geographical Perspective on Environmental Pollution & Urbanisation"] }
       ]
     },
     "ncert_10_science": {
       "key": "ncert_10_science",
       "name": "Science (Class 10)",
       "chapters": [
-        { "key": "s10_c1", "unit": "Chemical Substances", "title": "Chemical Reactions and Equations", "topics": ["Balancing Chemical Equations", "Types of Chemical Reactions", "Corrosion and Rancidity"] },
-        { "key": "s10_c2", "unit": "Chemical Substances", "title": "Acids, Bases and Salts", "topics": ["Chemical Properties of Acids and Bases", "pH Scale and Importance", "Important Salts (Baking Soda, Washing Soda, Plaster of Paris)"] },
-        { "key": "s10_c3", "unit": "Chemical Substances", "title": "Metals and Non-metals", "topics": ["Physical and Chemical Properties", "Ionic Compounds", "Occurrence and Extraction of Metals", "Corrosion Prevention"] },
-        { "key": "s10_c4", "unit": "Chemical Substances", "title": "Carbon and its Compounds", "topics": ["Covalent Bonding and Versatile Nature of Carbon", "Homologous Series and Nomenclature", "Chemical Properties, Ethanol and Ethanoic Acid", "Soaps and Detergents"] },
-        { "key": "s10_c5", "unit": "World of Living", "title": "Life Processes", "topics": ["Nutrition", "Respiration", "Transportation in Humans and Plants", "Excretion"] },
-        { "key": "s10_c6", "unit": "World of Living", "title": "Control and Coordination", "topics": ["Nervous System and Reflex Action", "Coordination in Plants", "Hormones in Animals"] },
-        { "key": "s10_c7", "unit": "World of Living", "title": "How do Organisms Reproduce?", "topics": ["Modes of Asexual Reproduction", "Sexual Reproduction in Flowering Plants", "Human Reproduction and Reproductive Health"] },
-        { "key": "s10_c8", "unit": "World of Living", "title": "Heredity", "topics": ["Mendel's Contributions and Rules of Inheritance", "Sex Determination"] },
-        { "key": "s10_c9", "unit": "Natural Phenomena", "title": "Light – Reflection and Refraction", "topics": ["Spherical Mirrors and Mirror Formula", "Refraction and Refractive Index", "Spherical Lenses, Lens Formula and Power"] },
-        { "key": "s10_c10", "unit": "Natural Phenomena", "title": "The Human Eye and the Colourful World", "topics": ["Human Eye and Defects of Vision", "Refraction and Dispersion Through a Prism", "Atmospheric Refraction and Scattering of Light"] },
-        { "key": "s10_c11", "unit": "Effects of Current", "title": "Electricity", "topics": ["Electric Current, Potential Difference and Ohm's Law", "Resistance in Series and Parallel", "Heating Effect of Electric Current and Electric Power"] },
-        { "key": "s10_c12", "unit": "Effects of Current", "title": "Magnetic Effects of Electric Current", "topics": ["Magnetic Field Lines and Current-Carrying Conductors", "Force on a Current-Carrying Conductor (Fleming's Left-Hand Rule)", "Domestic Electric Circuits"] },
-        { "key": "s10_c13", "unit": "Natural Resources", "title": "Our Environment", "topics": ["Ecosystem, Food Chains and Food Webs", "Ozone Layer Depletion and Waste Management"] }
+        { "key": "s10_c1", "unit": "Chemical Substances", "title": "Chemical Reactions and Equations", "topics": ["Balancing Chemical Equations", "Combination, Decomposition, Displacement and Double Displacement", "Oxidation, Reduction, Corrosion and Rancidity"] },
+        { "key": "s10_c2", "unit": "Chemical Substances", "title": "Acids, Bases and Salts", "topics": ["Chemical Properties of Acids and Bases", "pH Scale and Importance in Everyday Life", "Common Salt, NaOH, Bleaching Powder, Baking Soda, Washing Soda & POP"] },
+        { "key": "s10_c3", "unit": "Chemical Substances", "title": "Metals and Non-metals", "topics": ["Physical and Chemical Properties & Reactivity Series", "Formation and Properties of Ionic Compounds", "Extraction of Metals (Metallurgy) and Corrosion Prevention"] },
+        { "key": "s10_c4", "unit": "Chemical Substances", "title": "Carbon and its Compounds", "topics": ["Covalent Bonding, Catenation and Tetravalency", "Homologous Series, Functional Groups and IUPAC Nomenclature", "Combustion, Oxidation, Addition and Substitution Reactions", "Ethanol, Ethanoic Acid, Soaps and Detergents"] },
+        { "key": "s10_c5", "unit": "World of Living", "title": "Life Processes", "topics": ["Autotrophic and Heterotrophic Nutrition (Human Digestive System)", "Aerobic and Anaerobic Respiration", "Human Circulatory System and Transport in Plants", "Excretion in Humans and Plants"] },
+        { "key": "s10_c6", "unit": "World of Living", "title": "Control and Coordination", "topics": ["Human Nervous System, Reflex Arc and Brain", "Tropic Movements and Plant Hormones", "Human Endocrine System"] },
+        { "key": "s10_c7", "unit": "World of Living", "title": "How do Organisms Reproduce?", "topics": ["Modes of Asexual Reproduction", "Sexual Reproduction in Flowering Plants", "Human Male & Female Reproductive Systems and Reproductive Health"] },
+        { "key": "s10_c8", "unit": "World of Living", "title": "Heredity", "topics": ["Mendel's Experiments and Rules of Inheritance", "Sex Determination in Humans"] },
+        { "key": "s10_c9", "unit": "Natural Phenomena", "title": "Light – Reflection and Refraction", "topics": ["Spherical Mirrors, Ray Diagrams, Mirror Formula & Magnification", "Refraction, Refractive Index and Glass Slab", "Spherical Lenses, Lens Formula and Power of a Lens"] },
+        { "key": "s10_c10", "unit": "Natural Phenomena", "title": "The Human Eye and the Colourful World", "topics": ["Human Eye, Accommodation and Defects of Vision (Myopia, Hypermetropia, Presbyopia)", "Refraction and Dispersion Through a Glass Prism", "Atmospheric Refraction and Scattering of Light (Tyndall Effect)"] },
+        { "key": "s10_c11", "unit": "Effects of Current", "title": "Electricity", "topics": ["Electric Current, Potential Difference and Ohm's Law", "Factors Affecting Resistance and Resistivity", "Resistors in Series and Parallel", "Joule's Law of Heating and Electric Power"] },
+        { "key": "s10_c12", "unit": "Effects of Current", "title": "Magnetic Effects of Electric Current", "topics": ["Magnetic Field Lines, Straight Wire, Circular Loop & Solenoid", "Force on Current-Carrying Conductor (Fleming's Left-Hand Rule)", "AC vs DC and Domestic Electric Circuits (Fuse & Earthing)"] },
+        { "key": "s10_c13", "unit": "Natural Resources", "title": "Our Environment", "topics": ["Ecosystem Components, Food Chains, Food Webs and 10% Law", "Ozone Layer Depletion and Biodegradable/Non-biodegradable Waste"] }
       ]
     },
     "ncert_10_maths": {
       "key": "ncert_10_maths",
       "name": "Mathematics (Class 10)",
       "chapters": [
-        { "key": "m10_c1", "unit": "Number Systems", "title": "Real Numbers", "topics": ["Fundamental Theorem of Arithmetic", "Revisiting Irrational Numbers"] },
-        { "key": "m10_c2", "unit": "Algebra", "title": "Polynomials", "topics": ["Geometrical Meaning of Zeroes", "Relationship Between Zeroes and Coefficients"] },
-        { "key": "m10_c3", "unit": "Algebra", "title": "Pair of Linear Equations in Two Variables", "topics": ["Graphical Method", "Substitution and Elimination Methods"] },
-        { "key": "m10_c4", "unit": "Algebra", "title": "Quadratic Equations", "topics": ["Solution by Factorisation", "Quadratic Formula and Nature of Roots"] },
-        { "key": "m10_c5", "unit": "Algebra", "title": "Arithmetic Progressions", "topics": ["nth Term of an AP", "Sum of First n Terms of an AP"] },
-        { "key": "m10_c6", "unit": "Geometry", "title": "Triangles", "topics": ["Basic Proportionality Theorem (Thales)", "Criteria for Similarity of Triangles"] },
-        { "key": "m10_c7", "unit": "Coordinate Geometry", "title": "Coordinate Geometry", "topics": ["Distance Formula", "Section Formula"] },
-        { "key": "m10_c8", "unit": "Trigonometry", "title": "Introduction to Trigonometry", "topics": ["Trigonometric Ratios of Specific Angles", "Trigonometric Identities"] },
-        { "key": "m10_c9", "unit": "Trigonometry", "title": "Some Applications of Trigonometry", "topics": ["Heights and Distances (Angles of Elevation and Depression)"] },
-        { "key": "m10_c10", "unit": "Geometry", "title": "Circles", "topics": ["Tangent to a Circle", "Number of Tangents From a Point on a Circle"] },
-        { "key": "m10_c11", "unit": "Mensuration", "title": "Areas Related to Circles", "topics": ["Areas of Sector and Segment of a Circle"] },
+        { "key": "m10_c1", "unit": "Number Systems", "title": "Real Numbers", "topics": ["Fundamental Theorem of Arithmetic (HCF & LCM)", "Proofs of Irrationality"] },
+        { "key": "m10_c2", "unit": "Algebra", "title": "Polynomials", "topics": ["Geometrical Meaning of Zeroes", "Relationship Between Zeroes and Coefficients of Quadratic Polynomials"] },
+        { "key": "m10_c3", "unit": "Algebra", "title": "Pair of Linear Equations in Two Variables", "topics": ["Graphical Method and Consistency Conditions", "Substitution and Elimination Methods"] },
+        { "key": "m10_c4", "unit": "Algebra", "title": "Quadratic Equations", "topics": ["Solution by Factorisation", "Quadratic Formula and Discriminant (Nature of Roots)"] },
+        { "key": "m10_c5", "unit": "Algebra", "title": "Arithmetic Progressions", "topics": ["nth Term of an AP", "Sum of First n Terms of an AP and Applications"] },
+        { "key": "m10_c6", "unit": "Geometry", "title": "Triangles", "topics": ["Basic Proportionality Theorem (Thales Theorem)", "AAA, SSS and SAS Criteria for Similarity of Triangles"] },
+        { "key": "m10_c7", "unit": "Coordinate Geometry", "title": "Coordinate Geometry", "topics": ["Distance Formula", "Section Formula and Mid-Point Formula"] },
+        { "key": "m10_c8", "unit": "Trigonometry", "title": "Introduction to Trigonometry", "topics": ["Trigonometric Ratios of Specific Angles (0°, 30°, 45°, 60°, 90°)", "Trigonometric Identities"] },
+        { "key": "m10_c9", "unit": "Trigonometry", "title": "Some Applications of Trigonometry", "topics": ["Heights and Distances: Angles of Elevation and Depression"] },
+        { "key": "m10_c10", "unit": "Geometry", "title": "Circles", "topics": ["Tangent Perpendicular to Radius at Point of Contact", "Lengths of Tangents from an External Point"] },
+        { "key": "m10_c11", "unit": "Mensuration", "title": "Areas Related to Circles", "topics": ["Area of Sector and Segment of a Circle"] },
         { "key": "m10_c12", "unit": "Mensuration", "title": "Surface Areas and Volumes", "topics": ["Surface Area of Combination of Solids", "Volume of Combination of Solids"] },
-        { "key": "m10_c13", "unit": "Statistics & Probability", "title": "Statistics", "topics": ["Mean, Mode and Median of Grouped Data"] },
+        { "key": "m10_c13", "unit": "Statistics & Probability", "title": "Statistics", "topics": ["Mean, Median and Mode of Grouped Data"] },
         { "key": "m10_c14", "unit": "Statistics & Probability", "title": "Probability", "topics": ["Classical Definition and Simple Problems on Probability"] }
+      ]
+    },
+    "ncert_10_sst": {
+      "key": "ncert_10_sst",
+      "name": "Social Science (Class 10)",
+      "chapters": [
+        { "key": "sst10_h1", "unit": "History", "title": "The Rise of Nationalism in Europe", "topics": ["French Revolution and Idea of Nation", "Age of Revolutions (1830-1848)", "Unification of Germany, Italy and Britain", "Nationalism and Imperialism (Balkans)"] },
+        { "key": "sst10_h2", "unit": "History", "title": "Nationalism in India", "topics": ["First World War, Khilafat and Non-Cooperation Movement", "Civil Disobedience Movement and Salt March", "Sense of Collective Belonging"] },
+        { "key": "sst10_h3", "unit": "History", "title": "The Making of a Global World & Print Culture", "topics": ["Pre-Modern World: Silk Routes, Food and Conquest", "First Printed Books in East Asia and Gutenberg", "Print Revolution in Europe and Print in India"] },
+        { "key": "sst10_g1", "unit": "Geography", "title": "Resources, Forests & Water Resources", "topics": ["Resource Planning, Land Use and Soil Types", "Forest and Wildlife Conservation", "Multi-Purpose River Projects and Rainwater Harvesting"] },
+        { "key": "sst10_g2", "unit": "Geography", "title": "Agriculture, Minerals & Manufacturing Industries", "topics": ["Types of Farming, Cropping Seasons and Major Crops", "Ferrous, Non-Ferrous, Non-Metallic & Energy Minerals", "Classification of Industries and Industrial Pollution"] },
+        { "key": "sst10_p1", "unit": "Political Science", "title": "Power Sharing & Federalism", "topics": ["Belgium & Sri Lanka Case Studies and Forms of Power Sharing", "Features of Federalism, Three Lists and Decentralisation"] },
+        { "key": "sst10_p2", "unit": "Political Science", "title": "Gender, Religion, Caste, Parties & Outcomes", "topics": ["Gender Division, Communalism and Caste in Politics", "National and State Political Parties & Reforms", "Accountability, Economic Growth and Dignity in Democracy"] },
+        { "key": "sst10_e1", "unit": "Economics", "title": "Development, Sectors, Money & Globalisation", "topics": ["National Development, Per Capita Income & Sustainability", "Primary, Secondary & Tertiary Sectors; Organised vs Unorganised", "Money, RBI, Formal vs Informal Credit and SHGs", "MNCs, Foreign Trade and Globalisation in India"] }
+      ]
+    },
+    "ncert_10_english": {
+      "key": "ncert_10_english",
+      "name": "English Language & Literature (Class 10)",
+      "chapters": [
+        { "key": "e10_c1", "unit": "Reading & Writing", "title": "Comprehension, Grammar & Writing", "topics": ["Discursive and Case-Based Unseen Passages", "Determiners, Tenses, Modals, Subject-Verb Concord & Reported Speech", "Formal Letters and Analytical Paragraph Writing"] },
+        { "key": "e10_c2", "unit": "First Flight", "title": "First Flight: Prose", "topics": ["A Letter to God", "Nelson Mandela: Long Walk to Freedom", "Two Stories About Flying", "From the Diary of Anne Frank", "Glimpses of India", "Mijbil the Otter", "Madam Rides the Bus", "The Sermon at Benares", "The Proposal"] },
+        { "key": "e10_c3", "unit": "First Flight", "title": "First Flight: Poetry", "topics": ["Dust of Snow & Fire and Ice", "A Tiger in the Zoo & How to Tell Wild Animals", "The Ball Poem & Amanda!", "The Trees, Fog, Custard the Dragon & For Anne Gregory"] },
+        { "key": "e10_c4", "unit": "Footprints", "title": "Footprints Without Feet (Supplementary)", "topics": ["A Triumph of Surgery & The Thief's Story", "The Midnight Visitor & A Question of Trust", "Footprints Without Feet & The Making of a Scientist", "The Necklace, Bholi & The Book That Saved the Earth"] }
       ]
     },
     "ncert_9_science": {
       "key": "ncert_9_science",
       "name": "Science (Class 9)",
       "chapters": [
-        { "key": "s9_c1", "unit": "Matter", "title": "Matter in Our Surroundings", "topics": ["Physical Nature and States of Matter", "Change of State and Evaporation"] },
-        { "key": "s9_c2", "unit": "Matter", "title": "Is Matter Around Us Pure?", "topics": ["Mixtures, Solutions, Suspensions and Colloids", "Physical and Chemical Changes", "Elements and Compounds"] },
-        { "key": "s9_c3", "unit": "Matter", "title": "Atoms and Molecules", "topics": ["Laws of Chemical Combination", "Atoms, Molecules and Writing Chemical Formulae", "Molecular Mass"] },
-        { "key": "s9_c4", "unit": "Matter", "title": "Structure of the Atom", "topics": ["Charged Particles and Atomic Models", "Bohr's Model and Electron Distribution", "Valency, Atomic Number, Isotopes and Isobars"] },
-        { "key": "s9_c5", "unit": "Living World", "title": "The Fundamental Unit of Life", "topics": ["Plasma Membrane and Cell Wall", "Nucleus, Cytoplasm and Cell Organelles", "Cell Division Basics"] },
-        { "key": "s9_c6", "unit": "Living World", "title": "Tissues", "topics": ["Plant Tissues (Meristematic & Permanent)", "Animal Tissues (Epithelial, Connective, Muscular, Nervous)"] },
-        { "key": "s9_c7", "unit": "Motion & Force", "title": "Motion", "topics": ["Distance, Displacement, Speed and Velocity", "Acceleration and Graphical Representation", "Equations of Motion and Uniform Circular Motion"] },
+        { "key": "s9_c1", "unit": "Matter", "title": "Matter in Our Surroundings", "topics": ["Physical Nature and States of Matter", "Change of State, Latent Heat and Evaporation"] },
+        { "key": "s9_c2", "unit": "Matter", "title": "Is Matter Around Us Pure?", "topics": ["Mixtures, Solutions, Suspensions and Colloids", "Physical and Chemical Changes, Elements and Compounds"] },
+        { "key": "s9_c3", "unit": "Matter", "title": "Atoms and Molecules", "topics": ["Laws of Chemical Combination", "Dalton's Theory, Atomic Mass and Chemical Formulae", "Molecular Mass and Formula Unit Mass"] },
+        { "key": "s9_c4", "unit": "Matter", "title": "Structure of the Atom", "topics": ["Charged Particles, Thomson, Rutherford & Bohr Models", "Electron Distribution, Valency, Isotopes and Isobars"] },
+        { "key": "s9_c5", "unit": "Living World", "title": "The Fundamental Unit of Life", "topics": ["Plasma Membrane, Osmosis and Cell Wall", "Nucleus, Cytoplasm and Cell Organelles", "Mitosis and Meiosis Basics"] },
+        { "key": "s9_c6", "unit": "Living World", "title": "Tissues", "topics": ["Plant Tissues: Meristematic and Permanent", "Animal Tissues: Epithelial, Connective, Muscular & Nervous"] },
+        { "key": "s9_c7", "unit": "Motion & Force", "title": "Motion", "topics": ["Distance, Displacement, Speed and Velocity", "Acceleration and Distance-Time / Velocity-Time Graphs", "Equations of Motion and Uniform Circular Motion"] },
         { "key": "s9_c8", "unit": "Motion & Force", "title": "Force and Laws of Motion", "topics": ["Balanced and Unbalanced Forces", "Newton's First, Second and Third Laws of Motion"] },
-        { "key": "s9_c9", "unit": "Motion & Force", "title": "Gravitation", "topics": ["Universal Law of Gravitation and Free Fall", "Mass and Weight", "Thrust, Pressure and Archimedes' Principle"] },
-        { "key": "s9_c10", "unit": "Motion & Force", "title": "Work and Energy", "topics": ["Work Done by a Constant Force", "Kinetic and Potential Energy", "Conservation of Energy and Power"] },
-        { "key": "s9_c11", "unit": "Motion & Force", "title": "Sound", "topics": ["Production and Propagation of Sound", "Characteristics and Reflection of Sound", "Range of Hearing and Ultrasound"] },
-        { "key": "s9_c12", "unit": "Food", "title": "Improvement in Food Resources", "topics": ["Crop Variety, Production and Protection Management", "Animal Husbandry"] }
+        { "key": "s9_c9", "unit": "Motion & Force", "title": "Gravitation", "topics": ["Universal Law of Gravitation and Free Fall", "Mass vs Weight", "Thrust, Pressure, Buoyancy and Archimedes' Principle"] },
+        { "key": "s9_c10", "unit": "Motion & Force", "title": "Work and Energy", "topics": ["Work Done by a Constant Force", "Kinetic and Potential Energy", "Law of Conservation of Energy and Power"] },
+        { "key": "s9_c11", "unit": "Motion & Force", "title": "Sound", "topics": ["Production and Propagation of Sound Waves", "Characteristics (Pitch, Loudness, Quality) and Echo", "Range of Hearing and Ultrasound Applications"] },
+        { "key": "s9_c12", "unit": "Food", "title": "Improvement in Food Resources", "topics": ["Crop Variety, Production and Protection Management", "Animal Husbandry: Cattle, Poultry, Fisheries & Bee-Keeping"] }
       ]
     },
     "ncert_9_maths": {
       "key": "ncert_9_maths",
       "name": "Mathematics (Class 9)",
       "chapters": [
-        { "key": "m9_c1", "unit": "Number Systems", "title": "Number Systems", "topics": ["Irrational Numbers and Real Numbers on Number Line", "Operations on Real Numbers and Laws of Exponents"] },
-        { "key": "m9_c2", "unit": "Algebra", "title": "Polynomials", "topics": ["Polynomials in One Variable and Zeroes", "Factorisation and Algebraic Identities"] },
-        { "key": "m9_c3", "unit": "Coordinate Geometry", "title": "Coordinate Geometry", "topics": ["Cartesian System and Plotting Points"] },
-        { "key": "m9_c4", "unit": "Algebra", "title": "Linear Equations in Two Variables", "topics": ["Linear Equations and Their Solutions"] },
-        { "key": "m9_c5", "unit": "Geometry", "title": "Introduction to Euclid's Geometry", "topics": ["Euclid's Definitions, Axioms and Postulates"] },
-        { "key": "m9_c6", "unit": "Geometry", "title": "Lines and Angles", "topics": ["Pairs of Angles", "Parallel Lines and a Transversal"] },
-        { "key": "m9_c7", "unit": "Geometry", "title": "Triangles", "topics": ["Criteria for Congruence of Triangles", "Properties of Isosceles Triangles"] },
-        { "key": "m9_c8", "unit": "Geometry", "title": "Quadrilaterals", "topics": ["Properties of a Parallelogram", "The Mid-point Theorem"] },
-        { "key": "m9_c9", "unit": "Geometry", "title": "Circles", "topics": ["Chords and Perpendiculars from Centre", "Angle Subtended by an Arc and Cyclic Quadrilaterals"] },
-        { "key": "m9_c10", "unit": "Mensuration", "title": "Heron's Formula", "topics": ["Area of a Triangle by Heron's Formula"] },
-        { "key": "m9_c11", "unit": "Mensuration", "title": "Surface Areas and Volumes", "topics": ["Surface Area and Volume of Right Circular Cone and Sphere"] },
-        { "key": "m9_c12", "unit": "Statistics", "title": "Statistics", "topics": ["Graphical Representation: Bar Graphs, Histograms and Frequency Polygons"] }
+        { "key": "m9_c1", "unit": "Number Systems", "title": "Number Systems", "topics": ["Rational and Irrational Numbers on Number Line", "Real Numbers, Decimal Expansions and Laws of Exponents"] },
+        { "key": "m9_c2", "unit": "Algebra", "title": "Polynomials", "topics": ["Zeroes of a Polynomial", "Factorisation and Algebraic Identities"] },
+        { "key": "m9_c3", "unit": "Coordinate Geometry", "title": "Coordinate Geometry", "topics": ["Cartesian System and Plotting Points in Four Quadrants"] },
+        { "key": "m9_c4", "unit": "Algebra", "title": "Linear Equations in Two Variables", "topics": ["Linear Equations and Finding Solutions"] },
+        { "key": "m9_c5", "unit": "Geometry", "title": "Introduction to Euclid's Geometry", "topics": ["Euclid's Definitions, Axioms and Five Postulates"] },
+        { "key": "m9_c6", "unit": "Geometry", "title": "Lines and Angles", "topics": ["Linear Pair, Vertically Opposite Angles", "Parallel Lines and a Transversal"] },
+        { "key": "m9_c7", "unit": "Geometry", "title": "Triangles", "topics": ["SAS, ASA, AAS, SSS and RHS Congruence Criteria", "Properties of Isosceles Triangles"] },
+        { "key": "m9_c8", "unit": "Geometry", "title": "Quadrilaterals", "topics": ["Properties of a Parallelogram", "The Mid-Point Theorem"] },
+        { "key": "m9_c9", "unit": "Geometry", "title": "Circles", "topics": ["Angle Subtended by Chord and Perpendicular from Centre", "Equal Chords and Cyclic Quadrilaterals"] },
+        { "key": "m9_c10", "unit": "Mensuration", "title": "Heron's Formula", "topics": ["Area of a Triangle Using Heron's Formula"] },
+        { "key": "m9_c11", "unit": "Mensuration", "title": "Surface Areas and Volumes", "topics": ["Surface Area and Volume of Right Circular Cone", "Surface Area and Volume of Sphere and Hemisphere"] },
+        { "key": "m9_c12", "unit": "Statistics", "title": "Statistics", "topics": ["Bar Graphs, Histograms (Uniform & Varying Width) and Frequency Polygons"] }
+      ]
+    },
+    "ncert_9_sst": {
+      "key": "ncert_9_sst",
+      "name": "Social Science (Class 9 • 2026-27)",
+      "chapters": [
+        { "key": "sst9_c1", "unit": "Earth & Climate", "title": "Landforms, Dynamic Atmosphere & Climate", "topics": ["Meaning and Interdisciplinary Scope of Social Science", "Plate Tectonics, Interior of Earth and Weathering/Erosion", "Atmosphere Structure, Indian Monsoon and Climate Change", "Disaster Preparedness: Earthquakes, Cyclones & Early Warning"] },
+        { "key": "sst9_c2", "unit": "Civilisations", "title": "Earliest People & Ancient Civilisations", "topics": ["Stone Age (Palaeolithic, Mesolithic, Neolithic Revolution)", "Harappan and Mesopotamian Civilisations", "Ancient Indian Trade Networks and Knowledge Systems"] },
+        { "key": "sst9_c3", "unit": "Democracy", "title": "Understanding Democracy & Governance", "topics": ["Roots and Core Principles of Democracy", "Parliamentary vs Presidential Systems", "Constitutional Values, Rights and Challenges to Democracy"] },
+        { "key": "sst9_c4", "unit": "Economy", "title": "Markets, Livelihoods & Financial Literacy", "topics": ["Why Prices Change: Demand, Supply and Market Equilibrium", "Conservation and Livelihoods in Forest Areas", "Financial Planning: Budgeting, Interest, Investment & Taxation"] }
+      ]
+    },
+    "ncert_9_english": {
+      "key": "ncert_9_english",
+      "name": "English (Class 9)",
+      "chapters": [
+        { "key": "e9_c1", "unit": "Reading & Writing", "title": "Comprehension, Grammar & Writing", "topics": ["Unseen Discursive and Case-Based Passages", "Tenses, Modals, Subject-Verb Concord, Determiners & Reported Speech", "Descriptive Paragraph, Diary Entry and Story Writing"] },
+        { "key": "e9_c2", "unit": "Beehive", "title": "Beehive: Prose & Poetry", "topics": ["The Fun They Had, The Sound of Music & The Little Girl", "A Truly Beautiful Mind, The Snake and the Mirror & My Childhood", "Reach for the Top, Kathmandu & If I Were You", "Beehive Poems (The Road Not Taken to A Slumber Did My Spirit Seal)"] },
+        { "key": "e9_c3", "unit": "Moments", "title": "Moments: Supplementary Reader", "topics": ["The Lost Child, The Adventures of Toto & Iswaran", "In the Kingdom of Fools & The Happy Prince", "The Last Leaf, A House Is Not a Home & The Beggar"] }
+      ]
+    },
+    "exam_experimental_science": {
+      "key": "exam_experimental_science",
+      "name": "Experimental Physics & Practical Chemistry",
+      "chapters": [
+        { "key": "exp_p1", "unit": "NMC/NTA Unit 20", "title": "Physics Experimental Skills", "topics": ["Vernier Callipers and Screw Gauge Measurements", "Simple Pendulum, Metre Scale and Young's Modulus", "Surface Tension by Capillary Rise & Viscosity (Stokes' Law)", "Speed of Sound (Resonance Tube) & Specific Heat Capacity", "Metre Bridge, Ohm's Law and Galvanometer Half-Deflection", "Focal Length of Mirrors/Lenses, Prism Deviation & Diode/Logic Gate Identification"] },
+        { "key": "exp_c1", "unit": "NMC/NTA Unit 20", "title": "Principles Related to Practical Chemistry", "topics": ["Detection of Extra Elements (N, S, Halogens) & Functional Groups", "Inorganic Preparation (Mohr's Salt, Potash Alum) & Organic Compounds", "Titrimetric Analysis: Acid-Base, Oxalic Acid vs KMnO4, Mohr's Salt vs KMnO4", "Qualitative Salt Analysis: Cations (Pb2+ to NH4+) and Anions", "p-Block Elements Group 13–18 General Trends & Anomalous Behaviour"] }
+      ]
+    },
+    "cuet_core": {
+      "key": "cuet_core",
+      "name": "CUET Language & General Test",
+      "chapters": [
+        { "key": "cuet_eng", "unit": "Section IA", "title": "English Language", "topics": ["Reading Comprehension (Factual, Narrative, Literary)", "Verbal Ability & Rearranging Parts", "Synonyms, Antonyms, Idioms & Vocabulary"] },
+        { "key": "cuet_gt", "unit": "Section III", "title": "General Test", "topics": ["General Knowledge & Current Affairs", "General Mental Ability and Logical/Analytical Reasoning", "Quantitative Reasoning (Class 8–10 Arithmetic, Algebra, Geometry, Mensuration)"] }
+      ]
+    },
+    "upsc_prelims": {
+      "key": "upsc_prelims",
+      "name": "UPSC Prelims (GS Paper I & CSAT)",
+      "chapters": [
+        { "key": "up_p1", "unit": "Prelims GS I", "title": "History & Indian National Movement", "topics": ["Ancient India & Art and Culture", "Medieval India", "Modern Indian History and Freedom Struggle"] },
+        { "key": "up_p2", "unit": "Prelims GS I", "title": "Indian & World Geography", "topics": ["Physical Geography of India and the World", "Social and Economic Geography", "Map-Based Locations & Rivers"] },
+        { "key": "up_p3", "unit": "Prelims GS I", "title": "Indian Polity and Governance", "topics": ["Constitution, Fundamental Rights, DPSP & Amendments", "Parliament, Executive, Judiciary & Federalism", "Panchayati Raj, Constitutional & Statutory Bodies"] },
+        { "key": "up_p4", "unit": "Prelims GS I", "title": "Economy, Environment, S&T & Current Affairs", "topics": ["Economic & Social Development, Banking, Budget & Poverty", "Environment, Ecology, Biodiversity & Climate Change", "General Science & Everyday Technology", "National & International Current Events"] },
+        { "key": "up_csat", "unit": "Prelims Paper II", "title": "CSAT (Qualifying Aptitude)", "topics": ["Reading Comprehension Passages", "Logical Reasoning & Analytical Ability", "Basic Numeracy (Class X Level)", "Data Interpretation: Charts, Graphs and Tables"] }
+      ]
+    },
+    "upsc_mains_gs1": {
+      "key": "upsc_mains_gs1",
+      "name": "UPSC Mains GS Paper I",
+      "chapters": [
+        { "key": "up_m1_c1", "unit": "Heritage & History", "title": "Indian Heritage, Culture & Modern History", "topics": ["Art Forms, Literature and Architecture (Ancient to Modern)", "Modern Indian History (Mid-18th Century to Present)", "Freedom Struggle & Post-Independence Consolidation", "World History: Industrial Revolution, World Wars & Decolonisation"] },
+        { "key": "up_m1_c2", "unit": "Society & Geography", "title": "Indian Society & World Physical Geography", "topics": ["Diversity, Role of Women, Population, Poverty & Urbanisation", "Globalisation, Communalism, Regionalism & Secularism", "Salient Features of World Physical Geography & Resources", "Geophysical Phenomena: Earthquakes, Tsunamis, Volcanoes & Cyclones"] }
+      ]
+    },
+    "upsc_mains_gs2": {
+      "key": "upsc_mains_gs2",
+      "name": "UPSC Mains GS Paper II",
+      "chapters": [
+        { "key": "up_m2_c1", "unit": "Polity", "title": "Constitution, Federalism & Institutions", "topics": ["Historical Underpinnings, Evolution & Basic Structure", "Federal Structure, Separation of Powers & Dispute Redressal", "Parliament, State Legislatures, Executive & Judiciary", "Statutory, Regulatory & Quasi-Judicial Bodies"] },
+        { "key": "up_m2_c2", "unit": "Governance & IR", "title": "Governance, Social Justice & International Relations", "topics": ["Welfare Schemes, Health, Education, Poverty & Hunger", "Transparency, Accountability, E-Governance & Role of Civil Services", "India and Its Neighbourhood Relations", "Bilateral/Global Groupings, Indian Diaspora & International Institutions"] }
+      ]
+    },
+    "upsc_mains_gs3": {
+      "key": "upsc_mains_gs3",
+      "name": "UPSC Mains GS Paper III",
+      "chapters": [
+        { "key": "up_m3_c1", "unit": "Economy & Agri", "title": "Economic Development & Agriculture", "topics": ["Planning, Mobilisation of Resources, Inclusive Growth & Budgeting", "Major Crops, Irrigation, MSP, Food Processing & Land Reforms", "Liberalisation, Industrial Policy, Infrastructure & Investment Models"] },
+        { "key": "up_m3_c2", "unit": "S&T, Env & Security", "title": "Science, Environment, Disaster & Internal Security", "topics": ["IT, Space, Robotics, Nano-tech, Bio-tech & IPR", "Conservation, Pollution, EIA & Disaster Management", "Extremism, Cyber Security, Border Management & Money Laundering"] }
+      ]
+    },
+    "upsc_mains_gs4_essay": {
+      "key": "upsc_mains_gs4_essay",
+      "name": "UPSC Mains GS Paper IV & Essay",
+      "chapters": [
+        { "key": "up_m4_c1", "unit": "Ethics", "title": "Ethics, Integrity and Aptitude", "topics": ["Ethics and Human Interface; Attitude and Foundational Values", "Emotional Intelligence in Administration", "Moral Thinkers and Philosophers from India and the World", "Probity in Governance, RTI, Citizen Charters & Case Studies"] },
+        { "key": "up_essay", "unit": "Paper I", "title": "Essay Writing Practice", "topics": ["Philosophical Essays", "Socio-Economic, Governance & Environment Essays"] }
       ]
     }
   },
   "datasets": [
     {
       "datasetId": "school_cbse_class_11_science_pcb",
-      "matchPrefix": "school_cbse_class_11_science_pcb",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "CBSE Senior School Curriculum & NCERT Rationalised Textbooks (Class XI PCB)",
+      "matchTokens": ["school", "cbse", "class_11", "science_pcb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 & NCERT Rationalised Textbooks (Class XI PCB)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_biology"]
+      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_biology", "ncert_11_english_core"]
     },
     {
       "datasetId": "school_cbse_class_11_science_pcm",
-      "matchPrefix": "school_cbse_class_11_science_pcm",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "CBSE Senior School Curriculum & NCERT Rationalised Textbooks (Class XI PCM)",
+      "matchTokens": ["school", "cbse", "class_11", "science_pcm"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 & NCERT Rationalised Textbooks (Class XI PCM)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths"]
+      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths", "ncert_11_english_core", "ncert_11_cs"]
     },
     {
       "datasetId": "school_cbse_class_11_science_pcmb",
-      "matchPrefix": "school_cbse_class_11_science_pcmb",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "CBSE Senior School Curriculum & NCERT Rationalised Textbooks (Class XI PCMB)",
+      "matchTokens": ["school", "cbse", "class_11", "science_pcmb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 & NCERT Rationalised Textbooks (Class XI PCMB)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths", "ncert_11_biology"]
+      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths", "ncert_11_biology", "ncert_11_english_core"]
+    },
+    {
+      "datasetId": "school_cbse_class_11_commerce",
+      "matchTokens": ["school", "cbse", "class_11", "commerce"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 (Class XI Commerce)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_11_accountancy", "ncert_11_business_studies", "ncert_11_economics", "ncert_11_english_core", "ncert_11_maths"]
+    },
+    {
+      "datasetId": "school_cbse_class_11_humanities",
+      "matchTokens": ["school", "cbse", "class_11", "humanities"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 (Class XI Humanities / Arts)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_11_history", "ncert_11_political_science", "ncert_11_geography", "ncert_11_economics", "ncert_11_english_core"]
     },
     {
       "datasetId": "school_cbse_class_12_science_pcb",
-      "matchPrefix": "school_cbse_class_12_science_pcb",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "CBSE Senior School Curriculum & NCERT Rationalised Textbooks (Class XII PCB)",
+      "matchTokens": ["school", "cbse", "class_12", "science_pcb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 & NCERT Rationalised Textbooks (Class XII PCB)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_biology"]
+      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_biology", "ncert_12_english_core"]
     },
     {
       "datasetId": "school_cbse_class_12_science_pcm",
-      "matchPrefix": "school_cbse_class_12_science_pcm",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "CBSE Senior School Curriculum & NCERT Rationalised Textbooks (Class XII PCM)",
+      "matchTokens": ["school", "cbse", "class_12", "science_pcm"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 & NCERT Rationalised Textbooks (Class XII PCM)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths"]
+      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths", "ncert_12_english_core", "ncert_12_cs"]
     },
     {
       "datasetId": "school_cbse_class_12_science_pcmb",
-      "matchPrefix": "school_cbse_class_12_science_pcmb",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "CBSE Senior School Curriculum & NCERT Rationalised Textbooks (Class XII PCMB)",
+      "matchTokens": ["school", "cbse", "class_12", "science_pcmb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 & NCERT Rationalised Textbooks (Class XII PCMB)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths", "ncert_12_biology"]
+      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths", "ncert_12_biology", "ncert_12_english_core"]
+    },
+    {
+      "datasetId": "school_cbse_class_12_commerce",
+      "matchTokens": ["school", "cbse", "class_12", "commerce"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 (Class XII Commerce)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_12_accountancy", "ncert_12_business_studies", "ncert_12_economics", "ncert_12_english_core", "ncert_12_maths"]
+    },
+    {
+      "datasetId": "school_cbse_class_12_humanities",
+      "matchTokens": ["school", "cbse", "class_12", "humanities"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Senior School Curriculum 2026-27 (Class XII Humanities / Arts)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_12_history", "ncert_12_political_science", "ncert_12_geography", "ncert_12_economics", "ncert_12_english_core"]
     },
     {
       "datasetId": "school_cbse_class_10",
-      "matchPrefix": "school_cbse_class_10",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "CBSE Secondary Curriculum & NCERT Rationalised Textbooks (Class X Core Science & Maths)",
+      "matchTokens": ["school", "cbse", "class_10"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Secondary Curriculum 2026-27 & NCERT Textbooks (Class X Core)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_10_science", "ncert_10_maths"]
+      "subjectKeys": ["ncert_10_science", "ncert_10_maths", "ncert_10_sst", "ncert_10_english"]
     },
     {
       "datasetId": "school_cbse_class_9",
-      "matchPrefix": "school_cbse_class_9",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "CBSE Secondary Curriculum & NCERT Rationalised Textbooks (Class IX Core Science & Maths)",
+      "matchTokens": ["school", "cbse", "class_9"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "CBSE Secondary Curriculum 2026-27 & New NCERT Textbooks (Class IX Core)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_9_science", "ncert_9_maths"]
+      "subjectKeys": ["ncert_9_science", "ncert_9_maths", "ncert_9_sst", "ncert_9_english"]
     },
     {
-      "datasetId": "school_assam_board_seba_ahsec_class_11_science_pcb",
-      "matchPrefix": "school_assam_board_seba_ahsec_class_11_science_pcb",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "ASSEB / AHSEC HS 1st Year Science Syllabus (NCERT-Aligned Core PCB)",
+      "datasetId": "school_assam_class_11_pcb",
+      "matchTokens": ["school", "assam", "class_11", "science_pcb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "ASSEB / AHSEC HS 1st Year Science Syllabus 2026-27 (NCERT-Aligned PCB + English)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_biology"]
+      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_biology", "ncert_11_english_core"]
     },
     {
-      "datasetId": "school_assam_board_seba_ahsec_class_11_science_pcm",
-      "matchPrefix": "school_assam_board_seba_ahsec_class_11_science_pcm",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "ASSEB / AHSEC HS 1st Year Science Syllabus (NCERT-Aligned Core PCM)",
+      "datasetId": "school_assam_class_11_pcm",
+      "matchTokens": ["school", "assam", "class_11", "science_pcm"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "ASSEB / AHSEC HS 1st Year Science Syllabus 2026-27 (NCERT-Aligned PCM + English)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths"]
+      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths", "ncert_11_english_core"]
     },
     {
-      "datasetId": "school_assam_board_seba_ahsec_class_11_science_pcmb",
-      "matchPrefix": "school_assam_board_seba_ahsec_class_11_science_pcmb",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "ASSEB / AHSEC HS 1st Year Science Syllabus (NCERT-Aligned Core PCMB)",
+      "datasetId": "school_assam_class_11_pcmb",
+      "matchTokens": ["school", "assam", "class_11", "science_pcmb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "ASSEB / AHSEC HS 1st Year Science Syllabus 2026-27 (NCERT-Aligned PCMB + English)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths", "ncert_11_biology"]
+      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths", "ncert_11_biology", "ncert_11_english_core"]
     },
     {
-      "datasetId": "school_assam_board_seba_ahsec_class_12_science_pcb",
-      "matchPrefix": "school_assam_board_seba_ahsec_class_12_science_pcb",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "ASSEB / AHSEC HS 2nd Year Science Syllabus (NCERT-Aligned Core PCB)",
+      "datasetId": "school_assam_class_12_pcb",
+      "matchTokens": ["school", "assam", "class_12", "science_pcb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "ASSEB / AHSEC HS 2nd Year Science Syllabus 2026-27 (NCERT-Aligned PCB + English)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_biology"]
+      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_biology", "ncert_12_english_core"]
     },
     {
-      "datasetId": "school_assam_board_seba_ahsec_class_12_science_pcm",
-      "matchPrefix": "school_assam_board_seba_ahsec_class_12_science_pcm",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "ASSEB / AHSEC HS 2nd Year Science Syllabus (NCERT-Aligned Core PCM)",
+      "datasetId": "school_assam_class_12_pcm",
+      "matchTokens": ["school", "assam", "class_12", "science_pcm"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "ASSEB / AHSEC HS 2nd Year Science Syllabus 2026-27 (NCERT-Aligned PCM + English)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths"]
+      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths", "ncert_12_english_core"]
     },
     {
-      "datasetId": "school_assam_board_seba_ahsec_class_12_science_pcmb",
-      "matchPrefix": "school_assam_board_seba_ahsec_class_12_science_pcmb",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "ASSEB / AHSEC HS 2nd Year Science Syllabus (NCERT-Aligned Core PCMB)",
+      "datasetId": "school_assam_class_12_pcmb",
+      "matchTokens": ["school", "assam", "class_12", "science_pcmb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "ASSEB / AHSEC HS 2nd Year Science Syllabus 2026-27 (NCERT-Aligned PCMB + English)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths", "ncert_12_biology"]
+      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths", "ncert_12_biology", "ncert_12_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_11_pcb",
+      "matchTokens": ["school", "class_11", "science_pcb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 11 Core PCB Syllabus (Add state-specific language electives via Custom Add)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_biology", "ncert_11_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_11_pcm",
+      "matchTokens": ["school", "class_11", "science_pcm"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 11 Core PCM Syllabus (Add state-specific language electives via Custom Add)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths", "ncert_11_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_11_pcmb",
+      "matchTokens": ["school", "class_11", "science_pcmb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 11 Core PCMB Syllabus",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_11_physics", "ncert_11_chemistry", "ncert_11_maths", "ncert_11_biology", "ncert_11_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_11_commerce",
+      "matchTokens": ["school", "class_11", "commerce"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 11 Commerce Core Syllabus",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_11_accountancy", "ncert_11_business_studies", "ncert_11_economics", "ncert_11_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_11_humanities",
+      "matchTokens": ["school", "class_11", "humanities"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 11 Humanities Core Syllabus",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_11_history", "ncert_11_political_science", "ncert_11_geography", "ncert_11_economics", "ncert_11_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_12_pcb",
+      "matchTokens": ["school", "class_12", "science_pcb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 12 Core PCB Syllabus",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_biology", "ncert_12_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_12_pcm",
+      "matchTokens": ["school", "class_12", "science_pcm"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 12 Core PCM Syllabus",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths", "ncert_12_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_12_pcmb",
+      "matchTokens": ["school", "class_12", "science_pcmb"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 12 Core PCMB Syllabus",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths", "ncert_12_biology", "ncert_12_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_12_commerce",
+      "matchTokens": ["school", "class_12", "commerce"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 12 Commerce Core Syllabus",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_12_accountancy", "ncert_12_business_studies", "ncert_12_economics", "ncert_12_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_12_humanities",
+      "matchTokens": ["school", "class_12", "humanities"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 12 Humanities Core Syllabus",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_12_history", "ncert_12_political_science", "ncert_12_geography", "ncert_12_economics", "ncert_12_english_core"]
+    },
+    {
+      "datasetId": "school_general_class_10",
+      "matchTokens": ["school", "class_10"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 10 Core Syllabus (Add regional MIL / optional subjects via Custom Add)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_10_science", "ncert_10_maths", "ncert_10_sst", "ncert_10_english"]
+    },
+    {
+      "datasetId": "school_general_class_9",
+      "matchTokens": ["school", "class_9"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NCERT-Aligned Class 9 Core Syllabus (Add regional MIL / optional subjects via Custom Add)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_9_science", "ncert_9_maths", "ncert_9_sst", "ncert_9_english"]
     },
     {
       "datasetId": "competitive_neet_ug",
-      "matchPrefix": "competitive_neet_ug",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "NMC / NTA Official NEET UG Syllabus (Class 11 & 12 Physics, Chemistry, Biology)",
+      "matchTokens": ["competitive", "neet_ug"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NMC / NTA Official NEET (UG) 2026 Syllabus (All 50 Units + Experimental Skills)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_11_physics", "ncert_12_physics", "ncert_11_chemistry", "ncert_12_chemistry", "ncert_11_biology", "ncert_12_biology"]
+      "subjectKeys": ["ncert_11_physics", "ncert_12_physics", "ncert_11_chemistry", "ncert_12_chemistry", "ncert_11_biology", "ncert_12_biology", "exam_experimental_science"]
     },
     {
       "datasetId": "competitive_jee_main",
-      "matchPrefix": "competitive_jee_main",
-      "datasetVersion": "2026.1",
-      "officialSourceRef": "NTA Official JEE Main Paper 1 Syllabus (Class 11 & 12 Physics, Chemistry, Mathematics)",
+      "matchTokens": ["competitive", "jee_main"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NTA Official JEE Main Paper 1 Syllabus (Class 11 & 12 PCM + Experimental Skills)",
       "verificationDate": "2026-11-22",
       "isComplete": true,
-      "subjectKeys": ["ncert_11_physics", "ncert_12_physics", "ncert_11_chemistry", "ncert_12_chemistry", "ncert_11_maths", "ncert_12_maths"]
+      "subjectKeys": ["ncert_11_physics", "ncert_12_physics", "ncert_11_chemistry", "ncert_12_chemistry", "ncert_11_maths", "ncert_12_maths", "exam_experimental_science"]
+    },
+    {
+      "datasetId": "competitive_jee_advanced",
+      "matchTokens": ["competitive", "jee_advanced"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "IIT JEE Advanced Official Core Syllabus (Class 11 & 12 PCM + Experimental Skills)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["ncert_11_physics", "ncert_12_physics", "ncert_11_chemistry", "ncert_12_chemistry", "ncert_11_maths", "ncert_12_maths", "exam_experimental_science"]
+    },
+    {
+      "datasetId": "competitive_cuet_ug_science",
+      "matchTokens": ["competitive", "cuet_ug", "science"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NTA CUET (UG) Syllabus (Class 12 Science Domains + English + General Test)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["cuet_core", "ncert_12_physics", "ncert_12_chemistry", "ncert_12_maths", "ncert_12_biology"]
+    },
+    {
+      "datasetId": "competitive_cuet_ug_commerce",
+      "matchTokens": ["competitive", "cuet_ug", "commerce"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NTA CUET (UG) Syllabus (Class 12 Commerce Domains + English + General Test)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["cuet_core", "ncert_12_accountancy", "ncert_12_business_studies", "ncert_12_economics"]
+    },
+    {
+      "datasetId": "competitive_cuet_ug_humanities",
+      "matchTokens": ["competitive", "cuet_ug", "humanities"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "NTA CUET (UG) Syllabus (Class 12 Humanities Domains + English + General Test)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["cuet_core", "ncert_12_history", "ncert_12_political_science", "ncert_12_geography", "ncert_12_economics"]
+    },
+    {
+      "datasetId": "competitive_upsc_cse",
+      "matchTokens": ["competitive", "upsc"],
+      "datasetVersion": "2026.2",
+      "officialSourceRef": "UPSC Civil Services Examination Official Syllabus (Prelims GS + CSAT & Mains GS I-IV + Essay)",
+      "verificationDate": "2026-11-22",
+      "isComplete": true,
+      "subjectKeys": ["upsc_prelims", "upsc_mains_gs1", "upsc_mains_gs2", "upsc_mains_gs3", "upsc_mains_gs4_essay"]
     }
   ]
 }
