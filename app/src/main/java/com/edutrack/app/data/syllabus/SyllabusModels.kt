@@ -31,7 +31,7 @@ data class ChapterJson(
 @Serializable
 data class DatasetEntryJson(
     val datasetId: String,
-    val matchPrefix: String,
+    val matchTokens: List<String> = emptyList(),
     val datasetVersion: String,
     val officialSourceRef: String,
     val verificationDate: String,
