@@ -26,17 +26,23 @@ class SyllabusCatalogLoader(private val context: Context) {
         }.getOrNull()
     }
 
+    fun currentCatalogVersion(): String = loadCatalog()?.catalogVersion ?: "2026.2"
+
     fun findDataset(datasetKey: String): DatasetEntryJson? {
         val catalog = loadCatalog() ?: return null
         val normalized = datasetKey.lowercase()
         return catalog.datasets.firstOrNull { it.datasetId == normalized }
             ?: catalog.datasets
-                .sortedByDescending { it.matchPrefix.length }
-                .firstOrNull { normalized.startsWith(it.matchPrefix) }
+                .filter { ds ->
+                    ds.matchTokens.isNotEmpty() && ds.matchTokens.all { token ->
+                        normalized.contains(token.lowercase())
+                    }
+                }
+                .maxByOrNull { it.matchTokens.size * 100 + it.matchTokens.sumOf { t -> t.length } }
     }
 
     /**
-     * Populates or restores the official syllabus structure for a journey.
+     * Populates or upgrades the official syllabus structure for a journey.
      * Never overwrites existing official topic progress or deletes custom items.
      */
     suspend fun syncOfficialSyllabusForJourney(
@@ -128,7 +134,6 @@ class SyllabusCatalogLoader(private val context: Context) {
                     val topicOfficialKey = "${chJson.key}_t${tIndex + 1}"
                     val existingTopic = topicsByKey[topicOfficialKey]
                     if (existingTopic != null) {
-                        // Restore structure & order while preserving student's saved status & timestamps
                         dao.updateTopic(
                             existingTopic.copy(
                                 title = topicTitle,
