@@ -31,25 +31,73 @@ interface EduTrackDao {
     suspend fun deleteJourney(journey: AcademicJourneyEntity)
 
     // Subjects
-    @Query("SELECT * FROM subjects WHERE journeyId = :journeyId AND isArchived = 0 ORDER BY orderIndex ASC")
+    @Query("SELECT * FROM subjects WHERE journeyId = :journeyId AND isArchived = 0 ORDER BY orderIndex ASC, id ASC")
     fun observeSubjectsForJourney(journeyId: Long): Flow<List<SubjectEntity>>
+
+    @Query("SELECT * FROM subjects WHERE journeyId = :journeyId ORDER BY orderIndex ASC, id ASC")
+    suspend fun getSubjectsForJourneySync(journeyId: Long): List<SubjectEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertSubject(subject: SubjectEntity): Long
 
+    @Update
+    suspend fun updateSubject(subject: SubjectEntity)
+
+    @Delete
+    suspend fun deleteSubject(subject: SubjectEntity)
+
     // Chapters
-    @Query("SELECT * FROM chapters WHERE subjectId = :subjectId AND isArchived = 0 ORDER BY orderIndex ASC")
+    @Query("SELECT * FROM chapters WHERE subjectId = :subjectId AND isArchived = 0 ORDER BY orderIndex ASC, id ASC")
     fun observeChaptersForSubject(subjectId: Long): Flow<List<ChapterEntity>>
+
+    @Query(
+        """
+        SELECT c.* FROM chapters c
+        INNER JOIN subjects s ON c.subjectId = s.id
+        WHERE s.journeyId = :journeyId AND s.isArchived = 0 AND c.isArchived = 0
+        ORDER BY c.orderIndex ASC, c.id ASC
+        """
+    )
+    fun observeChaptersForJourney(journeyId: Long): Flow<List<ChapterEntity>>
+
+    @Query("SELECT * FROM chapters WHERE subjectId = :subjectId ORDER BY orderIndex ASC, id ASC")
+    suspend fun getChaptersForSubjectSync(subjectId: Long): List<ChapterEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertChapter(chapter: ChapterEntity): Long
 
+    @Update
+    suspend fun updateChapter(chapter: ChapterEntity)
+
+    @Delete
+    suspend fun deleteChapter(chapter: ChapterEntity)
+
     // Topics
-    @Query("SELECT * FROM topics WHERE chapterId = :chapterId AND isArchived = 0 ORDER BY orderIndex ASC")
+    @Query("SELECT * FROM topics WHERE chapterId = :chapterId AND isArchived = 0 ORDER BY orderIndex ASC, id ASC")
     fun observeTopicsForChapter(chapterId: Long): Flow<List<TopicEntity>>
+
+    @Query(
+        """
+        SELECT t.* FROM topics t
+        INNER JOIN chapters c ON t.chapterId = c.id
+        INNER JOIN subjects s ON c.subjectId = s.id
+        WHERE s.journeyId = :journeyId AND s.isArchived = 0 AND c.isArchived = 0 AND t.isArchived = 0
+        ORDER BY t.orderIndex ASC, t.id ASC
+        """
+    )
+    fun observeTopicsForJourney(journeyId: Long): Flow<List<TopicEntity>>
+
+    @Query("SELECT * FROM topics WHERE chapterId = :chapterId ORDER BY orderIndex ASC, id ASC")
+    suspend fun getTopicsForChapterSync(chapterId: Long): List<TopicEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertTopic(topic: TopicEntity): Long
+
+    @Update
+    suspend fun updateTopic(topic: TopicEntity)
+
+    @Delete
+    suspend fun deleteTopic(topic: TopicEntity)
 
     @Query(
         """
