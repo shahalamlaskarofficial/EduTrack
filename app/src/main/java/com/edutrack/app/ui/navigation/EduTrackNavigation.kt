@@ -33,14 +33,12 @@ import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material.icons.rounded.SwapHoriz
 import androidx.compose.material.icons.rounded.Timeline
 import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -61,7 +59,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
@@ -79,13 +76,15 @@ import com.edutrack.app.data.local.AcademicJourneyEntity
 import com.edutrack.app.data.local.ThemePreference
 import com.edutrack.app.data.preferences.AppPreferences
 import com.edutrack.app.data.repository.EduTrackRepository
+import com.edutrack.app.ui.dashboard.DashboardScreen
+import com.edutrack.app.ui.dashboard.DashboardViewModel
+import com.edutrack.app.ui.roadmap.RoadmapScreen
+import com.edutrack.app.ui.roadmap.RoadmapViewModel
 import com.edutrack.app.ui.syllabus.SyllabusScreen
 import com.edutrack.app.ui.syllabus.SyllabusViewModel
 import com.edutrack.app.ui.theme.SuccessGreen
 import com.edutrack.app.ui.theme.WarningAmber
 import kotlinx.coroutines.launch
-import java.time.LocalDate
-import java.time.temporal.ChronoUnit
 
 enum class BottomNavTab(
     val route: String,
@@ -112,23 +111,25 @@ fun EduTrackMainShell(
     val journeys by repository.allJourneysFlow.collectAsStateWithLifecycle(initialValue = emptyList())
     val activeJourney = journeys.firstOrNull { it.id == preferences.activeJourneyId } ?: journeys.firstOrNull()
 
-    // Auto-load official syllabus for journeys created in Phase 1
+    // Auto-sync official syllabus catalog (upgrades existing journeys seamlessly)
     LaunchedEffect(activeJourney?.id) {
         activeJourney?.id?.let { repository.ensureOfficialSyllabusLoaded(it) }
     }
-
-    val totalTopics by remember(activeJourney?.id) {
-        repository.observeTotalTopics(activeJourney?.id ?: -1L)
-    }.collectAsStateWithLifecycle(initialValue = 0)
-
-    val completedTopics by remember(activeJourney?.id) {
-        repository.observeCompletedTopics(activeJourney?.id ?: -1L)
-    }.collectAsStateWithLifecycle(initialValue = 0)
 
     var showJourneySwitcher by remember { mutableStateOf(false) }
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route ?: BottomNavTab.HOME.route
+
+    fun navigateToTab(route: String) {
+        navController.navigate(route) {
+            popUpTo(navController.graph.findStartDestination().id) {
+                saveState = true
+            }
+            launchSingleTop = true
+            restoreState = true
+        }
+    }
 
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
@@ -176,15 +177,7 @@ fun EduTrackMainShell(
                     val selected = currentRoute == tab.route
                     NavigationBarItem(
                         selected = selected,
-                        onClick = {
-                            navController.navigate(tab.route) {
-                                popUpTo(navController.graph.findStartDestination().id) {
-                                    saveState = true
-                                }
-                                launchSingleTop = true
-                                restoreState = true
-                            }
-                        },
+                        onClick = { navigateToTab(tab.route) },
                         icon = {
                             Icon(
                                 imageVector = tab.icon,
@@ -213,6 +206,7 @@ fun EduTrackMainShell(
             }
         }
     ) { innerPadding ->
+        val activeId = activeJourney?.id ?: -1L
         NavHost(
             navController = navController,
             startDestination = BottomNavTab.HOME.route,
@@ -221,24 +215,19 @@ fun EduTrackMainShell(
                 .padding(innerPadding)
         ) {
             composable(BottomNavTab.HOME.route) {
-                HomeOverviewScreen(
+                val dashboardVm: DashboardViewModel = viewModel(
+                    key = "dashboard_$activeId",
+                    factory = DashboardViewModel.factory(repository, activeId)
+                )
+                DashboardScreen(
+                    viewModel = dashboardVm,
                     studentName = preferences.studentName,
-                    activeJourney = activeJourney,
-                    totalTopics = totalTopics,
-                    completedTopics = completedTopics,
-                    onOpenSyllabus = {
-                        navController.navigate(BottomNavTab.SYLLABUS.route) {
-                            popUpTo(navController.graph.findStartDestination().id) { saveState = true }
-                            launchSingleTop = true
-                            restoreState = true
-                        }
-                    },
-                    onSwitchJourney = { showJourneySwitcher = true },
-                    onAddJourney = onAddNewJourney
+                    onOpenSyllabus = { navigateToTab(BottomNavTab.SYLLABUS.route) },
+                    onOpenRoadmap = { navigateToTab(BottomNavTab.ROADMAP.route) },
+                    onOpenPlanner = { navigateToTab(BottomNavTab.PLANNER.route) }
                 )
             }
             composable(BottomNavTab.SYLLABUS.route) {
-                val activeId = activeJourney?.id ?: -1L
                 val syllabusVm: SyllabusViewModel = viewModel(
                     key = "syllabus_$activeId",
                     factory = SyllabusViewModel.factory(repository, activeId)
@@ -246,19 +235,18 @@ fun EduTrackMainShell(
                 SyllabusScreen(viewModel = syllabusVm)
             }
             composable(BottomNavTab.ROADMAP.route) {
-                PhaseReadyScreen(
-                    title = "Academic Roadmap",
-                    phaseLabel = "Coming in Phase 3",
-                    activeJourney = activeJourney,
-                    description = "Visual milestone timeline (First Chapter → 25% → 50% → 75% → 100%) and unlockable achievement badges will power up from your real syllabus progress in Phase 3."
+                val roadmapVm: RoadmapViewModel = viewModel(
+                    key = "roadmap_$activeId",
+                    factory = RoadmapViewModel.factory(repository, activeId)
                 )
+                RoadmapScreen(viewModel = roadmapVm)
             }
             composable(BottomNavTab.PLANNER.route) {
                 PhaseReadyScreen(
                     title = "Study Planner & Revision",
                     phaseLabel = "Coming in Phase 4",
                     activeJourney = activeJourney,
-                    description = "Daily study missions, weekly goals, spaced-repetition Revision Centre (1/3/7/14/30 days), and local reminders will connect here in Phase 4."
+                    description = "Daily study missions, weekly goals, spaced-repetition Revision Centre (1/3/7/14/30 days), multi-exam countdowns, and offline reminders will launch in Phase 4."
                 )
             }
             composable(BottomNavTab.STATISTICS.route) {
@@ -266,7 +254,7 @@ fun EduTrackMainShell(
                     title = "Statistics & Analytics",
                     phaseLabel = "Coming in Phase 5",
                     activeJourney = activeJourney,
-                    description = "Subject-wise charts, weekly/monthly completion trends, consistency tracking, and JSON/PDF exports will arrive in Phase 5."
+                    description = "Subject-wise charts, weekly/monthly completion trends, consistency graphs, JSON Backup/Restore, and PDF Progress Reports will launch in Phase 5."
                 )
             }
             composable(BottomNavTab.SETTINGS.route) {
@@ -357,142 +345,6 @@ fun EduTrackMainShell(
 }
 
 @Composable
-private fun HomeOverviewScreen(
-    studentName: String,
-    activeJourney: AcademicJourneyEntity?,
-    totalTopics: Int,
-    completedTopics: Int,
-    onOpenSyllabus: () -> Unit,
-    onSwitchJourney: () -> Unit,
-    onAddJourney: () -> Unit
-) {
-    val progressFraction = if (totalTopics > 0) completedTopics.toFloat() / totalTopics else 0f
-    val progressPercent = (progressFraction * 100).toInt()
-    val daysRemaining = activeJourney?.targetExamDateEpochDay?.let { targetDay ->
-        ChronoUnit.DAYS.between(LocalDate.now(), LocalDate.ofEpochDay(targetDay))
-    }
-
-    LazyColumn(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(horizontal = 16.dp),
-        verticalArrangement = Arrangement.spacedBy(14.dp)
-    ) {
-        item {
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = if (studentName.isNotBlank()) "Welcome back, $studentName" else "Your Academic Journey",
-                style = MaterialTheme.typography.headlineMedium
-            )
-            Text(
-                text = "Every chapter brings you closer.",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
-        }
-
-        item {
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(18.dp),
-                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
-                border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
-            ) {
-                Column(modifier = Modifier.padding(20.dp)) {
-                    Text(
-                        text = "EDUTRACK • ACTIVE JOURNEY",
-                        style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.primary
-                    )
-                    Spacer(modifier = Modifier.height(6.dp))
-                    Text(
-                        text = activeJourney?.title ?: "No active journey",
-                        style = MaterialTheme.typography.titleLarge
-                    )
-                    Spacer(modifier = Modifier.height(14.dp))
-
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.Bottom
-                    ) {
-                        Text(
-                            text = "$progressPercent%",
-                            style = MaterialTheme.typography.headlineLarge,
-                            color = MaterialTheme.colorScheme.primary
-                        )
-                        Text(
-                            text = "$completedTopics / $totalTopics topics completed",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                    }
-                    Spacer(modifier = Modifier.height(10.dp))
-                    LinearProgressIndicator(
-                        progress = { progressFraction },
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .height(8.dp)
-                            .clip(RoundedCornerShape(4.dp)),
-                        color = MaterialTheme.colorScheme.primary,
-                        trackColor = MaterialTheme.colorScheme.surfaceVariant
-                    )
-                    Spacer(modifier = Modifier.height(14.dp))
-
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween
-                    ) {
-                        Text(
-                            text = "Session: ${activeJourney?.academicSession ?: "-"}",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                        if (daysRemaining != null) {
-                            Text(
-                                text = if (daysRemaining >= 0) "$daysRemaining days to exam" else "Exam date passed",
-                                style = MaterialTheme.typography.bodyMedium,
-                                fontWeight = FontWeight.SemiBold,
-                                color = MaterialTheme.colorScheme.primary
-                            )
-                        }
-                    }
-                }
-            }
-        }
-
-        item {
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(16.dp),
-                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
-                border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
-            ) {
-                Column(modifier = Modifier.padding(16.dp)) {
-                    Text("Syllabus Engine Live", style = MaterialTheme.typography.titleMedium)
-                    Spacer(modifier = Modifier.height(6.dp))
-                    Text(
-                        text = "Your syllabus is preloaded locally with $totalTopics trackable topics. Open the Syllabus tab to track chapters, mark topic states, or add custom topics.",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                    Spacer(modifier = Modifier.height(12.dp))
-                    Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                        Button(onClick = onOpenSyllabus, shape = RoundedCornerShape(12.dp)) {
-                            Icon(Icons.Rounded.MenuBook, contentDescription = null, modifier = Modifier.size(18.dp))
-                            Spacer(modifier = Modifier.width(6.dp))
-                            Text("Open Syllabus")
-                        }
-                        TextButton(onClick = onAddJourney) { Text("Add Journey") }
-                        TextButton(onClick = onSwitchJourney) { Text("Switch") }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@Composable
 private fun PhaseReadyScreen(
     title: String,
     phaseLabel: String,
@@ -565,7 +417,6 @@ private fun SettingsScreen(
     ) {
         item { Text("Settings", style = MaterialTheme.typography.headlineMedium) }
 
-        // Theme selector
         item {
             Card(
                 modifier = Modifier.fillMaxWidth(),
@@ -604,7 +455,6 @@ private fun SettingsScreen(
             }
         }
 
-        // Notifications toggle
         item {
             Card(
                 modifier = Modifier.fillMaxWidth(),
@@ -635,7 +485,6 @@ private fun SettingsScreen(
             }
         }
 
-        // Active Syllabus Dataset Info
         activeJourney?.let { journey ->
             item {
                 Card(
@@ -675,7 +524,6 @@ private fun SettingsScreen(
             }
         }
 
-        // Academic Journeys management
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -729,7 +577,6 @@ private fun SettingsScreen(
             }
         }
 
-        // Developer Info Card
         item {
             Card(
                 modifier = Modifier.fillMaxWidth(),
@@ -772,7 +619,7 @@ private fun SettingsScreen(
                         label = "Website",
                         value = "shahalamlaskar.click",
                         onClick = {
-                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://shahalamlaskar.click"))
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("[https://shahalamlaskar.click](https://shahalamlaskar.click)"))
                             runCatching { context.startActivity(intent) }
                         }
                     )
@@ -780,7 +627,6 @@ private fun SettingsScreen(
             }
         }
 
-        // About & Privacy
         item {
             Card(
                 modifier = Modifier.fillMaxWidth(),
@@ -792,7 +638,7 @@ private fun SettingsScreen(
                     Text("About & Privacy", style = MaterialTheme.typography.titleMedium)
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
-                        "EduTrack v1.0.0 (Phase 2)\nEvery chapter brings you closer.\n\nAll academic profiles, syllabus progress, and custom topics stay strictly on your device. No ads, no tracking SDKs, and no cloud account required.",
+                        "EduTrack v1.0.0 (Phase 3)\nEvery chapter brings you closer.\n\nAll academic profiles, syllabus progress, streaks, and achievements stay strictly on your device. No ads, no tracking SDKs, and no cloud account required.",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
