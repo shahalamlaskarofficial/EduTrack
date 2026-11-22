@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,8 +38,13 @@ jobs:
       - name: Build Debug APK
         run: gradle assembleDebug --stacktrace
 
-      - name: Upload EduTrack APK
-        uses: actions/upload-artifact@v4
+      - name: Rename APK
+        run: cp app/build/outputs/apk/debug/app-debug.apk EduTrack-v1.0.${{ github.run_number }}.apk
+
+      - name: Publish APK to GitHub Releases
+        uses: softprops/action-gh-release@v2
         with:
-          name: EduTrack-Phase1-Debug-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          tag_name: v1.0.${{ github.run_number }}
+          name: EduTrack Build #${{ github.run_number }}
+          body: "Automated EduTrack Android APK build."
+          files: EduTrack-v1.0.${{ github.run_number }}.apk
