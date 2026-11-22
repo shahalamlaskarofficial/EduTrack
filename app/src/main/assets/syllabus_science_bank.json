@@ -1,0 +1,619 @@
+{
+  "subjectBanks": {
+    "ncert_11_physics": {
+      "key": "ncert_11_physics",
+      "name": "Physics (Class 11)",
+      "chapters": [
+        {
+          "key": "p11_c0",
+          "unit": "Foundation (PW/NCERT)",
+          "title": "Physical World & Mathematical Tools",
+          "topics": ["Scope and Excitement of Physics & Fundamental Forces", "Basic Trigonometry & Coordinate Geometry for Physics", "Differentiation: Rules, Maxima & Minima", "Integration: Indefinite, Definite & Area Under Curve", "Graphs & Logarithms for Physics"]
+        },
+        {
+          "key": "p11_c1",
+          "unit": "Unit I",
+          "title": "Units and Measurements",
+          "topics": ["Physical Quantities, Fundamental & Derived Units (SI System)", "Parallax Method & Measurement of Length, Mass, Time", "Significant Figures & Rounding Off Rules", "Errors in Measurement: Absolute, Relative & Percentage Errors", "Combination of Errors (Sum, Difference, Product, Quotient, Power)", "Vernier Callipers & Screw Gauge (Least Count & Zero Error)", "Dimensions of Physical Quantities & Dimensional Formulae", "Dimensional Analysis: Homogeneity, Unit Conversion & Formula Derivation"]
+        },
+        {
+          "key": "p11_c2",
+          "unit": "Unit II: Kinematics",
+          "title": "Motion in a Straight Line",
+          "topics": ["Frame of Reference, Rest, Motion, Distance & Displacement", "Average Speed, Average Velocity & Instantaneous Velocity", "Uniform & Non-Uniform Acceleration", "Calculus Approach to Kinematics (dv/dt, v dv/dx)", "Kinematic Equations for Uniformly Accelerated Motion", "Motion Under Gravity (Free Fall & Vertical Projection)", "Position-Time (x-t), Velocity-Time (v-t) & Acceleration-Time (a-t) Graphs", "Relative Velocity in One Dimension"]
+        },
+        {
+          "key": "p11_c3",
+          "unit": "Unit II: Kinematics",
+          "title": "Motion in a Plane",
+          "topics": ["Scalars, Vectors & Types of Vectors", "Triangle, Parallelogram & Polygon Laws of Vector Addition", "Resolution of Vectors & Unit Vectors (i, j, k)", "Scalar (Dot) Product & Vector (Cross) Product", "Relative Velocity in 2D: Rain-Man & River-Boat Problems", "Ground-to-Ground Projectile Motion (Time, Height, Range, Trajectory)", "Horizontal & Inclined Plane Projectile Motion", "Uniform Circular Motion: Angular Variables & Centripetal Acceleration"]
+        },
+        {
+          "key": "p11_c4",
+          "unit": "Unit III",
+          "title": "Laws of Motion",
+          "topics": ["Aristotle's Fallacy, Inertia & Newton's First Law", "Linear Momentum, Newton's Second Law & Impulse", "Newton's Third Law & Conservation of Linear Momentum", "Free Body Diagrams (FBD), Normal Reaction & Tension in Strings", "Connected Blocks, Pulleys & Atwood Machine", "Spring Force & Weighing Machine / Apparent Weight in Lift", "Pseudo Force in Non-Inertial Frames", "Equilibrium of Concurrent Forces (Lami's Theorem)", "Static, Limiting, Kinetic & Rolling Friction; Angle of Repose", "Block-on-Block Friction Problems", "Circular Dynamics: Conical Pendulum, Level Road & Banked Road"]
+        },
+        {
+          "key": "p11_c5",
+          "unit": "Unit IV",
+          "title": "Work, Energy and Power",
+          "topics": ["Work Done by Constant & Variable Forces (Graphical & Integral)", "Kinetic Energy & Work-Energy Theorem", "Conservative vs Non-Conservative Forces", "Gravitational & Elastic (Spring) Potential Energy", "Force-Potential Energy Relation (F = -dU/dx) & Equilibrium Stability", "Conservation of Mechanical Energy", "Motion in a Vertical Circle (Minimum Speeds & Tension)", "Instantaneous & Average Power", "Head-On & Oblique Elastic Collisions", "Inelastic, Perfectly Inelastic Collisions & Coefficient of Restitution"]
+        },
+        {
+          "key": "p11_c6",
+          "unit": "Unit V",
+          "title": "System of Particles and Rotational Motion",
+          "topics": ["Centre of Mass of Discrete & Continuous Bodies (Rod, Ring, Disc, Cone)", "Motion of Centre of Mass & Conservation of Momentum", "Angular Displacement, Velocity, Acceleration & Rotational Kinematics", "Moment of Inertia & Radius of Gyration of Standard Bodies", "Parallel Axis & Perpendicular Axis Theorems", "Torque (Moment of Force) & Couple", "Rotational Equilibrium & Toppling", "Angular Momentum & Conservation of Angular Momentum", "Rolling Motion (Pure Rolling on Horizontal & Inclined Plane)", "Rotational Kinetic Energy & Work-Energy Theorem in Rotation"]
+        },
+        {
+          "key": "p11_c7",
+          "unit": "Unit VI",
+          "title": "Gravitation",
+          "topics": ["Kepler's Three Laws of Planetary Motion", "Newton's Universal Law of Gravitation & Superposition", "Gravitational Field Intensity (Point Mass, Ring, Shell, Solid Sphere)", "Acceleration Due to Gravity (g) & Variation with Altitude, Depth & Rotation", "Gravitational Potential & Gravitational Potential Energy", "Escape Velocity & Projection Problems", "Orbital Velocity, Time Period & Energy of Satellites", "Geostationary, Polar Satellites & Weightlessness"]
+        },
+        {
+          "key": "p11_c8",
+          "unit": "Unit VII: Bulk Matter",
+          "title": "Mechanical Properties of Solids",
+          "topics": ["Elasticity, Plasticity & Types of Stress and Strain", "Hooke's Law & Stress-Strain Curve (Proportional, Yield, Breaking)", "Young's Modulus, Bulk Modulus, Compressibility & Shear Modulus", "Poisson's Ratio", "Elastic Potential Energy Stored in a Stretched Wire", "Thermal Stress & Applications of Elasticity (Beams, Cranes)"]
+        },
+        {
+          "key": "p11_c9",
+          "unit": "Unit VII: Bulk Matter",
+          "title": "Mechanical Properties of Fluids",
+          "topics": ["Density, Relative Density, Pressure & Hydrostatic Paradox", "Pascal's Law, Hydraulic Lift, Barometer & Manometer", "Buoyancy, Archimedes' Principle & Law of Floatation", "Fluid in Accelerating Container", "Streamline vs Turbulent Flow, Reynolds Number & Equation of Continuity", "Bernoulli's Principle: Venturimeter, Torricelli's Law & Magnus Effect", "Viscosity, Newton's Law of Viscosity, Stokes' Law & Terminal Velocity", "Surface Tension, Surface Energy & Cohesive/Adhesive Forces", "Excess Pressure Inside Liquid Drop & Soap Bubble", "Angle of Contact, Capillary Rise & Jurin's Law"]
+        },
+        {
+          "key": "p11_c10",
+          "unit": "Unit VII: Bulk Matter",
+          "title": "Thermal Properties of Matter",
+          "topics": ["Temperature Scales & Thermometry", "Thermal Expansion of Solids (Linear, Area, Volume) & Applications", "Thermal Expansion of Liquids & Anomalous Expansion of Water", "Specific Heat Capacity, Molar Heat Capacity & Calorimetry", "Phase Change, Latent Heat of Fusion & Vaporisation", "Conduction, Thermal Conductivity, Series & Parallel Rods", "Convection & Radiation (Absorptivity, Emissivity, Kirchhoff's Law)", "Blackbody Radiation, Wien's Displacement Law & Stefan-Boltzmann Law", "Newton's Law of Cooling"]
+        },
+        {
+          "key": "p11_c11",
+          "unit": "Unit VIII",
+          "title": "Thermodynamics",
+          "topics": ["Thermal Equilibrium & Zeroth Law of Thermodynamics", "Heat, Work (P-V Indicator Diagrams) & Internal Energy", "First Law of Thermodynamics", "Mayer's Relation (Cp - Cv = R) & Specific Heats", "Isochoric, Isobaric, Isothermal, Adiabatic & Polytropic Processes", "Cyclic Processes & Free Expansion", "Second Law of Thermodynamics (Kelvin-Planck & Clausius Statements)", "Reversible vs Irreversible Processes, Carnot Engine & Refrigerator"]
+        },
+        {
+          "key": "p11_c12",
+          "unit": "Unit IX",
+          "title": "Kinetic Theory of Gases",
+          "topics": ["Ideal Gas Equation & Gas Laws (Boyle, Charles, Gay-Lussac, Dalton)", "Postulates of KTG & Pressure Exerted by an Ideal Gas", "RMS, Average & Most Probable Speeds of Gas Molecules", "Kinetic Interpretation of Temperature", "Degrees of Freedom & Law of Equipartition of Energy", "Specific Heat Capacities (Cv, Cp, Gamma) of Monoatomic, Diatomic & Polyatomic Gases", "Gas Mixtures & Mean Free Path"]
+        },
+        {
+          "key": "p11_c13",
+          "unit": "Unit X: Oscillations & Waves",
+          "title": "Oscillations",
+          "topics": ["Periodic, Oscillatory Motion & Simple Harmonic Motion (SHM)", "Displacement, Velocity, Acceleration & Phase in SHM", "SHM as Projection of Uniform Circular Motion", "Kinetic, Potential & Total Energy in SHM", "Spring-Block Systems (Series, Parallel, Cut Springs & Reduced Mass)", "Simple Pendulum, Second's Pendulum & Pendulum in Accelerating Frame", "Angular SHM, Physical Pendulum & Liquid in U-Tube", "Damped, Forced Oscillations & Resonance (Overview)"]
+        },
+        {
+          "key": "p11_c14",
+          "unit": "Unit X: Oscillations & Waves",
+          "title": "Waves",
+          "topics": ["Mechanical Waves: Transverse & Longitudinal Waves", "Equation of Progressive Wave, Particle vs Wave Velocity", "Speed of Transverse Wave on String & Speed of Sound (Newton-Laplace)", "Factors Affecting Speed of Sound in Gases", "Intensity, Loudness & Decibel Scale", "Principle of Superposition, Interference & Reflection of Waves", "Standing (Stationary) Waves on Stretched Strings & Harmonics", "Organ Pipes (Closed & Open), End Correction & Resonance Tube", "Beats & Beat Frequency", "Doppler Effect in Sound (Conceptual & Competitive Practice)"]
+        }
+      ]
+    },
+    "ncert_12_physics": {
+      "key": "ncert_12_physics",
+      "name": "Physics (Class 12)",
+      "chapters": [
+        {
+          "key": "p12_c1",
+          "unit": "Electrostatics",
+          "title": "Electric Charges and Fields",
+          "topics": ["Electric Charge, Quantisation, Conservation & Methods of Charging", "Coulomb's Law in Scalar & Vector Form, Dielectric Constant", "Superposition Principle & Equilibrium of Charges", "Electric Field Intensity (Point Charge, Ring, Rod, Disc, Sheet)", "Electric Field Lines & Motion of Charged Particle in Uniform E-Field", "Electric Dipole: Field on Axial, Equatorial & General Points", "Torque & Work Done on Dipole in Uniform Electric Field", "Electric Flux & Gauss's Law", "Applications of Gauss's Law (Infinite Wire, Plane Sheet, Spherical Shell & Solid Sphere)"]
+        },
+        {
+          "key": "p12_c2",
+          "unit": "Electrostatics",
+          "title": "Electrostatic Potential and Capacitance",
+          "topics": ["Electrostatic Potential & Potential Difference", "Potential Due to Point Charge, Dipole & System of Charges", "Potential Due to Ring, Conducting Shell & Non-Conducting Solid Sphere", "Relation Between Electric Field & Potential (E = -dV/dr)", "Equipotential Surfaces & Electrostatic Potential Energy", "Electrostatics of Conductors, Earthing & Cavity Shielding", "Dielectrics, Polarisation & Dielectric Breakdown", "Capacitance of Spherical & Parallel Plate Capacitor", "Capacitors in Series & Parallel, Wheatstone & Symmetry Circuits", "Effect of Dielectric Slabs (Battery Connected vs Disconnected)", "Energy Stored, Energy Density, Sharing of Charges & Common Potential"]
+        },
+        {
+          "key": "p12_c3",
+          "unit": "Current Electricity",
+          "title": "Current Electricity",
+          "topics": ["Electric Current, Current Density, Drift Velocity & Mobility", "Ohm's Law, Resistance, Resistivity & Stretching of Wire", "Temperature Dependence of Resistivity & Non-Ohmic Devices", "Series & Parallel Combinations of Resistors & Symmetry Methods", "Electrical Energy, Power, Bulbs in Series/Parallel & Maximum Power Transfer", "Cells: EMF, Terminal Potential Difference & Internal Resistance", "Series, Parallel & Mixed Grouping of Cells", "Kirchhoff's Laws (KCL & KVL) & Nodal Analysis", "Wheatstone Bridge & Metre Bridge", "Ammeter, Voltmeter Conversion & Potentiometer Concepts"]
+        },
+        {
+          "key": "p12_c4",
+          "unit": "Magnetism",
+          "title": "Moving Charges and Magnetism",
+          "topics": ["Oersted's Experiment & Biot-Savart Law", "Magnetic Field Due to Straight Wire, Circular Loop, Arc & Axial Line", "Ampere's Circuital Law: Infinite Wire, Hollow & Solid Cylinders", "Magnetic Field Inside Solenoid & Toroid", "Lorentz Force & Motion of Charged Particle in Uniform B-Field (Circle & Helix)", "Velocity Selector & Cyclotron Principle", "Force on Current-Carrying Conductor in Magnetic Field", "Force Between Two Parallel Current-Carrying Wires (Definition of Ampere)", "Torque on Current Loop, Magnetic Dipole Moment & Moving Coil Galvanometer"]
+        },
+        {
+          "key": "p12_c5",
+          "unit": "Magnetism",
+          "title": "Magnetism and Matter",
+          "topics": ["Bar Magnet, Magnetic Field Lines & Bar Magnet as Equivalent Solenoid", "Magnetic Dipole in Uniform Magnetic Field (Torque, PE & Oscillation)", "Gauss's Law in Magnetism", "Magnetisation, Magnetic Intensity (H), Permeability & Susceptibility", "Diamagnetic, Paramagnetic & Ferromagnetic Materials & Curie's Law"]
+        },
+        {
+          "key": "p12_c6",
+          "unit": "EMI & AC",
+          "title": "Electromagnetic Induction",
+          "topics": ["Magnetic Flux & Faraday's Laws of Electromagnetic Induction", "Lenz's Law & Conservation of Energy", "Motional EMF in Translating & Rotating Conductors", "Induced Electric Field & Eddy Currents", "Self-Inductance, Solenoid Inductance & Energy Stored in Inductor", "LR Growth & Decay of Current", "Mutual Inductance & Coaxial Solenoids", "AC Generator: Principle & Expression for Induced EMF"]
+        },
+        {
+          "key": "p12_c7",
+          "unit": "EMI & AC",
+          "title": "Alternating Current",
+          "topics": ["Mean (Average) & RMS Values of Alternating Current and Voltage", "Phasors & Pure Resistive, Inductive & Capacitive AC Circuits", "Reactance (XL, XC), Impedance (Z) & Phase Angle", "Series LCR Circuit & Phasor Diagram", "Resonance, Resonant Frequency, Bandwidth & Quality Factor (Q-Factor)", "Power in AC Circuits, Power Factor & Wattless Current", "LC Oscillations", "Transformers: Step-Up, Step-Down, Efficiency & Energy Losses"]
+        },
+        {
+          "key": "p12_c8",
+          "unit": "EM Waves",
+          "title": "Electromagnetic Waves",
+          "topics": ["Maxwell's Displacement Current & Ampere-Maxwell Law", "Sources, Transverse Nature & Equations of Electromagnetic Waves", "Speed, Energy Density, Intensity & Radiation Pressure of EM Waves", "Electromagnetic Spectrum: Wavelengths, Production & Uses"]
+        },
+        {
+          "key": "p12_c9",
+          "unit": "Optics",
+          "title": "Ray Optics and Optical Instruments",
+          "topics": ["Reflection at Plane Mirrors (Rotation, Velocity, Multiple Images)", "Spherical Mirrors: Ray Diagrams, Mirror Formula, Magnification & Velocity", "Refraction of Light, Snell's Law, Real & Apparent Depth, Glass Slab Shift", "Total Internal Reflection (TIR), Critical Angle & Optical Fibres", "Refraction at Spherical Surfaces", "Thin Lenses: Lens Maker's Formula, Lens Formula & Power", "Combination of Thin Lenses, Silvering of Lens & Cutting of Lens", "Refraction Through a Prism: Deviation, Minimum Deviation & Dispersion", "Human Eye, Simple Microscope, Compound Microscope & Astronomical Telescope"]
+        },
+        {
+          "key": "p12_c10",
+          "unit": "Optics",
+          "title": "Wave Optics",
+          "topics": ["Wavefront, Huygens Principle & Proof of Reflection/Refraction Laws", "Coherent Sources, Superposition & Intensity Distribution", "Young's Double-Slit Experiment (YDSE): Fringe Width & Conditions", "YDSE Variations: Thin Glass Slab, Immersion in Liquid & White Light", "Diffraction at a Single Slit: Minima, Maxima & Angular Width", "Resolving Power of Microscope & Telescope (Competitive Concept)", "Polarisation of Light, Malus' Law, Brewster's Law & Polaroids"]
+        },
+        {
+          "key": "p12_c11",
+          "unit": "Modern Physics",
+          "title": "Dual Nature of Radiation and Matter",
+          "topics": ["Electron Emission & Photoelectric Effect Experimental Setup", "Laws of Photoelectric Emission & Graphs (Current vs Intensity/Potential/Freq)", "Einstein's Photoelectric Equation, Work Function & Stopping Potential", "Photon Picture of Light, Energy, Momentum & Radiation Force", "de Broglie Matter Waves, Wavelength of Accelerated Particles & Davisson-Germer"]
+        },
+        {
+          "key": "p12_c12",
+          "unit": "Modern Physics",
+          "title": "Atoms",
+          "topics": ["Rutherford's Alpha-Scattering Experiment, Distance of Closest Approach", "Bohr's Postulates for Hydrogen-Like Atoms", "Radius, Velocity, Time Period & Energy of Electron in nth Orbit", "Hydrogen Spectrum: Lyman, Balmer, Paschen, Brackett & Pfund Series", "Excitation Energy, Ionisation Energy & Recoil of Atom", "de Broglie Explanation of Bohr's Second Postulate & X-Rays Overview"]
+        },
+        {
+          "key": "p12_c13",
+          "unit": "Modern Physics",
+          "title": "Nuclei",
+          "topics": ["Atomic Mass Unit, Composition, Nuclear Size & Constant Nuclear Density", "Mass-Energy Equivalence, Mass Defect & Binding Energy per Nucleon Curve", "Nuclear Forces & Stability", "Q-Value of Nuclear Reactions", "Nuclear Fission, Chain Reaction & Nuclear Reactor", "Nuclear Fusion & Energy Generation in Stars", "Radioactive Decay Law, Half-Life & Mean Life (Competitive Extra)"]
+        },
+        {
+          "key": "p12_c14",
+          "unit": "Electronics",
+          "title": "Semiconductor Electronics",
+          "topics": ["Energy Bands in Conductors, Insulators & Semiconductors", "Intrinsic Semiconductors & Extrinsic (n-Type and p-Type) Semiconductors", "p-n Junction Formation, Depletion Layer & Barrier Potential", "Forward & Reverse Biasing and I-V Characteristics of Diode", "Junction Diode as Half-Wave & Full-Wave Rectifier", "Special Diodes: Zener Diode (Voltage Regulator), LED, Photodiode & Solar Cell", "Digital Electronics: Logic Gates (AND, OR, NOT, NAND, NOR, XOR) & Truth Tables"]
+        }
+      ]
+    },
+    "ncert_11_chemistry": {
+      "key": "ncert_11_chemistry",
+      "name": "Chemistry (Class 11)",
+      "chapters": [
+        {
+          "key": "c11_c1",
+          "unit": "Physical Chemistry",
+          "title": "Some Basic Concepts of Chemistry",
+          "topics": ["Matter Classification, SI Units & Significant Figures", "Laws of Chemical Combination (Mass, Definite, Multiple, Gay-Lussac, Avogadro)", "Dalton's Atomic Theory", "Atomic Mass, Average Atomic Mass, Molecular & Formula Mass", "Mole Concept, Molar Mass, Molar Volume & Avogadro Number", "Percentage Composition, Empirical & Molecular Formula", "Stoichiometry, Balancing Equations & Limiting Reagent", "Concentration Terms: Mass %, Mole Fraction, Molarity, Molality & Normality"]
+        },
+        {
+          "key": "c11_c2",
+          "unit": "Physical Chemistry",
+          "title": "Structure of Atom",
+          "topics": ["Discovery of Electron, Proton, Neutron & Thomson/Rutherford Models", "Atomic Number, Mass Number, Isotopes, Isobars & Isotones", "Electromagnetic Waves, Planck's Quantum Theory & Photoelectric Effect", "Atomic Spectra & Rydberg Formula for Hydrogen", "Bohr's Model: Radius, Velocity, Energy & Limitations", "Dual Behaviour of Matter (de Broglie) & Heisenberg Uncertainty Principle", "Schrodinger Wave Equation, Orbitals & Radial/Angular Nodes", "Four Quantum Numbers (n, l, m, s) & Shapes of s, p, d Orbitals", "Aufbau Principle, (n+l) Rule, Pauli Exclusion, Hund's Rule & Electronic Configurations"]
+        },
+        {
+          "key": "c11_c3",
+          "unit": "Inorganic Chemistry",
+          "title": "Classification of Elements and Periodicity in Properties",
+          "topics": ["Genesis of Periodic Classification (Dobereiner, Newlands, Mendeleev)", "Modern Periodic Law & Long Form of Periodic Table", "IUPAC Nomenclature of Elements with Z > 100", "Electronic Configurations & s, p, d, f-Block Characteristics", "Effective Nuclear Charge (Zeff), Shielding & Slater's Rule", "Atomic Radius (Covalent, Metallic, van der Waals) & Ionic Radius / Isoelectronic Species", "Ionization Enthalpy: Factors & Periodic Exceptions", "Electron Gain Enthalpy & Periodic Exceptions", "Electronegativity (Pauling Scale), Valency, Diagonal Relationship & Oxide Nature"]
+        },
+        {
+          "key": "c11_c4",
+          "unit": "Inorganic Chemistry",
+          "title": "Chemical Bonding and Molecular Structure",
+          "topics": ["Kossel-Lewis Approach, Octet Rule & Formal Charge", "Ionic Bond, Lattice Enthalpy, Born-Haber Cycle & Fajans' Rules", "Covalent Bond Parameters: Bond Length, Angle, Enthalpy & Order", "Resonance & Dipole Moment (Polar vs Non-Polar Molecules)", "VSEPR Theory: Shapes & Geometry of Molecules with Lone Pairs", "Valence Bond Theory (VBT), Sigma & Pi Bonds", "Hybridisation (sp, sp2, sp3, sp3d, sp3d2, sp3d3) & Drago's Rule", "Molecular Orbital Theory (MOT): Energy Level Diagrams, Bond Order & Magnetism", "Hydrogen Bonding (Intermolecular & Intramolecular) & van der Waals Forces"]
+        },
+        {
+          "key": "c11_c5",
+          "unit": "Physical Chemistry",
+          "title": "Thermodynamics",
+          "topics": ["System, Surroundings, Extensive/Intensive Properties & State/Path Functions", "Reversible & Irreversible Work, Heat & Internal Energy", "First Law of Thermodynamics & Work in Isothermal/Adiabatic Processes", "Enthalpy (H), Relation Between Delta H & Delta U, Heat Capacities (Cp, Cv)", "Calorimetry (Bomb & Coffee-Cup Calorimeter)", "Thermochemical Equations & Hess's Law of Constant Heat Summation", "Enthalpies of Formation, Combustion, Atomisation, Bond Dissociation, Solution & Lattice", "Entropy (Delta S) & Second/Third Laws of Thermodynamics", "Gibbs Free Energy (Delta G), Spontaneity Criteria & Relation with Equilibrium Constant (K)"]
+        },
+        {
+          "key": "c11_c6",
+          "unit": "Physical Chemistry",
+          "title": "Equilibrium",
+          "topics": ["Physical Equilibrium & Law of Chemical Equilibrium", "Equilibrium Constants Kc, Kp, Relation Kp = Kc(RT)^dn & Characteristics", "Reaction Quotient (Q), Degree of Dissociation (Alpha) & Vapour Density", "Le Chatelier's Principle: Effect of Concentration, Pressure, Temp, Inert Gas & Catalyst", "Electrolytes, Acids & Bases (Arrhenius, Bronsted-Lowry, Lewis)", "Ionisation of Water (Kw), pH Scale & pH of Strong/Weak Acids & Bases", "Ostwald's Dilution Law, Common Ion Effect & Polyprotic Acids", "Salt Hydrolysis (4 Types) & pH Formulae", "Buffer Solutions (Acidic & Basic) & Henderson-Hasselbalch Equation", "Solubility, Solubility Product (Ksp) & Precipitation Conditions"]
+        },
+        {
+          "key": "c11_c7",
+          "unit": "Physical Chemistry",
+          "title": "Redox Reactions",
+          "topics": ["Classical & Electron Transfer Concepts of Oxidation and Reduction", "Oxidation Number Rules, Fractional Oxidation States & Paradoxes", "Types of Redox Reactions: Combination, Decomposition, Displacement & Disproportionation", "Balancing Redox Reactions: Oxidation Number & Half-Reaction (Ion-Electron) Methods", "Equivalent Weight, n-Factor & Redox Titrations", "Redox Reactions & Electrode Potential Series"]
+        },
+        {
+          "key": "c11_c8",
+          "unit": "Organic Chemistry",
+          "title": "Organic Chemistry: Some Basic Principles and Techniques (GOC)",
+          "topics": ["Hybridisation of Carbon, Sigma/Pi Bonds & Structural Representations", "Classification of Organic Compounds & Homologous Series", "Complete IUPAC Nomenclature (Alkanes, Functional Groups, Polyfunctional, Aromatic)", "Structural Isomerism (Chain, Position, Functional, Metamerism, Tautomerism)", "Stereoisomerism Basics: Geometrical (Cis-Trans, E-Z) & Optical Isomerism", "Homolytic & Heterolytic Bond Fission; Carbocations, Carbanions & Free Radicals", "Nucleophiles & Electrophiles", "Electronic Effects: Inductive, Resonance/Mesomeric, Electromeric & Hyperconjugation", "Applications of GOC: Acidic Strength, Basic Strength & Intermediate Stability", "Purification: Crystallisation, Sublimation, Distillation, Differential Extraction & Chromatography", "Qualitative Analysis (Lassaigne's Test for N, S, X, P) & Quantitative Estimation (Dumas, Kjeldahl, Carius)"]
+        },
+        {
+          "key": "c11_c9",
+          "unit": "Organic Chemistry",
+          "title": "Hydrocarbons",
+          "topics": ["Alkanes: Nomenclature, Isomerism & Preparation (Hydrogenation, Wurtz, Decarboxylation, Kolbe)", "Alkanes: Free Radical Halogenation, Combustion, Aromatisation & Pyrolysis", "Conformations of Ethane & Butane (Sawhorse & Newman Projections)", "Alkenes: Geometrical Isomerism & Preparation (Dehydrohalogenation, Dehydration, Lindlar/Birch)", "Alkenes: Electrophilic Addition, Markovnikov & Anti-Markovnikov (Peroxide Effect)", "Alkenes: Hydration, Oxymercuration, Hydroboration, Ozonolysis & Baeyer's Test", "Alkynes: Preparation, Acidic Character of Terminal Alkynes & Addition Reactions", "Aromaticity, Huckel's (4n+2) Rule & Structure of Benzene", "Electrophilic Substitution in Benzene (Nitration, Halogenation, Sulphonation, Friedel-Crafts)", "Directive Influence of Functional Groups (Ortho/Para vs Meta Directing)"]
+        }
+      ]
+    },
+    "ncert_12_chemistry": {
+      "key": "ncert_12_chemistry",
+      "name": "Chemistry (Class 12)",
+      "chapters": [
+        {
+          "key": "c12_c1",
+          "unit": "Physical Chemistry",
+          "title": "Solutions",
+          "topics": ["Types of Solutions & Expressing Concentration (Molarity, Molality, ppm, Mole Fraction)", "Solubility of Solid in Liquid & Gas in Liquid (Henry's Law & Applications)", "Vapour Pressure of Liquid Solutions & Raoult's Law", "Ideal & Non-Ideal Solutions (Positive & Negative Deviations)", "Minimum & Maximum Boiling Azeotropes", "Colligative Properties: Relative Lowering of Vapour Pressure (RLVP)", "Elevation of Boiling Point & Depression of Freezing Point", "Osmosis, Osmotic Pressure, Isotonic/Hypertonic/Hypotonic Solutions & Reverse Osmosis", "Abnormal Molar Masses & van't Hoff Factor (Association & Dissociation)"]
+        },
+        {
+          "key": "c12_c2",
+          "unit": "Physical Chemistry",
+          "title": "Electrochemistry",
+          "topics": ["Galvanic (Electrochemical) Cells, Salt Bridge & Cell Representation", "Standard Hydrogen Electrode (SHE) & Electrochemical Series", "Nernst Equation, Equilibrium Constant (Kc) & Gibbs Free Energy (Delta G)", "Conductance, Specific Conductivity (Kappa) & Molar Conductivity (Lambda m)", "Variation of Conductivity with Dilution & Kohlrausch's Law of Independent Migration", "Electrolytic Cells, Products of Electrolysis & Faraday's First and Second Laws", "Primary Batteries (Dry Cell, Mercury Cell) & Secondary Batteries (Lead Storage, Ni-Cd)", "Fuel Cells (H2-O2) & Mechanism/Prevention of Corrosion"]
+        },
+        {
+          "key": "c12_c3",
+          "unit": "Physical Chemistry",
+          "title": "Chemical Kinetics",
+          "topics": ["Average & Instantaneous Rate of Reaction & Stoichiometric Relations", "Rate Law, Rate Constant, Order vs Molecularity of Reaction", "Integrated Rate Equations & Half-Life for Zero-Order Reactions", "Integrated Rate Equations, Half-Life & Pressure/Volume Graphs for First-Order Reactions", "Pseudo First-Order Reactions & Parallel/Sequential Overview", "Temperature Dependence of Rate & Arrhenius Equation (Activation Energy)", "Effect of Catalyst on Activation Energy", "Collision Theory of Chemical Reactions"]
+        },
+        {
+          "key": "c12_c4",
+          "unit": "Inorganic Chemistry",
+          "title": "The d- and f-Block Elements",
+          "topics": ["Position, Electronic Configurations & Exceptions of 3d, 4d, 5d Series", "Trends: Atomic/Ionic Radii, Ionization Enthalpy & Oxidation States", "Standard Electrode Potentials (E0 M2+/M and M3+/M2+) & Stability", "Magnetic Properties (Spin-Only Formula), Coloured Ions & Complex Formation", "Catalytic Properties, Interstitial Compounds & Alloy Formation", "Preparation, Properties & Oxidising Reactions of K2Cr2O7", "Preparation, Properties & Oxidising Reactions of KMnO4", "Lanthanoids: Configuration, Oxidation States, Lanthanoid Contraction & Consequences", "Actinoids: Configuration, Oxidation States & Comparison with Lanthanoids"]
+        },
+        {
+          "key": "c12_c5",
+          "unit": "Inorganic Chemistry",
+          "title": "Coordination Compounds",
+          "topics": ["Werner's Theory of Coordination Compounds & Double Salts vs Complexes", "Definitions: Coordination Entity, Central Atom, Ligands (Denticity, Chelate, Ambidentate)", "IUPAC Nomenclature of Mononuclear Coordination Compounds", "Structural Isomerism (Ionisation, Hydrate, Linkage, Coordination)", "Stereoisomerism: Geometrical (Cis-Trans, Fac-Mer) & Optical Isomerism", "Valence Bond Theory (VBT): Inner & Outer Orbital Complexes & Limitations", "Crystal Field Theory (CFT): Octahedral & Tetrahedral Splitting, Spectrochemical Series", "High Spin vs Low Spin Complexes, CFSE & Colour in Coordination Compounds", "Bonding in Metal Carbonyls (Synergic Bonding) & Applications"]
+        },
+        {
+          "key": "c12_c6",
+          "unit": "Organic Chemistry",
+          "title": "Haloalkanes and Haloarenes",
+          "topics": ["Classification, Nomenclature & Nature of C-X Bond", "Preparation from Alcohols, Hydrocarbons, Finkelstein & Swarts Reactions", "Preparation of Haloarenes (Sandmeyer & Gattermann Reactions)", "Physical Properties: Boiling Points, Density & Solubility", "Nucleophilic Substitution: SN1 vs SN2 Mechanism, Reactivity & Stereochemistry", "Optical Activity: Chirality, Enantiomers, Retention, Inversion & Racemisation", "Elimination Reactions (E1, E2, Saytzeff Rule) & Reactions with Metals (Grignard, Wurtz)", "Haloarenes: Low Reactivity Towards SN, Dow's Process, Wurtz-Fittig & Fittig", "Electrophilic Substitution in Haloarenes & Polyhalogen Compounds (CHCl3, CHI3, Freons, DDT)"]
+        },
+        {
+          "key": "c12_c7",
+          "unit": "Organic Chemistry",
+          "title": "Alcohols, Phenols and Ethers",
+          "topics": ["Classification, Nomenclature & Structures of Functional Groups", "Preparation of Alcohols (Alkenes, Carbonyl Reduction, Grignard Reagent)", "Preparation of Phenols (Haloarenes, Benzenesulphonic Acid, Diazonium, Cumene Process)", "Physical Properties & Acidity of Alcohols vs Phenols (Substituent Effects)", "Reactions of Alcohols: Esterification, Lucas Test, Dehydration & Oxidation (PCC, CrO3, Cu)", "Reactions of Phenols: Bromination, Nitration, Kolbe's, Reimer-Tiemann, Zn Dust & Oxidation", "Methanol & Ethanol Commercial Preparation", "Ethers: Williamson Synthesis, Physical Properties & Cleavage with HI (SN1/SN2)", "Electrophilic Substitution in Anisole"]
+        },
+        {
+          "key": "c12_c8",
+          "unit": "Organic Chemistry",
+          "title": "Aldehydes, Ketones and Carboxylic Acids",
+          "topics": ["Nomenclature & Structure of Carbonyl Group", "Preparation: Oxidation/Dehydrogenation of Alcohols, Ozonolysis, Hydration of Alkynes", "Named Preparations: Rosenmund, Stephen, DIBAL-H, Etard, Gattermann-Koch, Friedel-Crafts", "Nucleophilic Addition: HCN, NaHSO3, Grignard, Alcohols (Acetals) & Ammonia Derivatives", "Reduction (Clemmensen, Wolff-Kishner) & Oxidation (Tollens', Fehling's, Haloform Test)", "Reactions Due to Alpha-Hydrogen: Aldol & Cross-Aldol Condensation", "Cannizzaro Reaction & Electrophilic Substitution in Aromatic Aldehydes", "Carboxylic Acids: Preparation & Factors Affecting Acidic Strength", "Reactions of Carboxylic Acids: Esterification, Decarboxylation, HVZ Reaction & Ring Substitution"]
+        },
+        {
+          "key": "c12_c9",
+          "unit": "Organic Chemistry",
+          "title": "Amines",
+          "topics": ["Structure, Classification & IUPAC Nomenclature of Amines", "Preparation: Reduction of Nitro/Nitriles/Amides, Gabriel Phthalimide & Hoffmann Bromamide", "Physical Properties & Basic Character of Aliphatic & Aromatic Amines (Gas vs Aqueous)", "Reactions: Alkylation, Acylation, Carbylamine Test & Reaction with Nitrous Acid", "Hinsberg's Test to Distinguish 1°, 2° and 3° Amines", "Electrophilic Substitution in Aniline (Bromination, Nitration, Sulphonation)", "Diazonium Salts: Preparation, Sandmeyer, Gattermann, Balz-Schiemann & Coupling Reactions"]
+        },
+        {
+          "key": "c12_c10",
+          "unit": "Organic Chemistry",
+          "title": "Biomolecules",
+          "topics": ["Carbohydrates Classification: Monosaccharides, Oligosaccharides & Polysaccharides", "Glucose: Preparation, Open-Chain Evidences, Cyclic Haworth Structure & Anomers", "Fructose, Disaccharides (Sucrose, Maltose, Lactose) & Polysaccharides (Starch, Cellulose, Glycogen)", "Amino Acids: Essential/Non-Essential, Zwitterion & Isoelectric Point", "Peptide Bond, Fibrous vs Globular Proteins, 1°/2°/3°/4° Structures & Denaturation", "Enzymes & Vitamins (Fat-Soluble vs Water-Soluble & Deficiency Diseases)", "Nucleic Acids: DNA vs RNA, Nucleosides, Nucleotides & Double Helix", "Hormones Overview"]
+        }
+      ]
+    },
+    "neet_jee_p_block": {
+      "key": "neet_jee_p_block",
+      "name": "p-Block Elements (NEET/JEE Core)",
+      "chapters": [
+        {
+          "key": "pb_g13_14",
+          "unit": "Inorganic Unit 10",
+          "title": "p-Block: Group 13 & Group 14 Elements",
+          "topics": ["General Outer Configuration (ns2 np1–6), Atomic Radii & Ionization Enthalpy Exceptions", "Group 13 (Boron Family): Oxidation States, Inert Pair Effect & Anomalous Behaviour of Boron", "Group 13: Reactivity Towards Air, Acids, Alkalis & Halogens", "Group 14 (Carbon Family): Catenation, Allotropes of Carbon & Anomalous Behaviour", "Group 14: Oxidation States, Inert Pair Effect & Halide/Oxide Trends"]
+        },
+        {
+          "key": "pb_g15_16",
+          "unit": "Inorganic Unit 10",
+          "title": "p-Block: Group 15 & Group 16 Elements",
+          "topics": ["Group 15 (Nitrogen Family): Electronic Config, Radii, IE, Electronegativity & Oxidation States", "Group 15: Anomalous Properties of Nitrogen & Hydride/Oxide/Halide Trends", "Group 16 (Oxygen Family): General Trends, Oxidation States & Catenation", "Group 16: Anomalous Behaviour of Oxygen & Hydride/Oxide/Halide Trends"]
+        },
+        {
+          "key": "pb_g17_18",
+          "unit": "Inorganic Unit 10",
+          "title": "p-Block: Group 17 (Halogens) & Group 18 (Noble Gases)",
+          "topics": ["Group 17: Electron Gain Enthalpy (Cl > F), Bond Dissociation Energy & Oxidising Power", "Group 17: Anomalous Behaviour of Fluorine, Hydrogen Halides & Oxoacids Trends", "Group 18 (Noble Gases): Electronic Configuration, IE, Atomic Radii & Physical Properties", "Group 18: Reactivity Trends & Xenon Fluorides/Oxides Shapes (VSEPR)"]
+        }
+      ]
+    },
+    "ncert_11_biology": {
+      "key": "ncert_11_biology",
+      "name": "Biology (Class 11)",
+      "chapters": [
+        {
+          "key": "b11_c1",
+          "unit": "Unit I: Diversity",
+          "title": "The Living World",
+          "topics": ["Biodiversity & Need for Classification", "Taxonomy, Systematics, Identification & Nomenclature", "Rules of Binomial Nomenclature (ICBN & ICZN)", "Taxonomic Categories & Hierarchy (Species to Kingdom)"]
+        },
+        {
+          "key": "b11_c2",
+          "unit": "Unit I: Diversity",
+          "title": "Biological Classification",
+          "topics": ["Two-Kingdom to Five-Kingdom Classification (R.H. Whittaker)", "Kingdom Monera: Archaebacteria, Eubacteria, Cyanobacteria & Mycoplasma", "Kingdom Protista: Chrysophytes, Dinoflagellates, Euglenoids, Slime Moulds & Protozoans", "Kingdom Fungi: Structure, Reproduction & Classes (Phyco, Asco, Basidio, Deutero)", "Viruses, Viroids, Prions & Lichens"]
+        },
+        {
+          "key": "b11_c3",
+          "unit": "Unit I: Diversity",
+          "title": "Plant Kingdom",
+          "topics": ["Artificial, Natural & Phylogenetic Classification; Numerical/Cytotaxonomy", "Algae: Chlorophyceae, Phaeophyceae & Rhodophyceae", "Bryophytes: Liverworts (Marchantia) & Mosses (Funaria, Sphagnum)", "Pteridophytes: Life Cycle, Homosporous vs Heterosporous & Classes", "Gymnosperms: Cycas, Pinus & Life Cycle", "Angiosperms Overview"]
+        },
+        {
+          "key": "b11_c4",
+          "unit": "Unit I: Diversity",
+          "title": "Animal Kingdom",
+          "topics": ["Basis of Classification: Levels of Organisation, Symmetry, Germ Layers, Coelom, Segmentation & Notochord", "Phylum Porifera, Coelenterata (Cnidaria) & Ctenophora", "Phylum Platyhelminthes, Aschelminthes & Annelida", "Phylum Arthropoda, Mollusca, Echinodermata & Hemichordata", "Phylum Chordata: Urochordata, Cephalochordata & Vertebrata", "Vertebrate Classes: Cyclostomata, Chondrichthyes, Osteichthyes, Amphibia, Reptilia, Aves & Mammalia"]
+        },
+        {
+          "key": "b11_c5",
+          "unit": "Unit II: Structural Organisation",
+          "title": "Morphology of Flowering Plants",
+          "topics": ["The Root: Regions & Types (Tap, Fibrous, Adventitious)", "The Stem: Features & Types", "The Leaf: Venation, Types & Phyllotaxy", "The Inflorescence (Racemose & Cymose)", "The Flower: Symmetry, Position of Ovary, Aestivation & Placentation", "The Fruit (Drupe) & Seed (Dicot & Monocot)", "Floral Formula, Floral Diagram & Family Solanaceae", "NMC/NEET Retained Families: Malvaceae, Cruciferae (Brassicaceae), Leguminosae (Fabaceae), Compositae & Gramineae"]
+        },
+        {
+          "key": "b11_c6",
+          "unit": "Unit II: Structural Organisation",
+          "title": "Anatomy of Flowering Plants",
+          "topics": ["The Tissue Systems: Epidermal (Stomata, Trichomes), Ground & Vascular Bundles", "Anatomy of Dicotyledonous & Monocotyledonous Root", "Anatomy of Dicotyledonous & Monocotyledonous Stem", "Anatomy of Dorsiventral (Dicot) & Isobilateral (Monocot) Leaf"]
+        },
+        {
+          "key": "b11_c7",
+          "unit": "Unit II: Structural Organisation",
+          "title": "Structural Organisation in Animals",
+          "topics": ["Animal Tissues (NMC/PW Core): Epithelial, Connective, Muscular & Neural Tissues", "Frog (Rana tigrina): External Morphology & Sexual Dimorphism", "Frog Anatomy: Digestive, Respiratory & Circulatory Systems", "Frog Anatomy: Excretory, Nervous, Endocrine & Reproductive Systems", "Cockroach (Periplaneta americana — NMC Retained): Morphology & Anatomy"]
+        },
+        {
+          "key": "b11_c8",
+          "unit": "Unit III: Cell Biology",
+          "title": "Cell: The Unit of Life",
+          "topics": ["Cell Theory & Overview of Prokaryotic vs Eukaryotic Cells", "Prokaryotic Cell: Cell Envelope, Mesosomes, Ribosomes & Inclusion Bodies", "Eukaryotic Cell Membrane (Fluid Mosaic Model) & Cell Wall", "Endomembrane System: ER, Golgi Apparatus, Lysosomes & Vacuoles", "Mitochondria & Plastids (Chloroplast, Chromoplast, Leucoplast)", "Ribosomes, Cytoskeleton, Cilia, Flagella & Centrosome/Centrioles", "Nucleus, Chromosomes (Classification by Centromere) & Microbodies"]
+        },
+        {
+          "key": "b11_c9",
+          "unit": "Unit III: Cell Biology",
+          "title": "Biomolecules",
+          "topics": ["Chemical Analysis of Living Tissue; Primary & Secondary Metabolites", "Biomicromolecules: Amino Acids, Lipids & Nucleotides", "Proteins: Peptide Bonds, 1°/2°/3°/4° Structures & Functions", "Polysaccharides (Starch, Glycogen, Cellulose, Inulin, Chitin) & Nucleic Acids", "Enzymes: Activation Energy, Mechanism & Factors (Temp, pH, Substrate Conc, Inhibition)", "Classification & Nomenclature of Enzymes & Co-factors"]
+        },
+        {
+          "key": "b11_c10",
+          "unit": "Unit III: Cell Biology",
+          "title": "Cell Cycle and Cell Division",
+          "topics": ["Phases of Cell Cycle: Interphase (G1, S, G2), M-Phase & Quiescent Stage (G0)", "Mitosis: Prophase, Metaphase, Anaphase, Telophase, Cytokinesis & Significance", "Meiosis I: Prophase I (Leptotene, Zygotene, Pachytene, Diplotene, Diakinesis)", "Meiosis I (Metaphase I to Telophase I), Interkinesis, Meiosis II & Significance"]
+        },
+        {
+          "key": "b11_c11",
+          "unit": "Unit IV: Plant Physiology",
+          "title": "Photosynthesis in Higher Plants",
+          "topics": ["Early Historical Experiments & Site of Photosynthesis (Chloroplast)", "Photosynthetic Pigments, Absorption & Action Spectra", "Light Reaction: PS II, PS I, Non-Cyclic & Cyclic Photophosphorylation", "Splitting of Water & Chemiosmotic Hypothesis of ATP Synthesis", "Dark Reaction: Calvin Cycle (C3 Pathway — Carboxylation, Reduction, Regeneration)", "C4 (Hatch & Slack) Pathway & Kranz Anatomy", "Photorespiration (C2 Cycle) & Blackman's Law of Limiting Factors"]
+        },
+        {
+          "key": "b11_c12",
+          "unit": "Unit IV: Plant Physiology",
+          "title": "Respiration in Plants",
+          "topics": ["Cellular Respiration & Glycolysis (EMP Pathway — 10 Steps & Net Gain)", "Fermentation: Alcoholic & Lactic Acid Fermentation", "Aerobic Respiration: Oxidative Decarboxylation (Link Reaction)", "Tricarboxylic Acid (Krebs) Cycle & ATP/NADH Balance", "Electron Transport System (Complexes I–V) & Oxidative Phosphorylation", "Respiratory Balance Sheet, Amphibolic Pathway & Respiratory Quotient (RQ)"]
+        },
+        {
+          "key": "b11_c13",
+          "unit": "Unit IV: Plant Physiology",
+          "title": "Plant Growth and Development",
+          "topics": ["Characteristics of Plant Growth, Phases & Arithmetic vs Geometric Growth Rates", "Differentiation, Dedifferentiation, Redifferentiation & Plasticity (Heterophylly)", "Discovery & Physiological Effects of Auxins & Gibberellins", "Discovery & Physiological Effects of Cytokinins, Ethylene & Abscisic Acid (ABA)"]
+        },
+        {
+          "key": "b11_c14",
+          "unit": "Unit V: Human Physiology",
+          "title": "Breathing and Exchange of Gases",
+          "topics": ["Respiratory Organs Across Animals & Human Respiratory System", "Mechanism of Breathing (Inspiration & Expiration)", "Respiratory Volumes (TV, IRV, ERV, RV) & Capacities (IC, EC, FRC, VC, TLC)", "Exchange of Gases at Alveoli & Tissues (Partial Pressures)", "Transport of O2 (Oxyhaemoglobin Dissociation Curve) & Transport of CO2", "Neural & Chemical Regulation of Respiration & Disorders (Asthma, Emphysema, Occupational)"]
+        },
+        {
+          "key": "b11_c15",
+          "unit": "Unit V: Human Physiology",
+          "title": "Body Fluids and Circulation",
+          "topics": ["Blood Plasma & Formed Elements (RBC, WBC Types, Platelets)", "ABO & Rh Blood Grouping (Erythroblastosis Foetalis) & Coagulation Cascade", "Lymph (Tissue Fluid) & Open vs Closed Circulatory Pathways", "Human Heart Structure, Conducting System (SA/AV Node, Purkinje Fibres)", "Cardiac Cycle, Heart Sounds (Lub-Dub), Stroke Volume & Cardiac Output", "Electrocardiograph (ECG: P, QRS, T Waves) & Double Circulation", "Regulation of Cardiac Activity & Disorders (Hypertension, CAD, Angina, Heart Failure)"]
+        },
+        {
+          "key": "b11_c16",
+          "unit": "Unit V: Human Physiology",
+          "title": "Excretory Products and Their Elimination",
+          "topics": ["Ammonotelism, Ureotelism & Uricotelism; Excretory Structures in Animals", "Human Excretory System & Structure of Nephron (Cortical vs Juxtamedullary)", "Urine Formation: Glomerular Filtration (GFR), Reabsorption & Secretion", "Functions of PCT, Loop of Henle, DCT & Collecting Duct", "Counter-Current Mechanism of Urine Concentration", "Regulation of Kidney Function (ADH, JGA-RAAS, ANF) & Micturition", "Role of Other Organs & Disorders (Uremia, Renal Calculi, Glomerulonephritis, Hemodialysis)"]
+        },
+        {
+          "key": "b11_c17",
+          "unit": "Unit V: Human Physiology",
+          "title": "Locomotion and Movement",
+          "topics": ["Types of Movement & Classification of Muscles (Skeletal, Visceral, Cardiac)", "Ultra-Structure of Skeletal Muscle, Sarcomere & Contractile Proteins (Actin, Myosin)", "Mechanism of Muscle Contraction (Sliding Filament Theory & Cross-Bridge Cycle)", "Red vs White Muscle Fibres", "Human Skeletal System: Axial Skeleton (80 Bones) & Appendicular Skeleton (126 Bones)", "Types of Joints (Fibrous, Cartilaginous, Synovial)", "Disorders: Myasthenia Gravis, Muscular Dystrophy, Tetany, Arthritis, Osteoporosis & Gout"]
+        },
+        {
+          "key": "b11_c18",
+          "unit": "Unit V: Human Physiology",
+          "title": "Neural Control and Coordination",
+          "topics": ["Human Neural System (CNS & PNS) & Structure/Types of Neurons", "Generation & Conduction of Nerve Impulse (Resting, Action Potential & Repolarisation)", "Transmission of Impulses Across Electrical & Chemical Synapses", "Central Neural System: Forebrain (Cerebrum, Thalamus, Hypothalamus, Limbic System)", "Midbrain & Hindbrain (Pons, Cerebellum, Medulla Oblongata)"]
+        },
+        {
+          "key": "b11_c19",
+          "unit": "Unit V: Human Physiology",
+          "title": "Chemical Coordination and Integration",
+          "topics": ["Endocrine Glands & Hypothalamus Releasing/Inhibiting Hormones", "Pituitary Gland (Anterior, Intermediate & Posterior Hormones & Disorders)", "Pineal, Thyroid (T3, T4, TCT), Parathyroid (PTH) & Thymus Glands", "Adrenal Cortex & Medulla Hormones", "Pancreas (Insulin & Glucagon), Testis & Ovary Hormones", "Hormones of Heart (ANF), Kidney (Erythropoietin) & GI Tract", "Mechanism of Hormone Action (Membrane-Bound vs Intracellular Receptors)"]
+        }
+      ]
+    },
+    "ncert_12_biology": {
+      "key": "ncert_12_biology",
+      "name": "Biology (Class 12)",
+      "chapters": [
+        {
+          "key": "b12_c1",
+          "unit": "Unit VI: Reproduction",
+          "title": "Sexual Reproduction in Flowering Plants",
+          "topics": ["Flower Structure & Pre-Fertilisation: Stamen, Microsporangium & Pollen Grain", "Pistil, Megasporangium (Ovule) & Female Gametophyte (Embryo Sac)", "Pollination: Autogamy, Geitonogamy, Xenogamy & Pollinating Agents", "Outbreeding Devices, Pollen-Pistil Interaction & Artificial Hybridisation", "Double Fertilisation (Syngamy & Triple Fusion)", "Post-Fertilisation: Endosperm, Dicot/Monocot Embryo, Seed & Fruit", "Apomixis & Polyembryony"]
+        },
+        {
+          "key": "b12_c2",
+          "unit": "Unit VI: Reproduction",
+          "title": "Human Reproduction",
+          "topics": ["Male Reproductive System: Testes, Accessory Ducts, Glands & External Genitalia", "Female Reproductive System: Ovaries, Oviducts, Uterus & Mammary Glands", "Gametogenesis: Spermatogenesis, Structure of Sperm & Hormonal Control", "Oogenesis & Follicular Development", "Menstrual Cycle: Menstrual, Follicular, Ovulatory & Luteal Phases", "Fertilisation, Cleavage, Blastocyst & Implantation", "Pregnancy, Placenta Hormones, Embryonic Development, Parturition & Lactation"]
+        },
+        {
+          "key": "b12_c3",
+          "unit": "Unit VI: Reproduction",
+          "title": "Reproductive Health",
+          "topics": ["Reproductive Health Strategies, RCH Programme & Amniocentesis", "Population Explosion & Birth Control: Natural, Barrier & IUD Methods", "Oral Pills, Injectables, Implants & Surgical Methods (Vasectomy/Tubectomy)", "Medical Termination of Pregnancy (MTP) & Sexually Transmitted Infections (STIs)", "Infertility & Assisted Reproductive Technologies (IVF-ET, ZIFT, IUT, GIFT, ICSI, AI)"]
+        },
+        {
+          "key": "b12_c4",
+          "unit": "Unit VII: Genetics",
+          "title": "Principles of Inheritance and Variation",
+          "topics": ["Mendel's Laws of Inheritance: Monohybrid Cross, Dominance & Segregation", "Incomplete Dominance, Co-dominance (ABO Blood Group) & Multiple Alleles", "Dihybrid Cross, Law of Independent Assortment & Test Cross", "Chromosomal Theory of Inheritance, Morgan's Drosophila Work, Linkage & Recombination", "Polygenic Inheritance & Pleiotropy", "Sex Determination (XX-XY, XX-XO, ZZ-ZW & Haplo-Diploid Honey Bee)", "Mutation & Pedigree Analysis", "Mendelian Disorders (Haemophilia, Colour Blindness, Sickle-Cell, PKU, Thalassemia)", "Chromosomal Disorders (Down's, Klinefelter's & Turner's Syndrome)"]
+        },
+        {
+          "key": "b12_c5",
+          "unit": "Unit VII: Genetics",
+          "title": "Molecular Basis of Inheritance",
+          "topics": ["DNA Structure, Chargaff's Rule & Packaging of DNA Helix (Nucleosome)", "Search for Genetic Material: Griffith, Avery-MacLeod-McCarty & Hershey-Chase", "Properties of Genetic Material & RNA World", "DNA Replication: Meselson-Stahl Experiment, Enzymes & Leading/Lagging Strands", "Transcription Unit, Prokaryotic vs Eukaryotic Transcription & Splicing", "Genetic Code: Salient Features, Wobble & Point/Frameshift Mutations", "tRNA Adapter Molecule & Mechanism of Translation", "Regulation of Gene Expression: Lac Operon", "Human Genome Project (HGP) & DNA Fingerprinting (VNTR)"]
+        },
+        {
+          "key": "b12_c6",
+          "unit": "Unit VII: Genetics",
+          "title": "Evolution",
+          "topics": ["Origin of Life: Big Bang, Oparin-Haldane Theory & Stanley Miller's Experiment", "Evidences for Evolution: Fossils, Homologous, Analogous, Vestigial & Industrial Melanism", "Adaptive Radiation (Darwin's Finches & Australian Marsupials)", "Theories of Evolution: Lamarck, Darwin (Natural Selection) & Hugo de Vries (Mutation)", "Hardy-Weinberg Principle & Five Factors Affecting Genetic Equilibrium", "Brief Account of Evolution (Plant & Animal Geological Timeline)", "Origin and Evolution of Man (Dryopithecus to Homo sapiens)"]
+        },
+        {
+          "key": "b12_c7",
+          "unit": "Unit VIII: Human Welfare",
+          "title": "Human Health and Disease",
+          "topics": ["Bacterial & Viral Diseases (Typhoid, Pneumonia, Common Cold, Dengue, Chikungunya)", "Protozoan, Helminth & Fungal Diseases (Malaria Life Cycle, Amoebiasis, Ascariasis, Filariasis, Ringworm)", "Innate Immunity (4 Barriers) & Acquired Immunity (Humoral & Cell-Mediated)", "Structure of Antibody, Active vs Passive Immunity & Vaccination", "Allergies, Autoimmunity & Primary/Secondary Lymphoid Organs", "AIDS (HIV Retrovirus Life Cycle, Diagnosis & Prevention) & Cancer", "Drugs (Opioids, Cannabinoids, Coca Alkaloids), Tobacco & Alcohol Abuse"]
+        },
+        {
+          "key": "b12_c8",
+          "unit": "Unit VIII: Human Welfare",
+          "title": "Microbes in Human Welfare",
+          "topics": ["Microbes in Household Products (Curd, Dough, Toddy, Swiss/Roquefort Cheese)", "Industrial Products: Fermented Beverages, Antibiotics & Organic Acids/Enzymes/Bioactives", "Microbes in Sewage Treatment (Primary, Secondary/BOD & Anaerobic Sludge Digesters)", "Production of Biogas (Methanogens & Biogas Plant)", "Microbes as Biocontrol Agents (Bt, Trichoderma, Baculoviruses) & Biofertilisers"]
+        },
+        {
+          "key": "b12_c9",
+          "unit": "Unit IX: Biotechnology",
+          "title": "Biotechnology: Principles and Processes",
+          "topics": ["Principles: Genetic Engineering & Bioprocess Engineering", "Tools of rDNA Technology: Restriction Enzymes (Naming & Palindromic Sequences)", "Separation & Isolation of DNA Fragments (Agarose Gel Electrophoresis)", "Cloning Vectors (pBR322, Ori, Selectable Markers, Insertional Inactivation, Ti Plasmid)", "Competent Host & Methods of DNA Transfer (Heat Shock, Micro-injection, Gene Gun)", "Processes of rDNA Technology: Isolation, PCR (Denaturation, Annealing, Extension)", "Bioreactors (Stirred-Tank & Sparged) & Downstream Processing"]
+        },
+        {
+          "key": "b12_c10",
+          "unit": "Unit IX: Biotechnology",
+          "title": "Biotechnology and Its Applications",
+          "topics": ["Applications in Agriculture: GM Crops, Bt Cotton (cry Genes) & Pest-Resistant Tobacco (RNAi)", "Applications in Medicine: Genetically Engineered Insulin (Eli Lilly)", "Gene Therapy (ADA Deficiency) & Molecular Diagnosis (PCR, ELISA, Autoradiography)", "Transgenic Animals & Their Uses", "Ethical Issues: GEAC, Biopatent & Biopiracy"]
+        },
+        {
+          "key": "b12_c11",
+          "unit": "Unit X: Ecology",
+          "title": "Organisms and Populations",
+          "topics": ["Population Attributes: Birth/Death Rates, Sex Ratio & Age Pyramids", "Population Density & Growth Processes (Natality, Mortality, Immigration, Emigration)", "Population Growth Models: Exponential (J-Shaped) & Verhulst-Pearl Logistic (S-Shaped)", "Life History Variation & Population Interactions (Predation, Competition, Parasitism, Commensalism, Mutualism, Amensalism)"]
+        },
+        {
+          "key": "b12_c12",
+          "unit": "Unit X: Ecology",
+          "title": "Ecosystem",
+          "topics": ["Ecosystem Structure, Stratification & Productivity (GPP, NPP, Secondary Productivity)", "Decomposition: Fragmentation, Leaching, Catabolism, Humification & Mineralisation", "Energy Flow: PAR, Grazing & Detritus Food Chains, Food Web & Lindeman's 10% Law", "Ecological Pyramids: Number, Biomass (Upright & Inverted) & Energy"]
+        },
+        {
+          "key": "b12_c13",
+          "unit": "Unit X: Ecology",
+          "title": "Biodiversity and Conservation",
+          "topics": ["Levels of Biodiversity (Genetic, Species, Ecological) & Global/Indian Estimates", "Patterns of Biodiversity: Latitudinal Gradients & Species-Area Relationship (Humboldt)", "Importance of Species Diversity (Rivet Popper Hypothesis) & Loss of Biodiversity (Evil Quartet)", "In-Situ Conservation (Hotspots, National Parks, Sanctuaries, Biosphere Reserves, Sacred Groves)", "Ex-Situ Conservation (Botanical Gardens, Cryopreservation, Seed Banks) & Earth Summits"]
+        }
+      ]
+    },
+    "ncert_11_maths": {
+      "key": "ncert_11_maths",
+      "name": "Mathematics (Class 11)",
+      "chapters": [
+        { "key": "m11_c1", "unit": "Sets & Functions", "title": "Sets", "topics": ["Sets, Roster & Set-Builder Forms", "Empty, Finite, Infinite, Equal Sets, Subsets & Intervals", "Power Set, Universal Set & Venn Diagrams", "Union, Intersection, Difference, Complement & De Morgan's Laws", "Cardinality Problems on Two & Three Sets"] },
+        { "key": "m11_c2", "unit": "Sets & Functions", "title": "Relations and Functions", "topics": ["Cartesian Product of Sets", "Relations: Domain, Co-domain, Range & Number of Relations", "Functions: Domain, Range & Vertical Line Test", "Standard Real Functions (Identity, Constant, Polynomial, Rational, Modulus, Signum, GIF)", "Algebra of Real Functions"] },
+        { "key": "m11_c3", "unit": "Sets & Functions", "title": "Trigonometric Functions", "topics": ["Degree, Radian Measure & Arc Length Formula", "Trigonometric Functions, Domain, Range & Quadrant Signs", "Allied Angles & Graphs of Trig Functions", "Compound Angle Formulae (A ± B)", "Transformation Formulae (Sum-to-Product & Product-to-Sum)", "Multiple & Sub-Multiple Angle Formulae (2A, 3A, A/2)"] },
+        { "key": "m11_c4", "unit": "Algebra", "title": "Complex Numbers and Quadratic Equations", "topics": ["Imaginary Unit (i) & Powers of i", "Algebra of Complex Numbers (Addition, Multiplication, Division)", "Modulus, Conjugate & Their Properties", "Argand Plane & Polar Representation Basics", "Quadratic Equations: Discriminant, Relation Between Roots & Coefficients"] },
+        { "key": "m11_c5", "unit": "Algebra", "title": "Linear Inequalities", "topics": ["Algebraic Solutions of Linear Inequalities in One Variable", "Graphical Representation on Number Line & Wavy Curve Method (JEE Foundation)"] },
+        { "key": "m11_c6", "unit": "Algebra", "title": "Permutations and Combinations", "topics": ["Fundamental Principle of Counting (Addition & Multiplication) & Factorial", "Permutations of Distinct Objects (nPr) & Conditional Arrangements", "Permutations When All Objects Are Not Distinct & Circular Permutations", "Combinations (nCr), Properties & Geometrical Applications"] },
+        { "key": "m11_c7", "unit": "Algebra", "title": "Binomial Theorem", "topics": ["Binomial Theorem for Positive Integral Indices & Pascal's Triangle", "General Term, Middle Term & Independent Term", "Properties of Binomial Coefficients"] },
+        { "key": "m11_c8", "unit": "Algebra", "title": "Sequences and Series", "topics": ["Arithmetic Progression (AP): nth Term, Sum & Arithmetic Mean", "Geometric Progression (GP): nth Term, Sum & Infinite GP", "Relationship Between AM & GM (AM >= GM Inequality)", "Special Series & Arithmetico-Geometric Progression (AGP)"] },
+        { "key": "m11_c9", "unit": "Coordinate Geometry", "title": "Straight Lines", "topics": ["Slope of a Line, Parallelism, Perpendicularity & Angle Between Two Lines", "Forms of Line Equations (Point-Slope, Two-Point, Slope-Intercept, Intercept, Normal)", "General Equation of a Line & Family of Lines", "Distance of a Point from a Line & Distance Between Parallel Lines"] },
+        { "key": "m11_c10", "unit": "Coordinate Geometry", "title": "Conic Sections", "topics": ["Circle: Standard, General & Diameter Forms; Position of Point/Line", "Parabola: Standard Forms, Focus, Directrix & Latus Rectum", "Ellipse: Standard Forms, Eccentricity, Foci & Latus Rectum", "Hyperbola: Standard Forms, Conjugate Hyperbola, Eccentricity & Asymptotes"] },
+        { "key": "m11_c11", "unit": "Coordinate Geometry", "title": "Introduction to Three Dimensional Geometry", "topics": ["Coordinate Axes, Planes & Octants in 3D Space", "Distance Between Two Points & Section Formula in 3D"] },
+        { "key": "m11_c12", "unit": "Calculus", "title": "Limits and Derivatives", "topics": ["Intuitive Idea, Left/Right Hand Limits & Algebra of Limits", "Limits of Polynomial, Rational, Trigonometric, Exponential & Logarithmic Functions", "Derivative from First Principle & Geometrical Interpretation", "Rules of Differentiation (Sum, Product, Quotient & Standard Derivatives)"] },
+        { "key": "m11_c13", "unit": "Statistics & Probability", "title": "Statistics", "topics": ["Range & Mean Deviation About Mean and Median (Ungrouped & Grouped)", "Variance & Standard Deviation (Direct & Shortcut Methods)"] },
+        { "key": "m11_c14", "unit": "Statistics & Probability", "title": "Probability", "topics": ["Random Experiments, Sample Space & Types of Events", "Axiomatic Approach to Probability", "Probability of Union, Intersection & Complement of Events"] }
+      ]
+    },
+    "ncert_12_maths": {
+      "key": "ncert_12_maths",
+      "name": "Mathematics (Class 12)",
+      "chapters": [
+        { "key": "m12_c1", "unit": "Relations & Functions", "title": "Relations and Functions", "topics": ["Reflexive, Symmetric, Transitive & Equivalence Relations + Equivalence Classes", "Injective (One-One), Surjective (Onto) & Bijective Functions", "Composition of Functions & Invertible Functions"] },
+        { "key": "m12_c2", "unit": "Relations & Functions", "title": "Inverse Trigonometric Functions", "topics": ["Domain, Principal Value Branches & Graphs of Inverse Trig Functions", "Simplification & Elementary Properties of ITF"] },
+        { "key": "m12_c3", "unit": "Algebra", "title": "Matrices", "topics": ["Order, Types & Algebra of Matrices", "Matrix Multiplication & Properties", "Transpose, Symmetric & Skew-Symmetric Matrices", "Invertible Matrices & Uniqueness of Inverse"] },
+        { "key": "m12_c4", "unit": "Algebra", "title": "Determinants", "topics": ["Determinant of Order 1, 2 & 3 and Properties", "Area of Triangle & Collinearity Using Determinants", "Minors, Cofactors, Adjoint & Inverse of a Square Matrix", "Consistency & Solution of System of Linear Equations (Matrix & Cramer's Method)"] },
+        { "key": "m12_c5", "unit": "Calculus", "title": "Continuity and Differentiability", "topics": ["Continuity at a Point, Interval & Algebra of Continuous Functions", "Differentiability, Chain Rule & Implicit Differentiation", "Derivatives of Inverse Trigonometric, Exponential & Logarithmic Functions", "Logarithmic Differentiation, Parametric Forms & Second-Order Derivatives"] },
+        { "key": "m12_c6", "unit": "Calculus", "title": "Application of Derivatives", "topics": ["Rate of Change of Quantities", "Strictly Increasing & Decreasing Functions", "Local Maxima/Minima (First & Second Derivative Tests)", "Absolute Maxima/Minima on Closed Interval & Applied Word Problems"] },
+        { "key": "m12_c7", "unit": "Calculus", "title": "Integrals", "topics": ["Indefinite Integrals & Standard Formulae", "Integration by Substitution & Trigonometric Identities", "Integration of Special Rational/Irrational Forms & Partial Fractions", "Integration by Parts & e^x[f(x) + f'(x)] Form", "Fundamental Theorem of Calculus & Evaluation of Definite Integrals", "Properties of Definite Integrals (King's Property, Even/Odd, Periodic)"] },
+        { "key": "m12_c8", "unit": "Calculus", "title": "Application of Integrals", "topics": ["Area Bounded by Simple Curves (Lines, Circles, Parabolas, Ellipses)", "Area Between Two Curves (JEE/Competitive Extension)"] },
+        { "key": "m12_c9", "unit": "Calculus", "title": "Differential Equations", "topics": ["Order, Degree, General & Particular Solutions", "Variable Separable Differential Equations", "Homogeneous Differential Equations", "First-Order Linear Differential Equations (Integrating Factor)"] },
+        { "key": "m12_c10", "unit": "Vectors & 3D", "title": "Vector Algebra", "topics": ["Types of Vectors, Addition, Components & Section Formula", "Scalar (Dot) Product, Angle & Projection of a Vector", "Vector (Cross) Product, Area of Triangle/Parallelogram & Scalar Triple Product"] },
+        { "key": "m12_c11", "unit": "Vectors & 3D", "title": "Three Dimensional Geometry", "topics": ["Direction Cosines & Direction Ratios of a Line", "Vector & Cartesian Equations of a Line in Space", "Angle Between Two Lines & Coplanarity", "Shortest Distance Between Skew & Parallel Lines; Foot of Perpendicular"] },
+        { "key": "m12_c12", "unit": "Linear Programming", "title": "Linear Programming", "topics": ["Mathematical Formulation of LPP", "Graphical Method: Feasible Region, Corner Points & Optimal Solution"] },
+        { "key": "m12_c13", "unit": "Probability", "title": "Probability", "topics": ["Conditional Probability & Multiplication Theorem", "Independent Events", "Theorem of Total Probability & Bayes' Theorem", "Random Variables, Probability Distribution & Mean/Variance"] }
+      ]
+    },
+    "exam_experimental_physics": {
+      "key": "exam_experimental_physics",
+      "name": "Experimental Physics (NMC/NTA Unit 20)",
+      "chapters": [
+        {
+          "key": "exp_p_mech",
+          "unit": "Unit 20: Mechanics & Heat",
+          "title": "Measurement, Mechanics & Thermal Experiments",
+          "topics": ["Vernier Callipers: Internal/External Diameter & Depth", "Screw Gauge: Thickness/Diameter of Thin Sheet/Wire", "Simple Pendulum: Dissipation of Energy (A^2 vs t Graph)", "Metre Scale: Mass of Given Object by Principle of Moments", "Young's Modulus of Elasticity of Material of Metallic Wire", "Surface Tension of Water by Capillary Rise & Effect of Detergents", "Coefficient of Viscosity by Terminal Velocity of Spherical Body", "Speed of Sound in Air Using Resonance Tube", "Specific Heat Capacity of Solid & Liquid by Method of Mixtures"]
+        },
+        {
+          "key": "exp_p_elec_opt",
+          "unit": "Unit 20: Electricity & Optics",
+          "title": "Electricity, Optics & Semiconductor Experiments",
+          "topics": ["Resistivity of Wire Using Metre Bridge & Ohm's Law", "Resistance & Figure of Merit of Galvanometer by Half-Deflection Method", "Focal Length of Convex Mirror, Concave Mirror & Convex Lens (Parallax Method)", "Angle of Deviation vs Angle of Incidence for Triangular Prism", "Refractive Index of Glass Slab Using Travelling Microscope", "Characteristic Curves of p-n Junction Diode (Forward & Reverse Bias)", "Characteristic Curve & Reverse Breakdown Voltage of Zener Diode", "Identification of Diode, LED, Resistor & Capacitor from Mixed Collection"]
+        }
+      ]
+    },
+    "exam_practical_chemistry": {
+      "key": "exam_practical_chemistry",
+      "name": "Practical Chemistry (NMC/NTA Unit 20)",
+      "chapters": [
+        {
+          "key": "exp_c_org",
+          "unit": "Unit 20: Organic & Prep",
+          "title": "Organic Detection, Preparations & Titrations",
+          "topics": ["Detection of Extra Elements (N, S, Cl, Br, I) via Lassaigne's Test", "Detection of Functional Groups: Hydroxyl, Carbonyl, Carboxyl & Amino", "Inorganic Preparations: Mohr's Salt & Potash Alum", "Organic Preparations: Acetanilide, p-Nitroacetanilide, Aniline Yellow & Iodoform", "Titrimetric Analysis: Acid-Base Indicators", "Redox Titrations: Oxalic Acid vs KMnO4 & Mohr's Salt vs KMnO4", "Enthalpy of Solution (CuSO4), Neutralisation & Lyophilic/Lyophobic Sols"]
+        },
+        {
+          "key": "exp_c_salt",
+          "unit": "Unit 20: Salt Analysis",
+          "title": "Qualitative Inorganic Salt Analysis",
+          "topics": ["Dry Tests: Flame Test, Borax Bead & Charcoal Cavity Test", "Anion Analysis (Dilute H2SO4 Group): CO3(2-), S(2-), SO3(2-), NO2(-)", "Anion Analysis (Conc. H2SO4 & Independent): Cl(-), Br(-), I(-), NO3(-), SO4(2-)", "Cation Group 0 & I: NH4(+), Pb(2+)", "Cation Group II & III: Cu(2+), Al(3+), Fe(3+)", "Cation Group IV, V & VI: Zn(2+), Ni(2+), Ca(2+), Ba(2+), Mg(2+)"]
+        }
+      ]
+    }
+  }
+}
