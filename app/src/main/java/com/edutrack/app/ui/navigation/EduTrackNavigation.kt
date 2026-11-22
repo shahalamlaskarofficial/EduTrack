@@ -1,7 +1,8 @@
 package com.edutrack.app.ui.navigation
 
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -23,8 +24,11 @@ import androidx.compose.material.icons.rounded.BarChart
 import androidx.compose.material.icons.rounded.CalendarMonth
 import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material.icons.rounded.Delete
+import androidx.compose.material.icons.rounded.Email
 import androidx.compose.material.icons.rounded.Home
+import androidx.compose.material.icons.rounded.Language
 import androidx.compose.material.icons.rounded.MenuBook
+import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material.icons.rounded.SwapHoriz
 import androidx.compose.material.icons.rounded.Timeline
@@ -33,6 +37,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
@@ -48,6 +53,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -57,11 +63,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -71,6 +79,10 @@ import com.edutrack.app.data.local.AcademicJourneyEntity
 import com.edutrack.app.data.local.ThemePreference
 import com.edutrack.app.data.preferences.AppPreferences
 import com.edutrack.app.data.repository.EduTrackRepository
+import com.edutrack.app.ui.syllabus.SyllabusScreen
+import com.edutrack.app.ui.syllabus.SyllabusViewModel
+import com.edutrack.app.ui.theme.SuccessGreen
+import com.edutrack.app.ui.theme.WarningAmber
 import kotlinx.coroutines.launch
 import java.time.LocalDate
 import java.time.temporal.ChronoUnit
@@ -99,6 +111,11 @@ fun EduTrackMainShell(
     val scope = rememberCoroutineScope()
     val journeys by repository.allJourneysFlow.collectAsStateWithLifecycle(initialValue = emptyList())
     val activeJourney = journeys.firstOrNull { it.id == preferences.activeJourneyId } ?: journeys.firstOrNull()
+
+    // Auto-load official syllabus for journeys created in Phase 1
+    LaunchedEffect(activeJourney?.id) {
+        activeJourney?.id?.let { repository.ensureOfficialSyllabusLoaded(it) }
+    }
 
     val totalTopics by remember(activeJourney?.id) {
         repository.observeTotalTopics(activeJourney?.id ?: -1L)
@@ -204,53 +221,59 @@ fun EduTrackMainShell(
                 .padding(innerPadding)
         ) {
             composable(BottomNavTab.HOME.route) {
-                HomePhase1Screen(
+                HomeOverviewScreen(
                     studentName = preferences.studentName,
                     activeJourney = activeJourney,
                     totalTopics = totalTopics,
                     completedTopics = completedTopics,
-                    journeyCount = journeys.size,
+                    onOpenSyllabus = {
+                        navController.navigate(BottomNavTab.SYLLABUS.route) {
+                            popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+                            launchSingleTop = true
+                            restoreState = true
+                        }
+                    },
                     onSwitchJourney = { showJourneySwitcher = true },
                     onAddJourney = onAddNewJourney
                 )
             }
             composable(BottomNavTab.SYLLABUS.route) {
-                PhaseReadyScreen(
-                    title = "Syllabus Tracker",
-                    phaseLabel = "Ready for Phase 2",
-                    activeJourney = activeJourney,
-                    description = "Verified preloaded official syllabus datasets, automatic loading, 4-state topic progress, and Custom Missing Content will plug directly into this Room database in Phase 2."
+                val activeId = activeJourney?.id ?: -1L
+                val syllabusVm: SyllabusViewModel = viewModel(
+                    key = "syllabus_$activeId",
+                    factory = SyllabusViewModel.factory(repository, activeId)
                 )
+                SyllabusScreen(viewModel = syllabusVm)
             }
             composable(BottomNavTab.ROADMAP.route) {
                 PhaseReadyScreen(
                     title = "Academic Roadmap",
-                    phaseLabel = "Ready for Phase 3",
+                    phaseLabel = "Coming in Phase 3",
                     activeJourney = activeJourney,
-                    description = "Milestone timeline (First Chapter → 25% → 50% → 75% → 100%) and unlockable achievement badges will activate in Phase 3."
+                    description = "Visual milestone timeline (First Chapter → 25% → 50% → 75% → 100%) and unlockable achievement badges will power up from your real syllabus progress in Phase 3."
                 )
             }
             composable(BottomNavTab.PLANNER.route) {
                 PhaseReadyScreen(
                     title = "Study Planner & Revision",
-                    phaseLabel = "Ready for Phase 4",
+                    phaseLabel = "Coming in Phase 4",
                     activeJourney = activeJourney,
-                    description = "Daily missions, weekly goals, spaced-repetition Revision Centre (1/3/7/14/30 days), and WorkManager reminders will connect here in Phase 4."
+                    description = "Daily study missions, weekly goals, spaced-repetition Revision Centre (1/3/7/14/30 days), and local reminders will connect here in Phase 4."
                 )
             }
             composable(BottomNavTab.STATISTICS.route) {
                 PhaseReadyScreen(
                     title = "Statistics & Analytics",
-                    phaseLabel = "Ready for Phase 5",
+                    phaseLabel = "Coming in Phase 5",
                     activeJourney = activeJourney,
-                    description = "Subject-wise charts, weekly/monthly completion trends, consistency streaks, and PDF/JSON exports will be added in Phase 5."
+                    description = "Subject-wise charts, weekly/monthly completion trends, consistency tracking, and JSON/PDF exports will arrive in Phase 5."
                 )
             }
             composable(BottomNavTab.SETTINGS.route) {
-                SettingsPhase1Screen(
+                SettingsScreen(
                     preferences = preferences,
                     journeys = journeys,
-                    activeJourneyId = activeJourney?.id ?: -1L,
+                    activeJourney = activeJourney,
                     onSelectTheme = { theme -> scope.launch { repository.setTheme(theme) } },
                     onToggleNotifications = { enabled ->
                         scope.launch { repository.setNotificationsEnabled(enabled) }
@@ -327,21 +350,19 @@ fun EduTrackMainShell(
                 }
             },
             dismissButton = {
-                TextButton(onClick = { showJourneySwitcher = false }) {
-                    Text("Close")
-                }
+                TextButton(onClick = { showJourneySwitcher = false }) { Text("Close") }
             }
         )
     }
 }
 
 @Composable
-private fun HomePhase1Screen(
+private fun HomeOverviewScreen(
     studentName: String,
     activeJourney: AcademicJourneyEntity?,
     totalTopics: Int,
     completedTopics: Int,
-    journeyCount: Int,
+    onOpenSyllabus: () -> Unit,
     onSwitchJourney: () -> Unit,
     onAddJourney: () -> Unit
 ) {
@@ -448,23 +469,22 @@ private fun HomePhase1Screen(
                 border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
-                    Text("Phase 1 Foundation Active", style = MaterialTheme.typography.titleMedium)
+                    Text("Syllabus Engine Live", style = MaterialTheme.typography.titleMedium)
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
-                        text = "Local Room database, DataStore preferences, Dark/Light themes, 6-tab navigation, and multi-journey tracking ($journeyCount active track${if (journeyCount == 1) "" else "s"}) are running offline on your device.",
+                        text = "Your syllabus is preloaded locally with $totalTopics trackable topics. Open the Syllabus tab to track chapters, mark topic states, or add custom topics.",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Spacer(modifier = Modifier.height(12.dp))
                     Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                        Button(onClick = onAddJourney, shape = RoundedCornerShape(12.dp)) {
-                            Icon(Icons.Rounded.Add, contentDescription = null, modifier = Modifier.size(18.dp))
+                        Button(onClick = onOpenSyllabus, shape = RoundedCornerShape(12.dp)) {
+                            Icon(Icons.Rounded.MenuBook, contentDescription = null, modifier = Modifier.size(18.dp))
                             Spacer(modifier = Modifier.width(6.dp))
-                            Text("Add 2nd Journey")
+                            Text("Open Syllabus")
                         }
-                        TextButton(onClick = onSwitchJourney) {
-                            Text("Switch Track")
-                        }
+                        TextButton(onClick = onAddJourney) { Text("Add Journey") }
+                        TextButton(onClick = onSwitchJourney) { Text("Switch") }
                     }
                 }
             }
@@ -490,10 +510,7 @@ private fun PhaseReadyScreen(
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
             border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
         ) {
-            Column(
-                modifier = Modifier.padding(22.dp),
-                horizontalAlignment = Alignment.Start
-            ) {
+            Column(modifier = Modifier.padding(22.dp)) {
                 Surface(
                     shape = RoundedCornerShape(8.dp),
                     color = MaterialTheme.colorScheme.primary.copy(alpha = 0.14f)
@@ -510,7 +527,7 @@ private fun PhaseReadyScreen(
                 Spacer(modifier = Modifier.height(6.dp))
                 if (activeJourney != null) {
                     Text(
-                        text = "Bound to: ${activeJourney.title} (Dataset Key: ${activeJourney.syllabusDatasetId})",
+                        text = "Active Track: ${activeJourney.title}",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.primary
                     )
@@ -527,16 +544,17 @@ private fun PhaseReadyScreen(
 }
 
 @Composable
-private fun SettingsPhase1Screen(
+private fun SettingsScreen(
     preferences: AppPreferences,
     journeys: List<AcademicJourneyEntity>,
-    activeJourneyId: Long,
+    activeJourney: AcademicJourneyEntity?,
     onSelectTheme: (ThemePreference) -> Unit,
     onToggleNotifications: (Boolean) -> Unit,
     onSelectJourney: (Long) -> Unit,
     onDeleteJourney: (AcademicJourneyEntity) -> Unit,
     onAddJourney: () -> Unit
 ) {
+    val context = LocalContext.current
     var pendingDelete by remember { mutableStateOf<AcademicJourneyEntity?>(null) }
 
     LazyColumn(
@@ -545,9 +563,7 @@ private fun SettingsPhase1Screen(
             .padding(horizontal = 16.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp)
     ) {
-        item {
-            Text("Settings", style = MaterialTheme.typography.headlineMedium)
-        }
+        item { Text("Settings", style = MaterialTheme.typography.headlineMedium) }
 
         // Theme selector
         item {
@@ -619,6 +635,46 @@ private fun SettingsPhase1Screen(
             }
         }
 
+        // Active Syllabus Dataset Info
+        activeJourney?.let { journey ->
+            item {
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(16.dp),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(16.dp),
+                        verticalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text("Syllabus Dataset Info", style = MaterialTheme.typography.titleMedium)
+                            Text(
+                                text = if (journey.isDatasetComplete) "Verified Official" else "Incomplete",
+                                style = MaterialTheme.typography.labelMedium,
+                                color = if (journey.isDatasetComplete) SuccessGreen else WarningAmber
+                            )
+                        }
+                        Text(
+                            text = "Source: ${journey.syllabusSourceRef}",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Text(
+                            text = "Version: ${journey.syllabusDatasetVersion} • Verified: ${journey.syllabusVerifiedDate}",
+                            style = MaterialTheme.typography.labelMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+            }
+        }
+
         // Academic Journeys management
         item {
             Row(
@@ -636,7 +692,7 @@ private fun SettingsPhase1Screen(
         }
 
         items(journeys, key = { it.id }) { journey ->
-            val isActive = journey.id == activeJourneyId
+            val isActive = journey.id == activeJourney?.id
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -673,7 +729,58 @@ private fun SettingsPhase1Screen(
             }
         }
 
-        // Privacy & About
+        // Developer Info Card
+        item {
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
+            ) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Text("Developer Info", style = MaterialTheme.typography.titleMedium)
+                    Spacer(modifier = Modifier.height(10.dp))
+
+                    DeveloperInfoRow(
+                        icon = Icons.Rounded.Person,
+                        label = "Developer",
+                        value = "Shahalam Laskar",
+                        onClick = null
+                    )
+                    HorizontalDivider(
+                        modifier = Modifier.padding(vertical = 8.dp),
+                        color = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f)
+                    )
+                    DeveloperInfoRow(
+                        icon = Icons.Rounded.Email,
+                        label = "Email",
+                        value = "shahalamlaskar.official@gmail.com",
+                        onClick = {
+                            val intent = Intent(Intent.ACTION_SENDTO).apply {
+                                data = Uri.parse("mailto:shahalamlaskar.official@gmail.com")
+                                putExtra(Intent.EXTRA_SUBJECT, "EduTrack App Feedback")
+                            }
+                            runCatching { context.startActivity(intent) }
+                        }
+                    )
+                    HorizontalDivider(
+                        modifier = Modifier.padding(vertical = 8.dp),
+                        color = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f)
+                    )
+                    DeveloperInfoRow(
+                        icon = Icons.Rounded.Language,
+                        label = "Website",
+                        value = "shahalamlaskar.click",
+                        onClick = {
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://shahalamlaskar.click"))
+                            runCatching { context.startActivity(intent) }
+                        }
+                    )
+                }
+            }
+        }
+
+        // About & Privacy
         item {
             Card(
                 modifier = Modifier.fillMaxWidth(),
@@ -685,7 +792,7 @@ private fun SettingsPhase1Screen(
                     Text("About & Privacy", style = MaterialTheme.typography.titleMedium)
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
-                        "EduTrack v1.0.0 (Phase 1)\nAll academic profiles and syllabus progress stay strictly on your device. No ads, no tracking SDKs, no mandatory cloud account.",
+                        "EduTrack v1.0.0 (Phase 2)\nEvery chapter brings you closer.\n\nAll academic profiles, syllabus progress, and custom topics stay strictly on your device. No ads, no tracking SDKs, and no cloud account required.",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -713,10 +820,44 @@ private fun SettingsPhase1Screen(
                 }
             },
             dismissButton = {
-                TextButton(onClick = { pendingDelete = null }) {
-                    Text("Cancel")
-                }
+                TextButton(onClick = { pendingDelete = null }) { Text("Cancel") }
             }
         )
+    }
+}
+
+@Composable
+private fun DeveloperInfoRow(
+    icon: ImageVector,
+    label: String,
+    value: String,
+    onClick: (() -> Unit)?
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
+            .padding(vertical = 2.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Icon(
+            imageVector = icon,
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.primary,
+            modifier = Modifier.size(20.dp)
+        )
+        Spacer(modifier = Modifier.width(12.dp))
+        Column {
+            Text(
+                text = label,
+                style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            Text(
+                text = value,
+                style = MaterialTheme.typography.bodyLarge,
+                color = if (onClick != null) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
+            )
+        }
     }
 }
